@@ -1,3 +1,48 @@
 @import '../utils/mixins';
 @import '../utils/variables';
 
+.header-and-banner{
+    background: $black;
+    height: 72px;
+    padding-top: 50px;
+    header{
+        .header-main-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           .logo{
+            color: $white;
+           } 
+           .navbar{
+            nav{
+                ul{
+                    li{
+                        display: inline-block;
+                        margin-right: 20px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        a{
+                           color: $white;
+                           font-size: 20px;
+                           font-weight: 500;
+                           font-family: $mainfont;
+                           text-transform: capitalize;
+                           transition: .3s ease;
+                           &:hover{
+                            color: $yellow;
+                           }
+                           &:focus{
+                            color: $yellow;
+                           }
+                        }
+
+                    }
+                }
+            }
+            .contact-button{}
+           }
+           
+        }
+    }
+}

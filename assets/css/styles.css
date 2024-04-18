@@ -64,4 +64,46 @@ img {
 
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+}
+
+.header-and-banner {
+  background: #131313;
+  height: 72px;
+  padding-top: 50px;
+}
+.header-and-banner header .header-main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-and-banner header .header-main-content .logo {
+  color: #ffffff;
+}
+.header-and-banner header .header-main-content .navbar nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.header-and-banner header .header-main-content .navbar nav ul li:last-child {
+  margin-right: 0;
+}
+.header-and-banner header .header-main-content .navbar nav ul li a {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Andada Pro", serif;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.header-and-banner header .header-main-content .navbar nav ul li a:hover {
+  color: #f1b22a;
+}
+.header-and-banner header .header-main-content .navbar nav ul li a:focus {
+  color: #f1b22a;
 }/*# sourceMappingURL=styles.css.map */
