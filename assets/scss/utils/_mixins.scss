@@ -5,10 +5,11 @@
     font-size: 15px;
     font-weight: 500;
     position: relative;
-    height: 35px;
-    width: 120px; 
+    height: 40px;
+    width: 130px; 
     text-transform: capitalize;
     text-wrap: nowrap;
+    overflow: hidden;
 }
 @mixin defaulttext{
     color: $black;
@@ -21,17 +22,14 @@
 @mixin hovertext{
     color: $white;
     position: absolute;
-    top: 50%;
+    top: -100%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
+    //transform: translate(-50%, -50%);
+    //display: none;
 }
 @mixin defaultbg{
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 1px 2px;
     background: $yellow;
     z-index: 3;
 }
@@ -47,13 +45,9 @@
 }
 @mixin hoverbox{
     border: 1px solid $black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0px;
-    bottom: 0px;
     background: $black;
+    position: absolute;
+    inset: 0;
     z-index: 2;
-    height: 35px;
-    width: 120px; 
+   
 }
