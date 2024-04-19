@@ -16,6 +16,18 @@ $(document).ready(function(){
             "border": "1px solid #ffffff",
            
         });
+        $(".hover-text").css("transition", " top 0.5s"); // Add transition
+        $(".hover-text").css({
+            "display": "block",
+            "z-index": "4"
+           
+        });
+        $("defaulttext").css("transition", " top 0.5s"); // Add transition
+        $("defaulttext").css({
+            "display": "none",
+           
+           
+        });
     }, function(){
         $(".default-bg").css("transition", "left 0.5s, right 0.5s"); // Reset transition
         $(".default-bg").css({
@@ -32,6 +44,18 @@ $(document).ready(function(){
         $(".hover-box").css("transition", " all 0.5s"); // Add transition
         $(".hover-box").css({
             "border": "1px solid #000000",
+           
+        });
+        $(".hover-text").css("transition", " top 0.5s"); // Add transition
+        $(".hover-text").css({
+            "display": "none",
+            "z-index": "4"
+           
+        });
+        $("defaulttext").css("transition", " top 0.5s"); // Add transition
+        $("defaulttext").css({
+            "display": "block",
+           
            
         });
     });
