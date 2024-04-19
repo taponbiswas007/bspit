@@ -4,12 +4,10 @@
     font-family: $mainfont;
     font-size: 16px;
     font-weight: 500;
-    position: relative;
-    height: 40px;
-    width: 130px; 
     text-transform: capitalize;
     text-wrap: nowrap;
-    //overflow: hidden;
+    overflow: hidden;
+    padding: 4px;
 }
 @mixin defaulttext{
     color: $black;
@@ -37,8 +35,8 @@
     border-right: 4px solid $white;
     border-bottom: 4px solid $white;
     position: absolute;
-    top: 4px;
-    left: 4px;
+    top: 6px;
+    left: 6px;
     right: -4px;
     bottom: -4px;
     z-index: 1;

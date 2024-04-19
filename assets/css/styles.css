@@ -112,15 +112,19 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "Andada Pro", serif;
   font-size: 16px;
   font-weight: 500;
-  position: relative;
-  height: 40px;
-  width: 130px;
   text-transform: capitalize;
   text-wrap: nowrap;
+  overflow: hidden;
+  padding: 4px;
   display: block;
-  margin-bottom: -15px;
+  margin-bottom: -18px;
 }
-.contact-button .default-text {
+.contact-button .contact-mainbtn-area {
+  height: 40px;
+  width: 130px;
+  position: relative;
+}
+.contact-button .contact-mainbtn-area .default-text {
   color: #131313;
   position: absolute;
   top: 50%;
@@ -129,29 +133,29 @@ p, h1, h2, h3, h4, h5, h6 {
           transform: translate(-50%, -50%);
   z-index: 4;
 }
-.contact-button .hover-text {
+.contact-button .contact-mainbtn-area .hover-text {
   color: #ffffff;
   position: absolute;
   top: -100%;
   left: 50%;
 }
-.contact-button .default-bg {
+.contact-button .contact-mainbtn-area .default-bg {
   position: absolute;
   inset: 1px 2px;
   background: #f1b22a;
   z-index: 3;
 }
-.contact-button .box-shadow {
+.contact-button .contact-mainbtn-area .box-shadow {
   border-right: 4px solid #ffffff;
   border-bottom: 4px solid #ffffff;
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 6px;
+  left: 6px;
   right: -4px;
   bottom: -4px;
   z-index: 1;
 }
-.contact-button .hover-box {
+.contact-button .contact-mainbtn-area .hover-box {
   border: 1px solid #131313;
   background: #131313;
   position: absolute;

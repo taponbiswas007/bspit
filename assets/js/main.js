@@ -27,22 +27,22 @@ $(document).ready(function () {
             "left": "50%",
             "transform": "translate(-50%, -50%)", // Combine translations here
             "z-index": "4",
-           
+            
         });
-    
-       
+      
 
         $(".default-text").css("transition", "top 0.5s"); // Add transition
         $(".default-text").css({
-            "top": "100%",
+            "top": "130%",
             "transform": "translate(-50%, 0)"
         });
         
     }, function () {
         $(".default-bg").css("transition", "all 0.6s"); // Reset transition
         $(".default-bg").css({
-            "left": "0", // Reset left position
-            "right": "0" // Reset right position
+            "left": "1px", 
+            "right": "1px" ,
+           
         });
         $(".box-shadow").css("transition", "all 0.5s"); // Add transition
         $(".box-shadow").css({
@@ -66,6 +66,7 @@ $(document).ready(function () {
         });
         $(".default-text").css("transition", " top 0.5s"); // Add transition
         $(".default-text").css({
+            "transition-delay":"0.5s",
             "top": "50%",
             "left": "50%",
             "transform": "translate(-50%, -50%)", // Combine translations here
