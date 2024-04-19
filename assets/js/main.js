@@ -27,7 +27,10 @@ $(document).ready(function () {
             "left": "50%",
             "transform": "translate(-50%, -50%)", // Combine translations here
             "z-index": "4",
+           
         });
+    
+       
 
         $(".default-text").css("transition", "top 0.5s"); // Add transition
         $(".default-text").css({

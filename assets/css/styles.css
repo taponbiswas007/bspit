@@ -83,7 +83,7 @@ p, h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 .header-and-banner header .header-main-content .logo {
-  width: 100px;
+  width: 268px;
 }
 .header-and-banner header .header-main-content .navbar nav ul li {
   display: inline-block;
@@ -110,16 +110,15 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .contact-button {
   font-family: "Andada Pro", serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   position: relative;
   height: 40px;
   width: 130px;
   text-transform: capitalize;
   text-wrap: nowrap;
-  overflow: hidden;
   display: block;
-  margin-bottom: -8px;
+  margin-bottom: -15px;
 }
 .contact-button .default-text {
   color: #131313;

@@ -2,14 +2,14 @@
 
 @mixin contactbtn{
     font-family: $mainfont;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     position: relative;
     height: 40px;
     width: 130px; 
     text-transform: capitalize;
     text-wrap: nowrap;
-    overflow: hidden;
+    //overflow: hidden;
 }
 @mixin defaulttext{
     color: $black;
@@ -24,8 +24,8 @@
     position: absolute;
     top: -100%;
     left: 50%;
-    //transform: translate(-50%, -50%);
-    //display: none;
+    
+   
 }
 @mixin defaultbg{
     position: absolute;
