@@ -102,10 +102,229 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: 0.3s ease;
 }
 .header-and-banner header .header-main-content .navbar nav ul li .navlink:hover {
-  color: #f1b22a;
+  color: #f5ab0c;
 }
 .header-and-banner header .header-main-content .navbar nav ul li .navlink:focus {
-  color: #f1b22a;
+  color: #f5ab0c;
+}
+.header-and-banner .banner-animation-area {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: #131313;
+}
+.header-and-banner .banner-animation-area .banner-animation-main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(100vh - 100px);
+}
+.header-and-banner .banner-animation-area .banner-animation-main-area .my-profession-heading {
+  overflow-y: hidden;
+  height: 50px;
+}
+.header-and-banner .banner-animation-area .banner-animation-main-area .my-profession-heading .my-profession-heading-main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+.header-and-banner .banner-animation-area .banner-animation-main-area .my-profession-heading .my-profession-heading-main-area span {
+  color: #ffffff;
+  font-family: "Andada Pro", serif;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: capitalize;
+  opacity: 0;
+}
+.header-and-banner .banner-animation-area .banner-animation-main-area .my-profession-heading .my-profession-heading-main-area span:nth-child(1) {
+  -webkit-animation: item1 ease 0.5s forwards;
+          animation: item1 ease 0.5s forwards;
+}
+@-webkit-keyframes item1 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 100%;
+  }
+}
+@keyframes item1 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 100%;
+  }
+}
+.header-and-banner .banner-animation-area .banner-animation-main-area .my-profession-heading .my-profession-heading-main-area span:nth-child(2) {
+  -webkit-animation: item2 ease 0.5s forwards;
+          animation: item2 ease 0.5s forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  color: #f5ab0c;
+}
+@-webkit-keyframes item2 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 100%;
+  }
+}
+@keyframes item2 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 100%;
+  }
+}
+.header-and-banner .banner-animation-area .banner-animation-main-area .my-profession-heading .my-profession-heading-main-area span:nth-child(3) {
+  -webkit-animation: item3 ease 0.5s forwards;
+          animation: item3 ease 0.5s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+@-webkit-keyframes item3 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 100%;
+  }
+}
+@keyframes item3 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 100%;
+  }
+}
+.header-and-banner .banner-animation-area .banner-animation-main-area .my-profession-heading .my-profession-heading-main-area span:nth-child(4) {
+  -webkit-animation: item4 ease 0.5s forwards;
+          animation: item4 ease 0.5s forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+@-webkit-keyframes item4 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 100%;
+  }
+}
+@keyframes item4 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 100%;
+  }
+}
+.header-and-banner .banner-animation-area .banner-animation-main-area .my-profession-heading .my-profession-heading-main-area span:nth-child(5) {
+  -webkit-animation: item5 ease 0.5s forwards;
+          animation: item5 ease 0.5s forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+@-webkit-keyframes item5 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 100%;
+  }
+}
+@keyframes item5 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 100%;
+  }
+}
+.header-and-banner .banner-animation-area .banner-animation-main-area .my-profession-heading .owner-name-area {
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.header-and-banner .banner-animation-area .banner-animation-main-area .my-profession-heading .owner-name-area .owner-name-bg {
+  background: #f5ab0c;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.header-and-banner .banner-animation-area .banner-animation-main-area .my-profession-heading .owner-name-area .name {
+  color: #ffffff;
+  font-family: "Andada Pro", serif;
+  font-weight: 700;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  right: -100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
 }
 
 .contact-button {
@@ -142,7 +361,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .contact-button .contact-mainbtn-area .default-bg {
   position: absolute;
   inset: 1px 2px;
-  background: #f1b22a;
+  background: #f5ab0c;
   z-index: 3;
 }
 .contact-button .contact-mainbtn-area .box-shadow {
