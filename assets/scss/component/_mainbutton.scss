@@ -1,0 +1,19 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+.contact-button{
+    @include contactbtn;
+    display: block;
+    margin-bottom: -8px;
+    .default-text{
+        @include defaulttext;
+    }
+    .hover-text{
+        @include hovertext;
+    }
+    .default-bg{
+        @include defaultbg;
+    }
+    .box-shadow{
+        @include boxshadow;
+    }
+}

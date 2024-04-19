@@ -69,7 +69,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .header-and-banner {
   background: #131313;
   height: 72px;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 .header-and-banner header .header-main-content {
   display: -webkit-box;
@@ -83,7 +83,7 @@ p, h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 .header-and-banner header .header-main-content .logo {
-  color: #ffffff;
+  width: 100px;
 }
 .header-and-banner header .header-main-content .navbar nav ul li {
   display: inline-block;
@@ -92,7 +92,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .header-and-banner header .header-main-content .navbar nav ul li:last-child {
   margin-right: 0;
 }
-.header-and-banner header .header-main-content .navbar nav ul li a {
+.header-and-banner header .header-main-content .navbar nav ul li .navlink {
   color: #ffffff;
   font-size: 20px;
   font-weight: 500;
@@ -101,9 +101,59 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-.header-and-banner header .header-main-content .navbar nav ul li a:hover {
+.header-and-banner header .header-main-content .navbar nav ul li .navlink:hover {
   color: #f1b22a;
 }
-.header-and-banner header .header-main-content .navbar nav ul li a:focus {
+.header-and-banner header .header-main-content .navbar nav ul li .navlink:focus {
   color: #f1b22a;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.contact-button {
+  font-family: "Andada Pro", serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  height: 35px;
+  width: 120px;
+  text-transform: capitalize;
+  text-wrap: nowrap;
+  display: block;
+  margin-bottom: -8px;
+}
+.contact-button .default-text {
+  color: #131313;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.contact-button .hover-text {
+  color: #ffffff;
+  color: #131313;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+.contact-button .default-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f1b22a;
+  z-index: 1;
+}
+.contact-button .box-shadow {
+  border-right: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: -4px;
+  bottom: -4px;
+}

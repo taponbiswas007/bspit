@@ -1,0 +1,47 @@
+@import 'variables';
+
+@mixin contactbtn{
+    font-family: $mainfont;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    height: 35px;
+    width: 120px; 
+    text-transform: capitalize;
+    text-wrap: nowrap;
+}
+@mixin defaulttext{
+    color: $black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+@mixin hovertext{
+    color: $white;
+    color: $black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+@mixin defaultbg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $yellow;
+    z-index: 1;
+}
+@mixin boxshadow{
+    border-right: 4px solid $white;
+    border-bottom: 4px solid $white;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: -4px;
+    bottom: -4px;
+}
