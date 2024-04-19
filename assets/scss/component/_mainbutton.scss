@@ -16,4 +16,7 @@
     .box-shadow{
         @include boxshadow;
     }
+    .hover-box{
+        @include hoverbox;
+    }
 }

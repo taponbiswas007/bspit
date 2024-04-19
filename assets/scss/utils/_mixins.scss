@@ -16,7 +16,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index: 4;
 }
 @mixin hovertext{
     color: $white;
@@ -34,7 +34,7 @@
     right: 0;
     bottom: 0;
     background: $yellow;
-    z-index: 1;
+    z-index: 3;
 }
 @mixin boxshadow{
     border-right: 4px solid $white;
@@ -44,4 +44,17 @@
     left: 4px;
     right: -4px;
     bottom: -4px;
+    z-index: 1;
+}
+@mixin hoverbox{
+    border: 1px solid $black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0px;
+    bottom: 0px;
+    background: $black;
+    z-index: 2;
+    height: 35px;
+    width: 120px; 
 }
