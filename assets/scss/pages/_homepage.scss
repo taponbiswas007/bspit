@@ -211,8 +211,16 @@
         height: 700px;
         display: none;
         .main-banner-area{
-            padding-top: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            column-gap: 40px;
             .banner-left{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                height: 100%;
                 p{
                     font-family: $textfont;
                     font-size: 20px;
@@ -231,6 +239,52 @@
                     line-height: 66px;
                     text-transform: capitalize;
                 }
+                a{
+                    margin-top: 50px;
+                }
+            }
+            .banner-right{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+             .myimg-area{
+                width: 100%;
+                border: 2px solid $white;
+                background: $yellow;
+                position: relative;
+                .project-complete{
+                    font-family: $mainfont;
+                    color: $white;
+                    border: 2px solid $white;
+                    background: black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    row-gap: 7px;
+                    padding: 10px;
+                    text-transform: capitalize;
+                    position: absolute;
+                    right: 100px;
+                    animation: projectnumber ease 2s infinite;
+                    animation-delay:0.3s;
+                    @keyframes projectnumber {
+                        0%{
+                            bottom: -30px;
+                        }
+                       
+                        50%{
+                            bottom: -25px;
+                        }
+                       
+                        100%{
+                            bottom: -30px;
+                        }
+                    }
+                }
+             }   
             }
         }
     }

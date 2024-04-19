@@ -333,7 +333,34 @@ p, h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 .header-and-banner .main-banner-area .main-banner-area {
-  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+.header-and-banner .main-banner-area .main-banner-area .banner-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 .header-and-banner .main-banner-area .main-banner-area .banner-left p {
   font-family: "Poppins", sans-serif;
@@ -352,6 +379,78 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: left;
   line-height: 66px;
   text-transform: capitalize;
+}
+.header-and-banner .main-banner-area .main-banner-area .banner-left a {
+  margin-top: 50px;
+}
+.header-and-banner .main-banner-area .main-banner-area .banner-right {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+.header-and-banner .main-banner-area .main-banner-area .banner-right .myimg-area {
+  width: 100%;
+  border: 2px solid #ffffff;
+  background: #f5ab0c;
+  position: relative;
+}
+.header-and-banner .main-banner-area .main-banner-area .banner-right .myimg-area .project-complete {
+  font-family: "Andada Pro", serif;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 7px;
+  padding: 10px;
+  text-transform: capitalize;
+  position: absolute;
+  right: 100px;
+  -webkit-animation: projectnumber ease 2s infinite;
+          animation: projectnumber ease 2s infinite;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+@-webkit-keyframes projectnumber {
+  0% {
+    bottom: -30px;
+  }
+  50% {
+    bottom: -25px;
+  }
+  100% {
+    bottom: -30px;
+  }
+}
+@keyframes projectnumber {
+  0% {
+    bottom: -30px;
+  }
+  50% {
+    bottom: -25px;
+  }
+  100% {
+    bottom: -30px;
+  }
 }
 
 .contact-button {
