@@ -1,83 +1,71 @@
 $(document).ready(function () {
-
-   // contact button start
+     //contact button area start 
     $(".contact-button").hover(function () {
-        $(".default-bg").css("transition", "all 0.6s"); // Add transition
-        $(".default-bg").css({
+        var $button = $(this); // Reference to the hovered button
+    
+        // Target only the elements within the hovered button
+        $button.find(".default-bg").css({
+            "transition": "all 0.6s",
             "transition-delay": "0.4s",
             "left": "0",
             "right": "100%"
         });
-        $(".box-shadow").css("transition", " all 0.5s"); // Add transition
-        $(".box-shadow").css({
+        $button.find(".box-shadow").css({
+            "transition": "all 0.5s",
             "bottom": "0",
             "right": "0",
-
-
         });
-        $(".hover-box").css("transition", " all 0.5s"); // Add transition
-        $(".hover-box").css({
-
+        $button.find(".hover-box").css({
+            "transition": "all 0.5s",
             "border": "1px solid #ffffff",
-
-
         });
-        $(".hover-text").css("transition", "top 0.5s"); 
-        $(".hover-text").css({
-            "transition-delay":"0.5s",
+        $button.find(".hover-text").css({
+            "transition": "top 0.5s",
+            "transition-delay": "0.5s",
             "top": "50%",
             "left": "50%",
-            "transform": "translate(-50%, -50%)", 
+            "transform": "translate(-50%, -50%)",
             "z-index": "4",
-            
         });
-      
-
-        $(".default-text").css("transition", "top 0.5s"); 
-        $(".default-text").css({
+        $button.find(".default-text").css({
+            "transition": "top 0.5s",
             "top": "130%",
             "transform": "translate(-50%, 0)"
         });
-        
     }, function () {
-        $(".default-bg").css("transition", "all 0.6s"); 
-        $(".default-bg").css({
-            "left": "1px", 
-            "right": "1px" ,
-           
+        var $button = $(this); // Reference to the hovered button
+    
+        // Reset the styles for elements within the hovered button
+        $button.find(".default-bg").css({
+            "transition": "all 0.6s",
+            "left": "1px",
+            "right": "1px",
         });
-        $(".box-shadow").css("transition", "all 0.5s"); 
-        $(".box-shadow").css({
+        $button.find(".box-shadow").css({
+            "transition": "all 0.5s",
             "bottom": "-4px",
             "right": "-4px",
             "border-right": "4px solid #ffffff",
             "border-bottom": "4px solid #ffffff",
         });
-        $(".hover-box").css("transition", " all 0.5s"); // Add transition
-        $(".hover-box").css({
+        $button.find(".hover-box").css({
+            "transition": "all 0.5s",
             "border": "2px solid #131313",
-
-
         });
-        $(".hover-text").css("transition", " top 0.5s"); // Add transition
-        $(".hover-text").css({
+        $button.find(".hover-text").css({
+            "transition": "top 0.5s",
             "top": "-100%",
             "left": "50%",
-            
-
         });
-        $(".default-text").css("transition", " top 0.5s"); // Add transition
-        $(".default-text").css({
-            "transition-delay":"0.5s",
+        $button.find(".default-text").css({
+            "transition": "top 0.5s",
             "top": "50%",
             "left": "50%",
-            "transform": "translate(-50%, -50%)", // Combine translations here
+            "transform": "translate(-50%, -50%)",
             "z-index": "4",
-
-
         });
     });
-    //contact button end
+    //contact button area end    
 
     //welcome screen start
     setTimeout(function(){
@@ -117,5 +105,15 @@ $(document).ready(function () {
             
         });
     }, 4200);
+    setTimeout(function(){
+        $(".banner-animation-area").slideUp(1000);
+        
+    }, 4700);
+    setTimeout(function(){
+        $(".main-banner-area").slideDown(500);
+        $(".header-main-content ").css({
+            "opacity":"100%"
+        });
+    }, 5700);
      //welcome screen end
 });
