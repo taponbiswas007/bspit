@@ -14,7 +14,7 @@
             align-items: center;
             opacity: 0;
             .logo {
-                width: 268px;
+                width: 160px;
             }
 
             .navbar {
@@ -254,6 +254,14 @@
                 border: 2px solid $white;
                 background: $yellow;
                 position: relative;
+                object-fit: cover;
+                img {
+                    transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                    opacity: 1;
+                    transform-style: preserve-3d;
+                    filter: brightness(81%) saturate(148%);
+                }
+                
                 .project-complete{
                     font-family: $mainfont;
                     color: $white;

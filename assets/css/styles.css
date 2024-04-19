@@ -84,7 +84,7 @@ p, h1, h2, h3, h4, h5, h6 {
   opacity: 0;
 }
 .header-and-banner header .header-main-content .logo {
-  width: 268px;
+  width: 160px;
 }
 .header-and-banner header .header-main-content .navbar nav ul li {
   display: inline-block;
@@ -401,6 +401,17 @@ p, h1, h2, h3, h4, h5, h6 {
   border: 2px solid #ffffff;
   background: #f5ab0c;
   position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header-and-banner .main-banner-area .main-banner-area .banner-right .myimg-area img {
+  -webkit-transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+          transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  opacity: 1;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-filter: brightness(81%) saturate(148%);
+          filter: brightness(81%) saturate(148%);
 }
 .header-and-banner .main-banner-area .main-banner-area .banner-right .myimg-area .project-complete {
   font-family: "Andada Pro", serif;
