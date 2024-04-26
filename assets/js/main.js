@@ -20,7 +20,7 @@ $(document).ready(function () {
             "border": "1px solid #ffffff",
         });
         $button.find(".hover-text").css({
-            "transition": "top 0.5s",
+            "transition": "top 0.2s",
             "transition-delay": "0.5s",
             "top": "50%",
             "left": "50%",
@@ -28,7 +28,7 @@ $(document).ready(function () {
             "z-index": "4",
         });
         $button.find(".default-text").css({
-            "transition": "top 0.5s",
+            "transition": "top 0.2s",
             "top": "130%",
             "transform": "translate(-50%, 0)"
         });
@@ -53,12 +53,12 @@ $(document).ready(function () {
             "border": "2px solid #131313",
         });
         $button.find(".hover-text").css({
-            "transition": "top 0.5s",
+            "transition": "top 0.2s",
             "top": "-100%",
             "left": "50%",
         });
         $button.find(".default-text").css({
-            "transition": "top 0.5s",
+            "transition": "top 0.2s",
             "top": "50%",
             "left": "50%",
             "transform": "translate(-50%, -50%)",
