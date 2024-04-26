@@ -67,9 +67,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .header-and-banner {
-  background: #111;
-  height: 100px;
-  padding-top: 20px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#070630), to(#060454));
+  background: linear-gradient(to bottom right, #070630 0%, #060454 100%);
 }
 .header-and-banner header .header-main-content {
   display: -webkit-box;
@@ -82,6 +81,7 @@ p, h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   opacity: 0;
+  height: 100px;
 }
 .header-and-banner header .header-main-content .logo {
   width: 160px;
@@ -111,7 +111,6 @@ p, h1, h2, h3, h4, h5, h6 {
 .header-and-banner .banner-animation-area {
   width: 100%;
   height: 100vh;
-  background: #111;
 }
 .header-and-banner .banner-animation-area .banner-animation-main-area {
   display: -webkit-box;
@@ -328,7 +327,6 @@ p, h1, h2, h3, h4, h5, h6 {
   z-index: 2;
 }
 .header-and-banner .main-banner-area {
-  background: #111;
   height: 700px;
   display: none;
 }
@@ -397,9 +395,10 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 50%;
 }
 .header-and-banner .main-banner-area .main-banner-area .banner-right .myimg-area {
-  width: 100%;
-  border: 2px solid #ffffff;
-  background: #f5ab0c;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
@@ -410,14 +409,18 @@ p, h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-filter: brightness(81%) saturate(148%);
-          filter: brightness(81%) saturate(148%);
+  -webkit-filter: brightness(100%) saturate(148%);
+          filter: brightness(100%) saturate(148%);
+  position: absolute;
+  bottom: 35px;
+  z-index: 1;
+  width: 291px;
+  left: 30px;
 }
 .header-and-banner .main-banner-area .main-banner-area .banner-right .myimg-area .project-complete {
   font-family: "Andada Pro", serif;
   color: #ffffff;
-  border: 2px solid #ffffff;
-  background: black;
+  background: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,36 +435,97 @@ p, h1, h2, h3, h4, h5, h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 7px;
-  padding: 10px;
+  padding: 5px;
   text-transform: capitalize;
   position: absolute;
   right: 100px;
-  -webkit-animation: projectnumber ease 2s infinite;
-          animation: projectnumber ease 2s infinite;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  bottom: -57px;
+  z-index: 2;
 }
-@-webkit-keyframes projectnumber {
+.header-and-banner .main-banner-area .main-banner-area .banner-right .snowfall {
+  background: url(../images/whiteball.png);
+  background-size: 350px 200px;
+  background-repeat: repeat;
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  animation: snowfall 5s linear forwards infinite;
+  -webkit-animation: snowfall 5s linear forwards infinite;
+}
+@keyframes snowfall {
   0% {
-    bottom: -30px;
+    background-position: 0 0;
   }
-  50% {
-    bottom: -25px;
+  20% {
+    background-position: 20px 20px;
+  }
+  40% {
+    background-position: 40px 40px;
+  }
+  60% {
+    background-position: 60px 60px;
+  }
+  80% {
+    background-position: 80px 80px;
   }
   100% {
-    bottom: -30px;
+    background-position: 100px 100px;
   }
 }
-@keyframes projectnumber {
+@-webkit-keyframes snowfall {
   0% {
-    bottom: -30px;
+    background-position: 0 0;
   }
-  50% {
-    bottom: -25px;
+  20% {
+    background-position: 20px 20px;
+  }
+  40% {
+    background-position: 40px 40px;
+  }
+  60% {
+    background-position: 60px 60px;
+  }
+  80% {
+    background-position: 80px 80px;
   }
   100% {
-    bottom: -30px;
+    background-position: 100px 100px;
   }
+}
+.header-and-banner .main-banner-area .main-banner-area .banner-right .snow {
+  height: 40px;
+  width: 235px;
+  background-color: white;
+  position: absolute;
+  left: 60px;
+  top: 315px;
+  border-radius: 8px;
+}
+.header-and-banner .main-banner-area .main-banner-area .banner-right .bottom {
+  background-color: #ca0404;
+  height: 70px;
+  width: 260px;
+  position: absolute;
+  top: 100%;
+  left: 47px;
+}
+.header-and-banner .main-banner-area .main-banner-area .banner-right .bottom .bt1 {
+  background-color: #ff1919;
+  height: 20px;
+  width: 280px;
+  position: relative;
+  right: 10px;
+  border-radius: 10px;
+  bottom: 12px;
+}
+.header-and-banner .main-banner-area .main-banner-area .banner-right .bottom .bt2 {
+  background-color: #ff1919;
+  height: 20px;
+  width: 280px;
+  position: relative;
+  right: 10px;
+  border-radius: 10px;
+  top: 40px;
 }
 
 .contact-button {
