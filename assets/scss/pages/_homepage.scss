@@ -8,7 +8,7 @@
     //padding-top: 20px;
     background: linear-gradient(to bottom right, #070630 0%, #060454 100%);
     position: relative;
-
+    overflow: hidden;
     header {
 
         .header-main-content {
@@ -710,4 +710,17 @@
 
         100% {}
     }
+}
+.about-wrapper{
+    height: 600px;
+   .about-area{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto;
+    column-gap: 40px;
+    .images-side{}
+    .content-side{
+        .
+    }
+   } 
 }

@@ -70,6 +70,7 @@ p, h1, h2, h3, h4, h5, h6 {
   background: -webkit-gradient(linear, left top, right bottom, from(#070630), to(#060454));
   background: linear-gradient(to bottom right, #070630 0%, #060454 100%);
   position: relative;
+  overflow: hidden;
 }
 .header-and-banner header .header-main-content {
   display: -webkit-box;
@@ -867,6 +868,17 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.about-wrapper {
+  height: 600px;
+}
+.about-wrapper .about-area {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: auto auto;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
 .contact-button {
   font-family: "Andada Pro", serif;
   font-size: 16px;
@@ -928,4 +940,4 @@ p, h1, h2, h3, h4, h5, h6 {
   position: absolute;
   inset: 0;
   z-index: 2;
-}
+}/*# sourceMappingURL=styles.css.map */
