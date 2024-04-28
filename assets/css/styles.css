@@ -88,6 +88,9 @@ p, h1, h2, h3, h4, h5, h6 {
 .header-and-banner header .header-main-content .logo {
   width: 160px;
 }
+.header-and-banner header .header-main-content .navbar {
+  padding-top: 0;
+}
 .header-and-banner header .header-main-content .navbar nav ul li {
   display: inline-block;
   margin-right: 20px;
@@ -109,6 +112,35 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .header-and-banner header .header-main-content .navbar nav ul li .navlink:focus {
   color: #f5ab0c;
+}
+.header-and-banner header .header-main-content .togglebar {
+  cursor: pointer;
+  color: #070630;
+  font-size: 30px;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: none;
+}
+.header-and-banner header .header-main-content .togglebar:hover {
+  color: #42e599;
+}
+.header-and-banner header .header-main-content .togglebar .bar {
+  margin-top: 5px;
+  margin-left: 8px;
+}
+.header-and-banner header .header-main-content .togglebar .close {
+  margin-top: 5px;
+  margin-left: 9px;
+  display: none;
 }
 .header-and-banner .banner-animation-area {
   width: 100%;
@@ -868,6 +900,40 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .header-and-banner header .header-main-content .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, right bottom, from(#070630), to(#060454));
+    background: linear-gradient(to bottom right, #070630 0%, #060454 100%);
+    -webkit-box-shadow: -10px 0 15px rgba(0, 0, 0, 0.3);
+            box-shadow: -10px 0 15px rgba(0, 0, 0, 0.3);
+    padding: 150px 50px 50px 50px;
+    height: 100vh;
+    z-index: 99;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .header-and-banner header .header-main-content .navbar nav ul li {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .header-and-banner header .header-main-content .navbar nav ul li:last-child {
+    display: none;
+  }
+  .header-and-banner header .header-main-content .navbar nav ul li:hover {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  .header-and-banner header .header-main-content .togglebar {
+    display: block;
+  }
+}
 .about-wrapper {
   height: 600px;
 }

@@ -9,6 +9,7 @@
     background: linear-gradient(to bottom right, #070630 0%, #060454 100%);
     position: relative;
     overflow: hidden;
+
     header {
 
         .header-main-content {
@@ -23,6 +24,8 @@
             }
 
             .navbar {
+                padding-top: 0;
+
                 nav {
                     ul {
                         li {
@@ -55,6 +58,38 @@
 
                         }
                     }
+                }
+
+            }
+
+            .togglebar {
+                cursor: pointer;
+                color: $background1;
+                font-size: 30px;
+                position: absolute;
+                top: 25px;
+                right: 30px;
+                background: rgba(255, 255, 255, 0.6);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                width: 40px;
+                height: 40px;
+                border-radius: 4px;
+                transition: .5s;
+                display: none;
+                &:hover {
+                    color: #42e599;
+                }
+
+                .bar {
+                    margin-top: 5px;
+                    margin-left: 8px;
+                    
+                }
+
+                .close {
+                    margin-top: 5px;
+                    margin-left: 9px;
+                    display: none;
                 }
 
             }
@@ -494,8 +529,8 @@
             align-items: center;
             top: 100px;
             left: 6%;
-           
-           
+
+
 
             .shape {
                 display: inline-block;
@@ -582,7 +617,7 @@
 
             &.second {
                 left: 94%;
-               
+
 
                 .shape {
 
@@ -711,16 +746,57 @@
         100% {}
     }
 }
-.about-wrapper{
-    height: 600px;
-   .about-area{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: auto auto;
-    column-gap: 40px;
-    .images-side{}
-    .content-side{
-        .
+
+@media screen and (max-width: 992px) {
+    .header-and-banner {
+        header {
+            .header-main-content {
+                .navbar {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: linear-gradient(to bottom right, #070630 0%, #060454 100%);
+                    box-shadow: -10px 0 15px rgba(0, 0, 0, 0.3);
+                    padding: 150px 50px 50px 50px;
+                    height: 100vh;
+                    z-index: 99;
+                    align-items: flex-start;
+                    nav {
+                        ul {
+                            li {
+                                display: block;
+                                width: 100%;
+                                margin-bottom: 20px;
+                                transition: .5s;
+                              &:last-child{
+                                display: none;
+                              }
+                              &:hover{
+                                transform: translateX(10px);
+                              }
+                            }
+                        }
+                    }
+                }
+                .togglebar{
+                    display: block;
+                }
+            }
+        }
     }
-   } 
+}
+
+.about-wrapper {
+    height: 600px;
+
+    .about-area {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto auto;
+        column-gap: 40px;
+
+        .images-side {}
+
+        .content-side {}
+    }
 }
