@@ -934,9 +934,6 @@ p, h1, h2, h3, h4, h5, h6 {
     display: block;
   }
 }
-.about-wrapper {
-  height: 600px;
-}
 .about-wrapper .about-area {
   display: grid;
   grid-template-columns: 2fr 2fr;
@@ -944,7 +941,85 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-column-gap: 40px;
      -moz-column-gap: 40px;
           column-gap: 40px;
+  height: 600px;
 }
+.about-wrapper .about-area .images-side .images-main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+}
+.about-wrapper .about-area .images-side .images-main-area .images-item {
+  width: 45%;
+}
+.about-wrapper .about-area .images-side .images-main-area .images-item h1 {
+  font-size: 20px;
+  color: #111;
+  font-family: "Andada Pro", serif;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+}
+.about-wrapper .about-area .images-side .images-main-area .images-item .images {
+  height: 400px;
+  background: #f5ab0c;
+  border-radius: 10px;
+}
+.about-wrapper .about-area .content-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 600px;
+}
+.about-wrapper .about-area .content-side .about-header h1 {
+  font-family: "Andada Pro", serif;
+  font-size: 20px;
+  color: #070630;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.about-wrapper .about-area .content-side .about-subheader {
+  margin-top: 20px;
+}
+.about-wrapper .about-area .content-side .about-subheader h2 {
+  font-family: "Andada Pro", serif;
+  font-size: 30px;
+  color: #111;
+  font-weight: 600;
+}
+.about-wrapper .about-area .content-side .about-description {
+  margin-top: 60px;
+}
+.about-wrapper .about-area .content-side .about-description p {
+  color: #7e7e7e;
+  font-family: "Andada Pro", serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+.about-wrapper .about-area .content-side .about-description p span {
+  font-weight: 700;
+  color: #f5ab0c;
+}
+.about-wrapper .about-area .content-side .contact-us-button {
+  margin-top: 15px;
+}
+
 .contact-button {
   font-family: "Andada Pro", serif;
   font-size: 16px;
@@ -1006,4 +1081,72 @@ p, h1, h2, h3, h4, h5, h6 {
   position: absolute;
   inset: 0;
   z-index: 2;
+}
+
+.contact-buttonwhite {
+  font-family: "Andada Pro", serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-wrap: nowrap;
+  overflow: hidden;
+  padding: 4px;
+  display: block;
+  margin-bottom: -18px;
+}
+.contact-buttonwhite .contact-mainbtn-area {
+  height: 40px;
+  width: 130px;
+  position: relative;
+}
+.contact-buttonwhite .contact-mainbtn-area .default-text {
+  color: #111;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 4;
+}
+.contact-buttonwhite .contact-mainbtn-area .hover-text {
+  color: #ffffff;
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  -webkit-transform: translate3d(0px, -50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+          transform: translate3d(0px, -50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  color: #111;
+}
+.contact-buttonwhite .contact-mainbtn-area .default-bg {
+  position: absolute;
+  inset: 1px 2px;
+  background: #f5ab0c;
+  z-index: 3;
+  -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.contact-buttonwhite .contact-mainbtn-area .box-shadow {
+  border-right: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: -4px;
+  bottom: -4px;
+  z-index: 1;
+  border-right: 4px solid #111;
+  border-bottom: 4px solid #111;
+}
+.contact-buttonwhite .contact-mainbtn-area .hover-box {
+  border: 1px solid #111;
+  background: #111;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: #ffffff;
+  border: 1px solid #ffffff;
 }/*# sourceMappingURL=styles.css.map */

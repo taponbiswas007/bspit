@@ -1,33 +1,83 @@
 @import '../utils/mixins';
 @import '../utils/variables';
-.contact-button{
+
+.contact-button {
     @include contactbtn;
     display: block;
     margin-bottom: -18px;
-    .contact-mainbtn-area{
+
+    .contact-mainbtn-area {
         height: 40px;
-        width: 130px; 
+        width: 130px;
         position: relative;
-        .default-text{
+
+        .default-text {
             @include defaulttext;
         }
-        .hover-text{
+
+        .hover-text {
             @include hovertext;
             transform: translate3d(0px, -50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
             transform-style: preserve-3d;
-           
+
         }
-        .default-bg{
+
+        .default-bg {
             @include defaultbg;
             transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
             transform-style: preserve-3d;
         }
-        .box-shadow{
+
+        .box-shadow {
             @include boxshadow;
         }
-        .hover-box{
+
+        .hover-box {
             @include hoverbox;
         }
     }
-   
+
+}
+
+.contact-buttonwhite {
+    @include contactbtn;
+    display: block;
+    margin-bottom: -18px;
+
+    .contact-mainbtn-area {
+        height: 40px;
+        width: 130px;
+        position: relative;
+
+        .default-text {
+            @include defaulttext;
+
+        }
+
+        .hover-text {
+            @include hovertext;
+            transform: translate3d(0px, -50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform-style: preserve-3d;
+            color: $black
+        }
+
+        .default-bg {
+            @include defaultbg;
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform-style: preserve-3d;
+        }
+
+        .box-shadow {
+            @include boxshadow;
+            border-right: 4px solid $black;
+            border-bottom: 4px solid $black;
+        }
+
+        .hover-box {
+            @include hoverbox;
+            background: $white;
+            border: 1px solid $white;
+        }
+    }
+
 }

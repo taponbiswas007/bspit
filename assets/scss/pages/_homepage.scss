@@ -787,16 +787,82 @@
 }
 
 .about-wrapper {
-    height: 600px;
+   
 
     .about-area {
         display: grid;
         grid-template-columns: 2fr 2fr;
         grid-template-rows: auto auto;
         column-gap: 40px;
+        height: 600px;
+        .images-side {
+            
+           .images-main-area{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 600px;
+            .images-item{
+                width: 45%;
+                h1{ 
+                    font-size: 20px;
+                    color: $black;
+                    font-family: $mainfont;
+                    font-weight: 500;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                .images{
+                   
+                    height: 400px;
+                    background: $yellow;
+                    border-radius: 10px;
+                }
+            }
+           } 
+        }
 
-        .images-side {}
-
-        .content-side {}
+        .content-side {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 600px;
+            .about-header{
+                h1{
+                    font-family: $mainfont;
+                    font-size: 20px;
+                    color: $background1;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+            }
+            .about-subheader{
+                margin-top: 20px;
+                h2{
+                    font-family: $mainfont;
+                    font-size: 30px;
+                    color: $black;
+                    font-weight: 600;
+                 
+                }
+            }
+            .about-description{
+                margin-top: 60px;
+                p{
+                    color: #7e7e7e;
+                    font-family: $mainfont;
+                    font-size: 15px;
+                    font-weight: 500;
+                    span{
+                        font-weight: 700;
+                        color: $yellow;
+                    }
+                }
+            }
+            .contact-us-button{
+                margin-top: 15px;
+            }
+        }
     }
 }
