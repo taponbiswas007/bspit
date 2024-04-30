@@ -181,4 +181,6 @@ $(document).ready(function () {
         });
     }, 5700);
      //welcome screen end
+   
+  
 });

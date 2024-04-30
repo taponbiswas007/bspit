@@ -804,6 +804,8 @@
             height: 600px;
             .images-item{
                 width: 45%;
+              
+               
                 h1{ 
                     font-size: 20px;
                     color: $black;
@@ -829,6 +831,7 @@
             flex-direction: column;
             height: 600px;
             .about-header{
+                overflow: hidden;
                 h1{
                     font-family: $mainfont;
                     font-size: 20px;
@@ -839,6 +842,7 @@
             }
             .about-subheader{
                 margin-top: 20px;
+                overflow: hidden;
                 h2{
                     font-family: $mainfont;
                     font-size: 30px;
@@ -849,11 +853,13 @@
             }
             .about-description{
                 margin-top: 60px;
+                overflow: hidden;
                 p{
                     color: #7e7e7e;
                     font-family: $mainfont;
                     font-size: 15px;
                     font-weight: 500;
+                    line-height: 20px;
                     span{
                         font-weight: 700;
                         color: $yellow;
@@ -863,6 +869,71 @@
             .contact-us-button{
                 margin-top: 15px;
             }
+        }
+    }
+}
+.ourservice-wrapper{
+    background: $background1;
+    padding: 100px 0;
+    
+    .service-header{
+        overflow: hidden;
+        h1{
+            font-family: $mainfont;
+            font-size: 20px;
+            color: $white;
+            font-weight: 600;
+            text-transform: capitalize;
+            text-align: center;
+        }
+    }
+    .service-area-description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        .left-side{
+            color: $white;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: $mainfont;
+        }
+        .right-side{
+            background: $yellow;
+            height: 50px;
+            width: 100px;
+            overflow: hidden;
+            position: relative;
+            h1{
+                color: brown;
+                font-size: 20px;
+                font-weight: 600;
+                font-family: $mainfont;
+                position: absolute;
+                bottom: -100%;
+                transition: 1s ease-in-out;
+
+              :nth-child(1){
+                animation: service-header .3s forwards infinite;
+                @keyframes service-header {
+                    0%{
+                        bottom: -100%;
+                    }
+                    100%{
+                        bottom: 0;
+                    }
+                }
+              }
+       
+            }
+        }
+    }
+    .service-area{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .service-item{
+            width: 25%;
         }
     }
 }

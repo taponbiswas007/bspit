@@ -987,6 +987,9 @@ p, h1, h2, h3, h4, h5, h6 {
           flex-direction: column;
   height: 600px;
 }
+.about-wrapper .about-area .content-side .about-header {
+  overflow: hidden;
+}
 .about-wrapper .about-area .content-side .about-header h1 {
   font-family: "Andada Pro", serif;
   font-size: 20px;
@@ -996,6 +999,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .about-wrapper .about-area .content-side .about-subheader {
   margin-top: 20px;
+  overflow: hidden;
 }
 .about-wrapper .about-area .content-side .about-subheader h2 {
   font-family: "Andada Pro", serif;
@@ -1005,12 +1009,14 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .about-wrapper .about-area .content-side .about-description {
   margin-top: 60px;
+  overflow: hidden;
 }
 .about-wrapper .about-area .content-side .about-description p {
   color: #7e7e7e;
   font-family: "Andada Pro", serif;
   font-size: 15px;
   font-weight: 500;
+  line-height: 20px;
 }
 .about-wrapper .about-area .content-side .about-description p span {
   font-weight: 700;
@@ -1018,6 +1024,93 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .about-wrapper .about-area .content-side .contact-us-button {
   margin-top: 15px;
+}
+
+.ourservice-wrapper {
+  background: #070630;
+  padding: 100px 0;
+}
+.ourservice-wrapper .service-header {
+  overflow: hidden;
+}
+.ourservice-wrapper .service-header h1 {
+  font-family: "Andada Pro", serif;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+.ourservice-wrapper .service-area-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.ourservice-wrapper .service-area-description .left-side {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Andada Pro", serif;
+}
+.ourservice-wrapper .service-area-description .right-side {
+  background: #f5ab0c;
+  height: 50px;
+  width: 100px;
+  overflow: hidden;
+  position: relative;
+}
+.ourservice-wrapper .service-area-description .right-side h1 {
+  color: brown;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Andada Pro", serif;
+  position: absolute;
+  bottom: -100%;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+.ourservice-wrapper .service-area-description .right-side h1 :nth-child(1) {
+  -webkit-animation: service-header 0.3s forwards infinite;
+          animation: service-header 0.3s forwards infinite;
+}
+@-webkit-keyframes service-header {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes service-header {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+.ourservice-wrapper .service-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ourservice-wrapper .service-area .service-item {
+  width: 25%;
 }
 
 .contact-button {
