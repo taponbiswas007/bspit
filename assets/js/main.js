@@ -182,5 +182,26 @@ $(document).ready(function () {
     }, 5700);
      //welcome screen end
    
+     //service area start
+     var items = $(".list-item");
+     var currentIndex = 0;
+     var duration = 2000; // Duration of animation in milliseconds
+
+     function animateItems() {
+         var currentItem = items.eq(currentIndex);
+         var nextIndex = (currentIndex + 1) % items.length;
+         var nextItem = items.eq(nextIndex);
+
+         currentItem.css({ bottom: '0', display: 'block' }).animate({ bottom: '-40px' }, duration/2, function() {
+             $(this).hide();
+         });
+
+         nextItem.css({ bottom: '100%', display: 'block' }).animate({ bottom: '0' }, duration/2);
+
+         currentIndex = nextIndex;
+     }
+
+     setInterval(animateItems, duration);
+     //service area end
   
 });

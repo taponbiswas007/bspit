@@ -476,7 +476,7 @@ p, h1, h2, h3, h4, h5, h6 {
   bottom: -57px;
   z-index: 2;
 }
-.header-and-banner .main-banner-area .main-banner-area .banner-right .snowfall {
+.header-and-banner .main-banner-area .main-banner-area .banner-right .myimg-area .snowfall {
   background: url(../images/whiteball.png);
   background-size: 350px 200px;
   background-repeat: repeat;
@@ -526,7 +526,7 @@ p, h1, h2, h3, h4, h5, h6 {
     background-position: 100px 100px;
   }
 }
-.header-and-banner .main-banner-area .main-banner-area .banner-right .snow {
+.header-and-banner .main-banner-area .main-banner-area .banner-right .myimg-area .snow {
   height: 40px;
   width: 235px;
   background-color: white;
@@ -535,7 +535,7 @@ p, h1, h2, h3, h4, h5, h6 {
   top: 315px;
   border-radius: 8px;
 }
-.header-and-banner .main-banner-area .main-banner-area .banner-right .bottom {
+.header-and-banner .main-banner-area .main-banner-area .banner-right .myimg-area .bottom {
   background-color: #ca0404;
   height: 70px;
   width: 260px;
@@ -543,7 +543,7 @@ p, h1, h2, h3, h4, h5, h6 {
   top: 100%;
   left: 47px;
 }
-.header-and-banner .main-banner-area .main-banner-area .banner-right .bottom .bt1 {
+.header-and-banner .main-banner-area .main-banner-area .banner-right .myimg-area .bottom .bt1 {
   background-color: #ff1919;
   height: 20px;
   width: 280px;
@@ -552,7 +552,7 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   bottom: 12px;
 }
-.header-and-banner .main-banner-area .main-banner-area .banner-right .bottom .bt2 {
+.header-and-banner .main-banner-area .main-banner-area .banner-right .myimg-area .bottom .bt2 {
   background-color: #ff1919;
   height: 20px;
   width: 280px;
@@ -561,13 +561,13 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   top: 40px;
 }
-.header-and-banner .banner-animation-container {
+.header-and-banner .main-banner-area .banner-animation-container {
   display: block;
   position: absolute;
   inset: 0;
   margin: 0 auto;
 }
-.header-and-banner .banner-animation-container .lightning-container {
+.header-and-banner .main-banner-area .banner-animation-container .lightning-container {
   position: absolute;
   top: 36%;
   left: 37%;
@@ -577,7 +577,7 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-.header-and-banner .banner-animation-container .lightning-container .lightning {
+.header-and-banner .main-banner-area .banner-animation-container .lightning-container .lightning {
   position: absolute;
   display: block;
   height: 12px;
@@ -596,19 +596,19 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
 }
-.header-and-banner .banner-animation-container .lightning-container .lightning.white {
+.header-and-banner .main-banner-area .banner-animation-container .lightning-container .lightning.white {
   background-color: white;
   -webkit-box-shadow: 0px 50px 50px 0px rgba(255, 255, 255, 0.3);
           box-shadow: 0px 50px 50px 0px rgba(255, 255, 255, 0.3);
 }
-.header-and-banner .banner-animation-container .lightning-container .lightning.red {
+.header-and-banner .main-banner-area .banner-animation-container .lightning-container .lightning.red {
   background-color: #fc7171;
   -webkit-box-shadow: 0px 50px 50px 0px rgba(252, 113, 113, 0.3);
           box-shadow: 0px 50px 50px 0px rgba(252, 113, 113, 0.3);
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
-.header-and-banner .banner-animation-container .boom-container {
+.header-and-banner .main-banner-area .banner-animation-container .boom-container {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -622,14 +622,14 @@ p, h1, h2, h3, h4, h5, h6 {
   top: 100px;
   left: 6%;
 }
-.header-and-banner .banner-animation-container .boom-container .shape {
+.header-and-banner .main-banner-area .banner-animation-container .boom-container .shape {
   display: inline-block;
   position: relative;
   opacity: 0;
   -webkit-transform-origin: center center;
           transform-origin: center center;
 }
-.header-and-banner .banner-animation-container .boom-container .shape.triangle {
+.header-and-banner .main-banner-area .banner-animation-container .boom-container .shape.triangle {
   width: 0;
   height: 0;
   border-style: solid;
@@ -647,14 +647,14 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-animation-name: boom-triangle;
           animation-name: boom-triangle;
 }
-.header-and-banner .banner-animation-container .boom-container .shape.triangle.big {
+.header-and-banner .main-banner-area .banner-animation-container .boom-container .shape.triangle.big {
   margin-left: -25px;
   border-width: 0 5px 10px 5px;
   border-color: transparent transparent #fade28 transparent;
   -webkit-animation-name: boom-triangle-big;
           animation-name: boom-triangle-big;
 }
-.header-and-banner .banner-animation-container .boom-container .shape.disc {
+.header-and-banner .main-banner-area .banner-animation-container .boom-container .shape.disc {
   width: 8px;
   height: 8px;
   border-radius: 100%;
@@ -668,7 +668,7 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.header-and-banner .banner-animation-container .boom-container .shape.circle {
+.header-and-banner .main-banner-area .banner-animation-container .boom-container .shape.circle {
   width: 20px;
   height: 20px;
   -webkit-animation-name: boom-circle;
@@ -682,38 +682,38 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 100%;
   margin-left: -30px;
 }
-.header-and-banner .banner-animation-container .boom-container .shape.circle.white {
+.header-and-banner .main-banner-area .banner-animation-container .boom-container .shape.circle.white {
   border: 1px solid white;
 }
-.header-and-banner .banner-animation-container .boom-container .shape.circle.big {
+.header-and-banner .main-banner-area .banner-animation-container .boom-container .shape.circle.big {
   width: 40px;
   height: 40px;
   margin-left: 0px;
 }
-.header-and-banner .banner-animation-container .boom-container .shape.circle.big.white {
+.header-and-banner .main-banner-area .banner-animation-container .boom-container .shape.circle.big.white {
   border: 2px solid white;
 }
-.header-and-banner .banner-animation-container .boom-container .shape:after {
+.header-and-banner .main-banner-area .banner-animation-container .boom-container .shape:after {
   background-color: rgba(178, 215, 232, 0.2);
 }
-.header-and-banner .banner-animation-container .boom-container .shape.triangle, .header-and-banner .banner-animation-container .boom-container .shape.circle, .header-and-banner .banner-animation-container .boom-container .shape.circle.big, .header-and-banner .banner-animation-container .boom-container .shape.disc {
+.header-and-banner .main-banner-area .banner-animation-container .boom-container .shape.triangle, .header-and-banner .main-banner-area .banner-animation-container .boom-container .shape.circle, .header-and-banner .main-banner-area .banner-animation-container .boom-container .shape.circle.big, .header-and-banner .main-banner-area .banner-animation-container .boom-container .shape.disc {
   -webkit-animation-delay: 0.38s;
           animation-delay: 0.38s;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
 }
-.header-and-banner .banner-animation-container .boom-container .shape.circle {
+.header-and-banner .main-banner-area .banner-animation-container .boom-container .shape.circle {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
-.header-and-banner .banner-animation-container .boom-container.second {
+.header-and-banner .main-banner-area .banner-animation-container .boom-container.second {
   left: 94%;
 }
-.header-and-banner .banner-animation-container .boom-container.second .shape.triangle, .header-and-banner .banner-animation-container .boom-container.second .shape.circle, .header-and-banner .banner-animation-container .boom-container.second .shape.circle.big, .header-and-banner .banner-animation-container .boom-container.second .shape.disc {
+.header-and-banner .main-banner-area .banner-animation-container .boom-container.second .shape.triangle, .header-and-banner .main-banner-area .banner-animation-container .boom-container.second .shape.circle, .header-and-banner .main-banner-area .banner-animation-container .boom-container.second .shape.circle.big, .header-and-banner .main-banner-area .banner-animation-container .boom-container.second .shape.disc {
   -webkit-animation-delay: 1.9s;
           animation-delay: 1.9s;
 }
-.header-and-banner .banner-animation-container .boom-container.second .shape.circle {
+.header-and-banner .main-banner-area .banner-animation-container .boom-container.second .shape.circle {
   -webkit-animation-delay: 2.15s;
           animation-delay: 2.15s;
 }
@@ -1013,7 +1013,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .about-wrapper .about-area .content-side .about-description p {
   color: #7e7e7e;
-  font-family: "Andada Pro", serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
@@ -1051,66 +1051,179 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
+  margin-top: 30px;
 }
-.ourservice-wrapper .service-area-description .left-side {
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 600;
-  font-family: "Andada Pro", serif;
-}
-.ourservice-wrapper .service-area-description .right-side {
-  background: #f5ab0c;
-  height: 50px;
-  width: 100px;
-  overflow: hidden;
-  position: relative;
-}
-.ourservice-wrapper .service-area-description .right-side h1 {
-  color: brown;
-  font-size: 20px;
-  font-weight: 600;
-  font-family: "Andada Pro", serif;
-  position: absolute;
-  bottom: -100%;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-}
-.ourservice-wrapper .service-area-description .right-side h1 :nth-child(1) {
-  -webkit-animation: service-header 0.3s forwards infinite;
-          animation: service-header 0.3s forwards infinite;
-}
-@-webkit-keyframes service-header {
-  0% {
-    bottom: -100%;
-  }
-  100% {
-    bottom: 0;
-  }
-}
-@keyframes service-header {
-  0% {
-    bottom: -100%;
-  }
-  100% {
-    bottom: 0;
-  }
-}
-.ourservice-wrapper .service-area {
+.ourservice-wrapper .service-area-description .content .content-main-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  height: 40px;
+  width: 100%;
+}
+.ourservice-wrapper .service-area-description .content .content-main-area .content-header {
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Andada Pro", serif;
+  font-weight: 600;
+}
+.ourservice-wrapper .service-area-description .content .content-main-area .content-list {
+  background: #d15ff4;
+  height: 40px;
+  width: 150px;
+  position: relative;
+  overflow: hidden;
+}
+.ourservice-wrapper .service-area-description .content .content-main-area .content-list .list-item {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 40px;
+  margin: 0;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Andada Pro", serif;
+  font-weight: 600;
+  display: none;
+  text-align: center;
+  text-transform: capitalize;
+}
+.ourservice-wrapper .service-area {
+  margin-top: 30px;
+}
+.ourservice-wrapper .service-area ul li {
+  display: inline-block;
+  width: 24%;
+}
+.ourservice-wrapper .service-area ul li a {
+  height: 400px;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  position: relative;
+  padding: 20px;
+  margin-right: -4px;
+  overflow: hidden;
+}
+.ourservice-wrapper .service-area ul li a span {
+  width: 50px;
+  display: block;
+}
+.ourservice-wrapper .service-area ul li a h1 {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Andada Pro", serif;
+  text-align: center;
+  text-transform: capitalize;
+}
+.ourservice-wrapper .service-area ul li a p {
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  padding: 20px;
+}
+.ourservice-wrapper .service-area ul li a .button-area {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.ourservice-wrapper .service-area .service-item {
-  width: 25%;
+.ourservice-wrapper .service-area ul li a .button-area button {
+  background: #ffffff;
+  color: #070630;
+  border-radius: 50%;
+  padding: 5px 6px;
+  font-size: 10px;
+}
+.ourservice-wrapper .service-area ul li a:hover .service-box-content {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  bottom: 100px;
+}
+.ourservice-wrapper .service-area ul li a:hover .gobtn {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background: #f5ab0c;
+  left: 50%;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+.ourservice-wrapper .service-area ul li a .border-effect {
+  display: block;
+  width: 0;
+  height: 1px;
+  z-index: 1;
+  background: #f5ab0c;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.ourservice-wrapper .service-area ul li a .border-effect:hover {
+  -webkit-animation: borderanimation 0.5s ease;
+          animation: borderanimation 0.5s ease;
+}
+@-webkit-keyframes borderanimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes borderanimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.ourservice-wrapper .service-area ul li:nth-child(4) a {
+  border-right: 1px solid #ffffff;
 }
 
 .contact-button {
@@ -1242,4 +1355,4 @@ p, h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   background: #ffffff;
   border: 1px solid #ffffff;
-}/*# sourceMappingURL=styles.css.map */
+}
