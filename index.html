@@ -22,53 +22,77 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
         integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- slick slider  -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <section class="header-and-banner">
-        <header>
-            <div class="container">
-                <div class="header-main-content">
-                    <div class="logo">
-                        <a href="#">
-                            <img src="assets/images/logo.png" alt="">
-                        </a>
-                    </div>
-                    <div class="navbar">
-                        <nav>
-                            <ul>
-                                <li><a class="navlink" href="#">home</a></li>
-                                <li><a class="navlink" href="#">about</a></li>
-                                <li><a class="navlink" href="#">portfulio</a></li>
-                                <li><a class="navlink" href="#">feedback</a></li>
-                                <li><a class="navlink" href="#">products</a></li>
-                                <li><a class="contact-button" href="#">
-                                        <div class="contact-mainbtn-area">
-                                            <div class="default-text">contact now</div>
-                                            <div class="hover-text">contact now</div>
-                                            <div class="default-bg"></div>
-                                            <div class="hover-box"></div>
-                                            <div class="box-shadow"></div>
-                                        </div>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-main-content">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="navbar">
+                    <nav>
+                        <ul>
+                            <li><a class="navlink" href="#">home</a></li>
+                            <li><a class="navlink" href="#">about</a></li>
+                            <li><a class="navlink" href="#">portfulio</a></li>
+                            <li><a class="navlink" href="#">feedback</a></li>
+                            <li><a class="navlink" href="#">products</a></li>
+                            <li><a class="contact-button" href="#">
+                                    <div class="contact-mainbtn-area">
+                                        <div class="default-text">contact now</div>
+                                        <div class="hover-text">contact now</div>
+                                        <div class="default-bg"></div>
+                                        <div class="hover-box"></div>
+                                        <div class="box-shadow"></div>
+                                    </div>
 
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="my-responsive-images-area">
+                        <div class="banner-right">
+                            <div class="myimg-area" data-aos="zoom-in-down" data-aos-delay="6300">
+                                <img src="assets/images/owner1.png" alt="">
+                                <div class="project-complete">
+                                    <span>150+</span>
+                                    <span>project complete</span>
+                                </div>
+                                <div class="snowfall"></div>
+                                <div class="snow"></div>
+                                <div class="bottom">
+                                    <div class="bt1"></div>
+                                    <div class="bt2"></div>
+                                </div>
+    
+                            </div>
+                        </div>
                     </div>
-                    <div class="togglebar">
-                        <div class="bar"><i class="fa-solid fa-bars"></i></div>
+                    <div class="toggleclose">
+                       
                         <div class="close"><i class="fa-solid fa-x"></i></div>
                     </div>
-
                 </div>
+                <div class="togglebar">
+                    <div class="bar"><i class="fa-solid fa-bars"></i></div>
+                 
+                </div>
+
             </div>
-        </header>
+        </div>
+    </header>
+    <section class="header-and-banner">
+      
         <!-- welcome screen start -->
         <div class="banner-animation-area">
-            <div class="container">
+           
                 <div class="banner-animation-main-area">
                     <div class="my-profession-heading">
                         <div class="my-profession-heading-main-area">
@@ -84,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+           
         </div>
         <!-- welcome screen end -->
         <!-- main banner area start -->
@@ -123,8 +147,6 @@
                             </div>
 
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -226,7 +248,7 @@
 
             </div>
             <div class="service-area">
-                <ul>
+                <ul class="">
                     <li>
                         <a href="#">
                             <span>
@@ -301,6 +323,8 @@
     <script>
         AOS.init();
     </script>
+    <!-- slick slider -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
 </body>
