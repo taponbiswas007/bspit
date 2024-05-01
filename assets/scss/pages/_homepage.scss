@@ -1258,7 +1258,7 @@
     .header {
         .header-main-content {
             .navbar {
-                position: absolute;
+                position: fixed;
                 top: 0;
                 left: -100%;
                 background: linear-gradient(to bottom right, #070630 0%, #060454 100%);
@@ -1266,7 +1266,7 @@
                 padding: 150px 50px 50px 50px;
                 height: 100vh;
                 width: 100%;
-                z-index: 99;
+                z-index: 99999999;
                 align-items: flex-start;
 
                 nav {
@@ -1320,10 +1320,7 @@
         .about-area{
             grid-template-columns: 1fr;
             row-gap: 40px;
-            .images-side{
-
-            }
-            .content-side{}
+           
         }
     }
 
