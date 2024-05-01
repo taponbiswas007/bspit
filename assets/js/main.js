@@ -211,12 +211,10 @@ $(document).ready(function () {
 
      setInterval(animateItems, duration);
 
-     $('.responsive').slick({
-        dots: true,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+     $('.multiple-items').slick({
+        infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 3,
         responsive: [
           {
             breakpoint: 1024,

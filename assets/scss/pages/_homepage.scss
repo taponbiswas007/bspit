@@ -457,7 +457,7 @@
     .main-banner-area {
         //background: $black;
         // background: linear-gradient(to bottom right, #070630 0%,#060454 100%);
-        height: 700px;
+        //height: 700px;
         display: none;
 
         .main-banner-area {
@@ -465,13 +465,15 @@
             justify-content: space-between;
             align-items: flex-start;
             column-gap: 40px;
+            padding-top: 100px;
+            padding-bottom: 100px;
 
             .banner-left {
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
                 flex-direction: column;
-                height: 100%;
+                //height: 100%;
 
                 p {
                     font-family: $textfont;
@@ -499,7 +501,7 @@
             }
 
             .banner-right {
-                height: 100%;
+                //height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -931,187 +933,17 @@
         }
     }
 }
-@media screen and (max-width: 1200px){
-    .header-and-banner{
-        .banner-animation-main-area{
-            .my-profession-heading{
-                height: 100px !important;
-                .my-profession-heading-main-area{
-                    column-gap: 10px !important;
-                    flex-wrap: wrap;
-                    span{
-                        font-size: 30px !important;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 992px) {
 
-    .header {
-        .header-main-content {
-            .navbar {
-                position: absolute;
-                top: 0;
-                left: -100%;
-                background: linear-gradient(to bottom right, #070630 0%, #060454 100%);
-                box-shadow: -10px 0 15px rgba(0, 0, 0, 0.3);
-                padding: 150px 50px 50px 50px;
-                height: 100vh;
-                width: 100%;
-                z-index: 99;
-                align-items: flex-start;
-
-                nav {
-                    width: 50%;
-
-                    ul {
-                        li {
-                            display: block;
-                            width: 100%;
-                            margin-bottom: 20px;
-
-
-                            &:last-child {
-                                display: none;
-                            }
-
-                            a {
-                                display: block;
-                                width: 100%;
-                                background: $yellow;
-                                color: $black !important;
-                                padding: 10px;
-
-                                &:hover {
-                                    transform: translateX(10px);
-                                    color: $white !important;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .my-responsive-images-area {
-                    display: block;
-
-                    .banner-right {
-                        width: 350px;
-                    }
-                }
-                .toggleclose {
-                    display: block;
-                }
-            }
-
-            .togglebar {
-                display: block;
-            }
-        }
-    }
-
-}
-@media screen and (max-width: 420px) {
-
-    .header {
-        .header-main-content {
-            .navbar {
-                
-
-                nav {
-                    width: 50%;
-
-                    ul {
-                        li {
-                            display: block;
-                            width: 100%;
-                            margin-bottom: 20px;
-
-
-                            &:last-child {
-                                display: none;
-                            }
-
-                            a {
-                                display: block;
-                                width: 100%;
-                                background: $yellow;
-                                color: $black !important;
-                                padding: 10px;
-
-                                &:hover {
-                                    transform: translateX(10px);
-                                    color: $white !important;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .my-responsive-images-area {
-                    display: block;
-
-                    .banner-right {
-                        display: none;
-                        width: 300px;
-                        height: 300px;
-                        .myimg-area{
-                            .snowfall{
-                               background-size: 300px;
-
-                            }
-                        }
-                    }
-                }
-                .togglebar {
-                    display: block;
-                    .close{
-                        display: block;
-                    }
-                }
-            }
-
-            .togglebar {
-                display: block;
-                .close{
-                    display: block;
-                }
-            }
-        }
-    }
-    .header-and-banner{
-        .banner-animation-main-area{
-            .my-profession-heading{
-                height: 100px !important;
-                .my-profession-heading-main-area{
-                    column-gap: 10px !important;
-                    flex-wrap: wrap;
-                    span{
-                        font-size: 20px !important;
-                    }
-                }
-                .owner-name-area{
-                    width: 300px !important;
-                    span{
-                        font-size: 20px !important;
-                    }
-                }
-            }
-        }
-    }
-
-}
 
 .about-wrapper {
-
+    padding: 100px 0;
 
     .about-area {
         display: grid;
         grid-template-columns: 2fr 2fr;
         grid-template-rows: auto auto;
         column-gap: 40px;
-        height: 600px;
+       
 
         .images-side {
 
@@ -1119,7 +951,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                height: 600px;
+              
 
                 .images-item {
                     width: 45%;
@@ -1149,7 +981,7 @@
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
-            height: 600px;
+            
 
             .about-header {
                 overflow: hidden;
@@ -1279,10 +1111,13 @@
     .service-area {
         margin-top: 30px;
 
-        ul {
-            li {
-                display: inline-block;
-                width: 24%;
+        .service-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            .service-item {
+                width: 25% !important;
 
                 a {
                     height: 400px;
@@ -1295,7 +1130,7 @@
                     column-gap: 20px;
                     position: relative;
                     padding: 20px;
-                    margin-right: -4px;
+                    
                     overflow: hidden;
 
                     span {
@@ -1400,4 +1235,224 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 1200px){
+    .header-and-banner{
+        .banner-animation-main-area{
+            .my-profession-heading{
+                height: 100px !important;
+                .my-profession-heading-main-area{
+                    column-gap: 10px !important;
+                    flex-wrap: wrap;
+                    span{
+                        font-size: 30px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+
+    .header {
+        .header-main-content {
+            .navbar {
+                position: absolute;
+                top: 0;
+                left: -100%;
+                background: linear-gradient(to bottom right, #070630 0%, #060454 100%);
+                box-shadow: -10px 0 15px rgba(0, 0, 0, 0.3);
+                padding: 150px 50px 50px 50px;
+                height: 100vh;
+                width: 100%;
+                z-index: 99;
+                align-items: flex-start;
+
+                nav {
+                    width: 50%;
+
+                    ul {
+                        li {
+                            display: block;
+                            width: 100%;
+                            margin-bottom: 20px;
+
+
+                            &:last-child {
+                                display: none;
+                            }
+
+                            a {
+                                display: block;
+                                width: 100%;
+                                background: $yellow;
+                                color: $black !important;
+                                padding: 10px;
+
+                                &:hover {
+                                    transform: translateX(10px);
+                                    color: $white !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .my-responsive-images-area {
+                    display: block;
+
+                    .banner-right {
+                        width: 350px;
+                    }
+                }
+                .toggleclose {
+                    display: block;
+                }
+            }
+
+            .togglebar {
+                display: block;
+            }
+        }
+    }
+    .about-wrapper{
+        .about-area{
+            grid-template-columns: 1fr;
+            row-gap: 40px;
+            .images-side{
+
+            }
+            .content-side{}
+        }
+    }
+
+}
+@media screen and (max-width: 768px){
+    .header-and-banner{
+        .main-banner-area{
+            .main-banner-area{
+                flex-wrap: wrap;
+                row-gap: 60px;
+                .banner-left{
+                    width: 100%;
+                }
+                .banner-right{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 420px) {
+
+    .header {
+        .header-main-content {
+            .navbar {
+                
+
+                nav {
+                    width: 50%;
+
+                    ul {
+                        li {
+                            display: block;
+                            width: 100%;
+                            margin-bottom: 20px;
+
+
+                            &:last-child {
+                                display: none;
+                            }
+
+                            a {
+                                display: block;
+                                width: 100%;
+                                background: $yellow;
+                                color: $black !important;
+                                padding: 10px;
+
+                                &:hover {
+                                    transform: translateX(10px);
+                                    color: $white !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .my-responsive-images-area {
+                    display: block;
+
+                    .banner-right {
+                        display: none;
+                        width: 300px;
+                        height: 300px;
+                        .myimg-area{
+                            .snowfall{
+                               background-size: 300px;
+
+                            }
+                        }
+                    }
+                }
+                .togglebar {
+                    display: block;
+                    .close{
+                        display: block;
+                    }
+                }
+            }
+
+            .togglebar {
+                display: block;
+                .close{
+                    display: block;
+                }
+            }
+        }
+    }
+    .header-and-banner{
+        .main-banner-area{
+            .main-banner-area{
+                .banner-left{
+                    p{
+                        font-size: 13px;
+                    }
+                    h1{
+                        font-size: 34px;
+                        line-height: 40px;
+                    }
+                }
+                .banner-right{
+                    .myimg-area{
+                        .snowfall{
+                           background-size: 300px;
+
+                        }
+                    }
+                }
+            }
+        }
+        .banner-animation-main-area{
+            .my-profession-heading{
+                height: 100px !important;
+                .my-profession-heading-main-area{
+                    column-gap: 10px !important;
+                    flex-wrap: wrap;
+                    span{
+                        font-size: 20px !important;
+                    }
+                }
+                .owner-name-area{
+                    width: 300px !important;
+                    span{
+                        font-size: 20px !important;
+                    }
+                }
+            }
+        }
+
+    }
+
 }
