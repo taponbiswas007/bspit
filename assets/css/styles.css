@@ -297,9 +297,6 @@ p, h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   color: #070630;
   font-size: 30px;
-  position: absolute;
-  top: 25px;
-  right: 30px;
   background: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -1411,6 +1408,75 @@ p, h1, h2, h3, h4, h5, h6 {
   100% {
     border-left-color: yellow;
   }
+}
+
+.ourportfulio-wrapper {
+  background: #ffffff;
+  padding: 100px 0;
+}
+.ourportfulio-wrapper .service-header h1 {
+  font-family: "Andada Pro", serif;
+  font-size: 20px;
+  color: #111;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+.ourportfulio-wrapper .service-area-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+.ourportfulio-wrapper .service-area-description .content .content-main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  height: 40px;
+  width: 100%;
+}
+.ourportfulio-wrapper .service-area-description .content .content-main-area .content-header {
+  font-size: 30px;
+  color: #111;
+  font-family: "Andada Pro", serif;
+  font-weight: 600;
+}
+.ourportfulio-wrapper .service-area-description .content .content-main-area .content-list {
+  background: #d15ff4;
+  height: 40px;
+  width: 150px;
+  position: relative;
+  overflow: hidden;
+}
+.ourportfulio-wrapper .service-area-description .content .content-main-area .content-list .list-item {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 40px;
+  margin: 0;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Andada Pro", serif;
+  font-weight: 600;
+  display: none;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 1200px) {

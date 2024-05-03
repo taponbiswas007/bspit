@@ -193,23 +193,39 @@ $(document).ready(function () {
     //service area start
     var items = $(".list-item");
     var currentIndex = 0;
-    var duration = 2000; // Duration of animation in milliseconds
-
+    var duration = 1500; // Duration of animation in milliseconds
+    var delay = 100; // Delay before starting animation loop
+    var gap = 300; // Gap between animation cycles
+    var firstLoop = true; // Flag to track the first iteration
+    
     function animateItems() {
         var currentItem = items.eq(currentIndex);
         var nextIndex = (currentIndex + 1) % items.length;
         var nextItem = items.eq(nextIndex);
-
-        currentItem.css({ bottom: '0', display: 'block' }).animate({ bottom: '-40px' }, duration / 2, function () {
+    
+        currentItem.css({ bottom: '0', display: 'block' }).delay(delay).animate({ bottom: '-40px' }, duration / 2, function () {
             $(this).hide();
         });
-
-        nextItem.css({ bottom: '100%', display: 'block' }).animate({ bottom: '0' }, duration / 2);
-
+    
+        nextItem.css({ bottom: '100%', display: 'block' }).delay(delay).animate({ bottom: '0' }, duration / 2);
+    
         currentIndex = nextIndex;
+    
+        // After the first iteration, reduce the delay
+        if (!firstLoop) {
+            delay = 0; // Adjusted delay for subsequent iterations
+        }
+        firstLoop = false;
     }
+    
+    // Start animation loop after a delay
+    setTimeout(function() {
+        animateItems(); // Run the animation once before starting the interval
+        setInterval(animateItems, duration + delay + gap);
+        setTimeout(startAnimationLoop, gap); // Start the interval with adjusted duration
+    });
+    
 
-    setInterval(animateItems, duration);
 
     $('.responsive').slick({
         infinite: false,
@@ -222,8 +238,7 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 3.5,
                     slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
+                    infinite: false,
                 }
             },
             {
@@ -231,22 +246,23 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 2.5,
                     slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
+                    infinite: false,
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    infinite: false,
                 }
             },
             {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 1.5,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    infinite: false,
                 }
             },
 
@@ -254,7 +270,8 @@ $(document).ready(function () {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    infinite: false,
                 }
             }
             // You can unslick at a given breakpoint now by adding:
