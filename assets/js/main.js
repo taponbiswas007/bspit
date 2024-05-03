@@ -1,16 +1,16 @@
 $(document).ready(function () {
 
     //toggle bar
-    $(".togglebar").click(function(){
-        $(".navbar").animate({"left":"0"},500);
+    $(".togglebar").click(function () {
+        $(".navbar").animate({ "left": "0" }, 500);
     });
-    $(".toggleclose").click(function(){
-        $(".navbar").animate({"left":"-100%"},500);
+    $(".toggleclose").click(function () {
+        $(".navbar").animate({ "left": "-100%" }, 500);
     });
-     //contact button area start 
+    //contact button area start 
     $(".contact-button").hover(function () {
         var $button = $(this); // Reference to the hovered button
-    
+
         // Target only the elements within the hovered button
         $button.find(".default-bg").css({
             "transition": "all 0.6s",
@@ -42,7 +42,7 @@ $(document).ready(function () {
         });
     }, function () {
         var $button = $(this); // Reference to the hovered button
-    
+
         // Reset the styles for elements within the hovered button
         $button.find(".default-bg").css({
             "transition": "all 0.6s",
@@ -75,7 +75,7 @@ $(document).ready(function () {
     });
     $(".contact-buttonwhite").hover(function () {
         var $button = $(this); // Reference to the hovered button
-    
+
         // Target only the elements within the hovered button
         $button.find(".default-bg").css({
             "transition": "all 0.6s",
@@ -107,7 +107,7 @@ $(document).ready(function () {
         });
     }, function () {
         var $button = $(this); // Reference to the hovered button
-    
+
         // Reset the styles for elements within the hovered button
         $button.find(".default-bg").css({
             "transition": "all 0.6s",
@@ -141,125 +141,144 @@ $(document).ready(function () {
     //contact button area end    
 
     //welcome screen start
-    setTimeout(function(){
+    setTimeout(function () {
         $(".my-profession-heading-main-area").hide();
         $(".owner-name-area").show();
         $(".owner-name-bg").animate({
             //"transition": "all 1s",
             "left": "0",
             "right": "0",
-        },600);
+        }, 600);
     }, 2500);
-    setTimeout(function(){
+    setTimeout(function () {
         $(".name").css({
             "transition": " all 0.5s",
             "top": "50%",
             "left": "50%",
-            "transform": "translate(-50%, -50%)", 
+            "transform": "translate(-50%, -50%)",
             "z-index": "4",
             "width": "100%"
-            
+
         });
     }, 3100);
-    setTimeout(function(){
+    setTimeout(function () {
         $(".owner-name-bg").animate({
             "left": "0",
             "right": "100%",
-        },600);
+        }, 600);
     }, 3600);
-    setTimeout(function(){
+    setTimeout(function () {
         $(".name").css({
             "transition": " all 0.5s",
             "top": "50%",
             "left": "-100%",
-            "transform": "translateY(-50%)", 
+            "transform": "translateY(-50%)",
             "z-index": "4",
             "width": "100%"
-            
+
         });
     }, 4200);
-    setTimeout(function(){
+    setTimeout(function () {
         $(".banner-animation-area").slideUp(1000);
-        
+
     }, 4700);
-    setTimeout(function(){
+    setTimeout(function () {
         $(".main-banner-area").slideDown(500);
         $(".header-main-content ").css({
-            "opacity":"100%"
+            "opacity": "100%"
         });
     }, 5700);
-     //welcome screen end
-   
-     //service area start
-     var items = $(".list-item");
-     var currentIndex = 0;
-     var duration = 2000; // Duration of animation in milliseconds
+    //welcome screen end
 
-     function animateItems() {
-         var currentItem = items.eq(currentIndex);
-         var nextIndex = (currentIndex + 1) % items.length;
-         var nextItem = items.eq(nextIndex);
+    //service area start
+    var items = $(".list-item");
+    var currentIndex = 0;
+    var duration = 2000; // Duration of animation in milliseconds
 
-         currentItem.css({ bottom: '0', display: 'block' }).animate({ bottom: '-40px' }, duration/2, function() {
-             $(this).hide();
-         });
+    function animateItems() {
+        var currentItem = items.eq(currentIndex);
+        var nextIndex = (currentIndex + 1) % items.length;
+        var nextItem = items.eq(nextIndex);
 
-         nextItem.css({ bottom: '100%', display: 'block' }).animate({ bottom: '0' }, duration/2);
+        currentItem.css({ bottom: '0', display: 'block' }).animate({ bottom: '-40px' }, duration / 2, function () {
+            $(this).hide();
+        });
 
-         currentIndex = nextIndex;
-     }
+        nextItem.css({ bottom: '100%', display: 'block' }).animate({ bottom: '0' }, duration / 2);
 
-     setInterval(animateItems, duration);
+        currentIndex = nextIndex;
+    }
 
-     $('.responsive').slick({
-        infinite: true,
-  slidesToShow: 4,
-  slidesToScroll: 3,
+    setInterval(animateItems, duration);
+
+    $('.responsive').slick({
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 3,
         responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ]
-      });
-     //service area end
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 3.5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2.5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1.5,
+                    slidesToScroll: 1
+                }
+            },
 
-     
-  
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+
+    //service area end
+
+
+
 });
 
 //sticky border
-window.onscroll = function() {myFunction()};
+window.onscroll = function () { myFunction() };
 
 var header = document.getElementById("header");
 var sticky = header.offsetTop;
 
 function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
 }
