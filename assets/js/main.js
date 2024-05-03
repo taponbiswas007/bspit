@@ -211,7 +211,7 @@ $(document).ready(function () {
 
      setInterval(animateItems, duration);
 
-     $('.multiple-items').slick({
+     $('.responsive').slick({
         infinite: true,
   slidesToShow: 4,
   slidesToScroll: 3,

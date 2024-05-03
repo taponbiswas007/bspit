@@ -1110,14 +1110,12 @@
 
     .service-area {
         margin-top: 30px;
+        padding: 0 40px;
 
         .service-list {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
+            
             .service-item {
-                width: 25% !important;
+               
 
                 a {
                     height: 400px;
