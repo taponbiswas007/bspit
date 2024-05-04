@@ -1478,6 +1478,26 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   text-transform: capitalize;
 }
+.ourportfulio-wrapper .project-portfulio-area {
+  margin-top: 50px;
+  background: #070630;
+  padding: 100px 0;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ourportfulio-wrapper .project-portfulio-area .protfulio-item .image-area {
+  width: 500px;
+  overflow: hidden;
+}
 
 @media screen and (max-width: 1200px) {
   .header-and-banner .banner-animation-main-area .my-profession-heading {

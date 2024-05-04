@@ -282,7 +282,53 @@ $(document).ready(function () {
 
     //service area end
 
+    //protfulio start
+    var $slider = $('.project-portfulio-area');
+    var slideWidth = $('.protfulio-item').width();
+    var animationSpeed = 2000;
+    var interval;
+    
+    function startSlider() {
+        interval = setInterval(function() {
+            $slider.animate({marginLeft: -slideWidth}, animationSpeed, function() {
+                $(this).css('margin-left', 0).find('.protfulio-item:last').after($(this).find('.protfulio-item:first'));
+            });
+        }, animationSpeed);
+    }
+    
+    startSlider();
+    
+    var isMouseDown = false;
+    var startX;
+    var startMargin;
+    
+    $slider.on('mousedown', function(event) {
+        isMouseDown = true;
+        startX = event.clientX;
+        startMargin = parseInt($slider.css('margin-left'));
+    });
+    
+    $(document).on('mousemove', function(event) {
+        if (isMouseDown) {
+            var moveX = event.clientX - startX;
+            $slider.css('margin-left', startMargin + moveX);
+        }
+    });
+    
+    $(document).on('mouseup', function() {
+        isMouseDown = false;
+    });
+    
+    $slider.find('.protfulio-item').on('mouseenter', function() {
+        clearInterval(interval);
+    }).on('mouseleave', function() {
+        startSlider();
+    });
+    
+    
 
+    
+    
 
 });
 
