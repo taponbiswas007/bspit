@@ -26,6 +26,7 @@
     <!-- slick slider  -->
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- main style sheet -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -276,7 +277,7 @@
                             <span class="button-area">
                                 <button class="gobtn"><i class="fa-solid fa-arrow-right"></i></button>
                             </span>
-                            
+
                         </a>
                     </div>
                     <div class="service-item">
@@ -293,7 +294,7 @@
                         </a>
                     </div>
                     <div class="service-item">
-                        <a href="#"  class="servicelink">
+                        <a href="#" class="servicelink">
                             <span>
                                 <img src="assets/images/marketing.png">
                             </span>
@@ -314,9 +315,9 @@
 
     <!-- our portfulio section start -->
     <section class="ourportfulio-wrapper">
-        
+        <div class="container-fluid">
             <div class="service-header">
-                <h1 >our Portfolio</h1>
+                <h1>our Portfolio</h1>
             </div>
             <div class="service-area-description">
                 <div class="content">
@@ -329,8 +330,8 @@
                             <li class="list-item">Websites</li>
                             <li class="list-item">designs</li>
                             <li class="list-item">projects</li>
-                           
-                           
+
+
 
 
                         </ul>
@@ -338,49 +339,53 @@
                 </div>
 
             </div>
-          <div class="project-portfulio-area">
-            <div class="protfulio-item">
-                <div class="image-area">
-                    <img src="assets/images/project-1.png">
+            <div class="portfulio-slider-area">
+                <div class="project-portfulio-area swiper mySwiper">
+                    <div class="project-portfulio-main-area swiper-wrapper">
+                        <div class="protfulio-item swiper-slide">
+                            <div class="image-area">
+                                <img src="assets/images/project-1.png">
+                            </div>
+                        </div>
+                        <div class="protfulio-item swiper-slide">
+                            <div class="image-area">
+                                <img src="assets/images/project-2.png">
+                            </div>
+                        </div>
+                       
+                        <div class="protfulio-item swiper-slide">
+                            <div class="image-area">
+                                <img src="assets/images/project-5.png">
+                            </div>
+                        </div>
+                        <div class="protfulio-item swiper-slide">
+                            <div class="image-area">
+                                <img src="assets/images/project-6.png">
+                            </div>
+                        </div>
+                        <div class="protfulio-item swiper-slide">
+                            <div class="image-area">
+                                <img src="assets/images/project-7.png">
+                            </div>
+                        </div>
+                        <div class="protfulio-item swiper-slide">
+                            <div class="image-area">
+                                <img src="assets/images/project-8.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="autoplay-progress">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <span></span>
+                    </div>
                 </div>
             </div>
-            <div class="protfulio-item">
-                <div class="image-area">
-                    <img src="assets/images/project-2.png">
-                </div>
-            </div>
-            <div class="protfulio-item">
-                <div class="image-area">
-                    <img src="assets/images/project-3.png">
-                </div>
-            </div>
-            <div class="protfulio-item">
-                <div class="image-area">
-                    <img src="assets/images/project-4.jpg">
-                </div>
-            </div>
-            <div class="protfulio-item">
-                <div class="image-area">
-                    <img src="assets/images/project-5.png">
-                </div>
-            </div>
-            <div class="protfulio-item">
-                <div class="image-area">
-                    <img src="assets/images/project-6.png">
-                </div>
-            </div>
-            <div class="protfulio-item">
-                <div class="image-area">
-                    <img src="assets/images/project-7.png">
-                </div>
-            </div>
-            <div class="protfulio-item">
-                <div class="image-area">
-                    <img src="assets/images/project-8.png">
-                </div>
-            </div>
-          </div>
-       
+        </div>
     </section>
     <!-- our portfulio section end -->
 
@@ -401,6 +406,7 @@
     </script>
     <!-- slick slider -->
     <script src="assets/js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
 </body>
