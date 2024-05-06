@@ -622,8 +622,8 @@ p, h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-filter: brightness(100%) saturate(148%);
-          filter: brightness(100%) saturate(148%);
+  -webkit-filter: brightness(70%) saturate(90%);
+          filter: brightness(70%) saturate(90%);
   position: absolute;
   bottom: 35px;
   z-index: 1;
@@ -1101,9 +1101,6 @@ p, h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
 }
-.about-wrapper .about-area .images-side .images-main-area .images-item {
-  width: 45%;
-}
 .about-wrapper .about-area .images-side .images-main-area .images-item h1 {
   font-size: 20px;
   color: #111;
@@ -1116,6 +1113,12 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 400px;
   background: #f5ab0c;
   border-radius: 10px;
+}
+.about-wrapper .about-area .images-side .images-main-area .images-item .images img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about-wrapper .about-area .content-side {
   display: -webkit-box;
@@ -1221,7 +1224,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 .ourservice-wrapper .service-area-description .content .content-main-area .content-list {
-  background: #d15ff4;
+  background: rgb(241, 9, 191);
   height: 40px;
   width: 150px;
   position: relative;
@@ -1253,7 +1256,7 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 400px;
   border-style: solid;
   border-width: 2px;
-  border-color: transparent;
+  border-color: rgb(241, 9, 191);
   -webkit-transition: none;
   transition: none;
   border-radius: 10px;
@@ -1457,7 +1460,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 .ourportfulio-wrapper .service-area-description .content .content-main-area .content-list {
-  background: #d15ff4;
+  background: rgb(241, 9, 191);
   height: 40px;
   width: 150px;
   position: relative;
