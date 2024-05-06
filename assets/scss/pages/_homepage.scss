@@ -1550,7 +1550,25 @@
         }
     }
 }
-
+@media screen and (max-width: 540px){
+    .ourservice-wrapper{
+        .service-area-description{
+            .content{
+                .content-main-area{
+                  .content-header{
+                    font-size: 19px;
+                  }  
+                  .content-list{
+                    width: 100px;
+                    .list-item{
+                        font-size: 19px;
+                    }
+                  }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 420px) {
 
     .header {
@@ -1672,6 +1690,43 @@
             }
         }
 
+    }
+    .ourservice-wrapper{
+        .service-area-description{
+            .content{
+                .content-main-area{
+                  .content-header{
+                    font-size: 15px;
+                  }  
+                  .content-list{
+                    .list-item{
+                        font-size: 15px;
+                    }
+                  }
+                }
+            }
+        }
+    }
+    .ourportfulio-wrapper{
+        .service-header{
+            h1{
+                font-size: 19px;
+            }
+        }
+        .service-area-description{
+            .content{
+                .content-main-area{
+                    .content-header{
+                        font-size: 19px;
+                    }
+                    .content-list{
+                        .list-item{
+                            font-size: 19px;
+                        }
+                      }
+                }
+            }
+        }
     }
 
 }

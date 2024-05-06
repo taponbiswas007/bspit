@@ -1647,6 +1647,17 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 }
+@media screen and (max-width: 540px) {
+  .ourservice-wrapper .service-area-description .content .content-main-area .content-header {
+    font-size: 19px;
+  }
+  .ourservice-wrapper .service-area-description .content .content-main-area .content-list {
+    width: 100px;
+  }
+  .ourservice-wrapper .service-area-description .content .content-main-area .content-list .list-item {
+    font-size: 19px;
+  }
+}
 @media screen and (max-width: 420px) {
   .header .header-main-content .navbar nav {
     width: 50%;
@@ -1722,6 +1733,21 @@ p, h1, h2, h3, h4, h5, h6 {
   }
   .header-and-banner .banner-animation-main-area .my-profession-heading .owner-name-area span {
     font-size: 20px !important;
+  }
+  .ourservice-wrapper .service-area-description .content .content-main-area .content-header {
+    font-size: 15px;
+  }
+  .ourservice-wrapper .service-area-description .content .content-main-area .content-list .list-item {
+    font-size: 15px;
+  }
+  .ourportfulio-wrapper .service-header h1 {
+    font-size: 19px;
+  }
+  .ourportfulio-wrapper .service-area-description .content .content-main-area .content-header {
+    font-size: 19px;
+  }
+  .ourportfulio-wrapper .service-area-description .content .content-main-area .content-list .list-item {
+    font-size: 19px;
   }
 }
 .contact-button {
