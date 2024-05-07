@@ -41,18 +41,53 @@
                             color: $white;
                             font-size: 20px;
                             font-weight: 500;
-                            font-family: $mainfont;
+                            font-family: $headerfont;
                             text-transform: capitalize;
                             transition: .3s ease;
-
+                            position: relative;
+                           // -webkit-text-stroke: .3px navy;
                             &:hover {
                                 color: $yellow;
+                                &::after{
+                                    content: ' ';
+                                    background: $yellow;
+                                    height: 2px;
+                                    width: 100%;
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 0;
+                                    animation: underline .3s ease forwards;
+
+                                }
+                                @keyframes underline {
+                                   0%{
+                                    width: 0;
+                                   } 
+                                   100%{
+                                    width: 100%;
+                                   } 
+                                }
                             }
 
                             &:focus {
                                 color: $yellow;
                             }
+                           
 
+                        }
+                        .active{
+                            color: $yellow;
+                            &::after{
+                                content: ' ';
+                                background: $yellow;
+                                height: 2px;
+                                width: 100%;
+                                position: absolute;
+                                top: 100%;
+                                left: 0;
+                              
+
+                            }
                         }
 
 
@@ -1361,6 +1396,7 @@
                
 
                 .images-area {
+                   position: relative;
                    
                     img {
                         display: block;
@@ -1368,6 +1404,7 @@
                        height: 100%;
                        
                     }
+                  
                 }
             }
 
