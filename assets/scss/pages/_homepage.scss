@@ -45,10 +45,12 @@
                             text-transform: capitalize;
                             transition: .3s ease;
                             position: relative;
-                           // -webkit-text-stroke: .3px navy;
+
+                            // -webkit-text-stroke: .3px navy;
                             &:hover {
                                 color: $yellow;
-                                &::after{
+
+                                &::after {
                                     content: ' ';
                                     background: $yellow;
                                     height: 2px;
@@ -59,25 +61,29 @@
                                     animation: underline .3s ease forwards;
 
                                 }
+
                                 @keyframes underline {
-                                   0%{
-                                    width: 0;
-                                   } 
-                                   100%{
-                                    width: 100%;
-                                   } 
+                                    0% {
+                                        width: 0;
+                                    }
+
+                                    100% {
+                                        width: 100%;
+                                    }
                                 }
                             }
 
                             &:focus {
                                 color: $yellow;
                             }
-                           
+
 
                         }
-                        .active{
+
+                        .active {
                             color: $yellow;
-                            &::after{
+
+                            &::after {
                                 content: ' ';
                                 background: $yellow;
                                 height: 2px;
@@ -85,7 +91,7 @@
                                 position: absolute;
                                 top: 100%;
                                 left: 0;
-                              
+
 
                             }
                         }
@@ -987,7 +993,7 @@
 
 
                 .images-item {
-                   
+
 
 
                     h1 {
@@ -1004,11 +1010,12 @@
                         height: 400px;
                         background: $yellow;
                         border-radius: 10px;
-                        img{
+
+                        img {
                             height: 100%;
                             width: 100%;
-                            object-fit: cover; 
-                            
+                            object-fit: cover;
+
                         }
                     }
                 }
@@ -1380,31 +1387,31 @@
         border-radius: 20px;
         padding: 20px;
         background: $background1;
-        
+
 
         .swiper {
             width: 100%;
             height: 100%;
-           
+
             .swiper-slide {
-               // text-align: center;
-               // font-size: 18px;
-              //  background: $background1;
-               // display: flex;
-               // justify-content: center;
-               // align-items: center;
-               
+                // text-align: center;
+                // font-size: 18px;
+                //  background: $background1;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+
 
                 .images-area {
-                   position: relative;
-                   
+                    position: relative;
+
                     img {
                         display: block;
                         width: 100%;
-                       height: 100%;
-                       
+                        height: 100%;
+
                     }
-                  
+
                 }
             }
 
@@ -1413,34 +1420,37 @@
                 height: 25px;
                 width: 25px;
                 border-radius: 50%;
-               
+
                 &::after {
                     font-family: "fontawesome";
                     content: "\f105";
                     font-size: 20px;
-                    
+
                 }
             }
+
             .swiper-button-prev {
                 background: #fff;
                 height: 25px;
                 width: 25px;
                 border-radius: 50%;
+
                 &::after {
                     font-family: "fontawesome";
                     content: "\f104";
                     font-size: 20px;
-                    
+
                 }
             }
-            .swiper-pagination{
-                .swiper-pagination-bullet-active{
+
+            .swiper-pagination {
+                .swiper-pagination-bullet-active {
                     width: 15px;
                     background: $yellow;
                     border-radius: 5px;
                 }
             }
-            
+
             .autoplay-progress {
                 position: absolute;
                 right: 16px;
@@ -1472,9 +1482,10 @@
             }
         }
     }
- 
+
 
 }
+
 .testimonials-wrapper {
     background: $white;
     padding: 100px 0;
@@ -1552,44 +1563,45 @@
         border-radius: 20px;
         padding: 20px;
         background: $background1;
-        
+
 
         .swiper {
             width: 100%;
             height: 100%;
-           
+
             .swiper-slide {
-               // text-align: center;
-               // font-size: 18px;
-              //  background: $background1;
-               // display: flex;
-               // justify-content: center;
-               // align-items: center;
-               
+                // text-align: center;
+                // font-size: 18px;
+                //  background: $background1;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+
 
                 .image-area {
                     background: $white;
-                   
-                   p{
-                    color: $background1;
-                    font-size: 20px;
-                    font-family: $textfont;
-                    font-weight: 500;
-                    text-align: center;
-                    padding: 40px;
-                    line-height: 30px;
-                  
-                   }
-                   h1{
-                    color: $background1;
-                    font-size: 20px;
-                    font-family: $mainfont;
-                    font-weight: 600;
-                    text-align: center;
-                    padding: 40px;
-                    line-height: 30px;
-                   }
-                  
+
+                    p {
+                        color: $background1;
+                        font-size: 20px;
+                        font-family: $textfont;
+                        font-weight: 500;
+                        text-align: center;
+                        padding: 40px;
+                        line-height: 30px;
+
+                    }
+
+                    h1 {
+                        color: $background1;
+                        font-size: 20px;
+                        font-family: $mainfont;
+                        font-weight: 600;
+                        text-align: center;
+                        padding: 40px;
+                        line-height: 30px;
+                    }
+
                 }
             }
 
@@ -1598,34 +1610,37 @@
                 height: 25px;
                 width: 25px;
                 border-radius: 50%;
-               
+
                 &::after {
                     font-family: "fontawesome";
                     content: "\f105";
                     font-size: 20px;
-                    
+
                 }
             }
+
             .swiper-button-prev {
                 background: #fff;
                 height: 25px;
                 width: 25px;
                 border-radius: 50%;
+
                 &::after {
                     font-family: "fontawesome";
                     content: "\f104";
                     font-size: 20px;
-                    
+
                 }
             }
-            .swiper-pagination{
-                .swiper-pagination-bullet-active{
+
+            .swiper-pagination {
+                .swiper-pagination-bullet-active {
                     width: 15px;
                     background: $yellow;
                     border-radius: 5px;
                 }
             }
-            
+
             .autoplay-progress {
                 position: absolute;
                 right: 16px;
@@ -1657,7 +1672,7 @@
             }
         }
     }
- 
+
 
 }
 
@@ -1773,25 +1788,29 @@
         }
     }
 }
-@media screen and (max-width: 540px){
-    .ourservice-wrapper{
-        .service-area-description{
-            .content{
-                .content-main-area{
-                  .content-header{
-                    font-size: 19px;
-                  }  
-                  .content-list{
-                    width: 100px;
-                    .list-item{
+
+@media screen and (max-width: 540px) {
+    .ourservice-wrapper {
+        .service-area-description {
+            .content {
+                .content-main-area {
+                    .content-header {
                         font-size: 19px;
                     }
-                  }
+
+                    .content-list {
+                        width: 100px;
+
+                        .list-item {
+                            font-size: 19px;
+                        }
+                    }
                 }
             }
         }
     }
 }
+
 @media screen and (max-width: 420px) {
 
     .header {
@@ -1914,39 +1933,44 @@
         }
 
     }
-    .ourservice-wrapper{
-        .service-area-description{
-            .content{
-                .content-main-area{
-                  .content-header{
-                    font-size: 15px;
-                  }  
-                  .content-list{
-                    .list-item{
+
+    .ourservice-wrapper {
+        .service-area-description {
+            .content {
+                .content-main-area {
+                    .content-header {
                         font-size: 15px;
                     }
-                  }
+
+                    .content-list {
+                        .list-item {
+                            font-size: 15px;
+                        }
+                    }
                 }
             }
         }
     }
-    .ourportfulio-wrapper{
-        .service-header{
-            h1{
+
+    .ourportfulio-wrapper {
+        .service-header {
+            h1 {
                 font-size: 19px;
             }
         }
-        .service-area-description{
-            .content{
-                .content-main-area{
-                    .content-header{
+
+        .service-area-description {
+            .content {
+                .content-main-area {
+                    .content-header {
                         font-size: 19px;
                     }
-                    .content-list{
-                        .list-item{
+
+                    .content-list {
+                        .list-item {
                             font-size: 19px;
                         }
-                      }
+                    }
                 }
             }
         }
