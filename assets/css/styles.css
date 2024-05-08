@@ -66,6 +66,19 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070630;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dfdfdf;
+  border-radius: 10px;
+}
+
 .sticky {
   border-bottom-color: #ffffff !important;
 }
@@ -1605,6 +1618,171 @@ p, h1, h2, h3, h4, h5, h6 {
           transform: rotate(-90deg);
 }
 
+.testimonials-wrapper {
+  background: #ffffff;
+  padding: 100px 0;
+}
+.testimonials-wrapper .service-header h1 {
+  font-family: "Andada Pro", serif;
+  font-size: 20px;
+  color: #111;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+.testimonials-wrapper .service-area-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+.testimonials-wrapper .service-area-description .content .content-main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  height: 40px;
+  width: 100%;
+}
+.testimonials-wrapper .service-area-description .content .content-main-area .content-header {
+  font-size: 30px;
+  color: #111;
+  font-family: "Andada Pro", serif;
+  font-weight: 600;
+}
+.testimonials-wrapper .service-area-description .content .content-main-area .content-list {
+  background: rgb(241, 9, 191);
+  height: 40px;
+  width: 150px;
+  position: relative;
+  overflow: hidden;
+}
+.testimonials-wrapper .service-area-description .content .content-main-area .content-list .list-item {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 40px;
+  margin: 0;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Andada Pro", serif;
+  font-weight: 600;
+  display: none;
+  text-align: center;
+  text-transform: capitalize;
+}
+.testimonials-wrapper .testimonials-area {
+  margin-top: 50px;
+  position: relative;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3) inset, 10px 0 10px -5px rgba(0, 0, 0, 0.3), -10px 0 10px -5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3) inset, 10px 0 10px -5px rgba(0, 0, 0, 0.3), -10px 0 10px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  background: #070630;
+}
+.testimonials-wrapper .testimonials-area .swiper {
+  width: 100%;
+  height: 100%;
+}
+.testimonials-wrapper .testimonials-area .swiper .swiper-slide .image-area {
+  background: #ffffff;
+}
+.testimonials-wrapper .testimonials-area .swiper .swiper-slide .image-area p {
+  color: #070630;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  padding: 40px;
+  line-height: 30px;
+}
+.testimonials-wrapper .testimonials-area .swiper .swiper-slide .image-area h1 {
+  color: #070630;
+  font-size: 20px;
+  font-family: "Andada Pro", serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 40px;
+  line-height: 30px;
+}
+.testimonials-wrapper .testimonials-area .swiper .swiper-button-next {
+  background: #fff;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+.testimonials-wrapper .testimonials-area .swiper .swiper-button-next::after {
+  font-family: "fontawesome";
+  content: "\f105";
+  font-size: 20px;
+}
+.testimonials-wrapper .testimonials-area .swiper .swiper-button-prev {
+  background: #fff;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+.testimonials-wrapper .testimonials-area .swiper .swiper-button-prev::after {
+  font-family: "fontawesome";
+  content: "\f104";
+  font-size: 20px;
+}
+.testimonials-wrapper .testimonials-area .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  width: 15px;
+  background: #f5ab0c;
+  border-radius: 5px;
+}
+.testimonials-wrapper .testimonials-area .swiper .autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+.testimonials-wrapper .testimonials-area .swiper .autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 @media screen and (max-width: 1200px) {
   .header-and-banner .banner-animation-main-area .my-profession-heading {
     height: 100px !important;
@@ -1922,4 +2100,4 @@ p, h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   background: #ffffff;
   border: 1px solid #ffffff;
-}
+}/*# sourceMappingURL=styles.css.map */

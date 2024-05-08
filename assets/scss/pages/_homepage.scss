@@ -1472,6 +1472,192 @@
             }
         }
     }
+ 
+
+}
+.testimonials-wrapper {
+    background: $white;
+    padding: 100px 0;
+
+    .service-header {
+
+
+        h1 {
+            font-family: $mainfont;
+            font-size: 20px;
+            color: $black;
+            font-weight: 600;
+            text-transform: capitalize;
+            text-align: center;
+        }
+    }
+
+    .service-area-description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+
+        .content {
+            .content-main-area {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                column-gap: 20px;
+                height: 40px;
+                width: 100%;
+
+
+                .content-header {
+                    font-size: 30px;
+                    color: $black;
+                    font-family: $mainfont;
+                    font-weight: 600;
+                }
+
+                .content-list {
+                    background: rgb(241, 9, 191);
+                    height: 40px;
+                    width: 150px;
+                    position: relative;
+                    overflow: hidden;
+
+
+                    .list-item {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        line-height: 40px;
+                        margin: 0;
+                        font-size: 30px;
+                        color: $white;
+                        font-family: $mainfont;
+                        font-weight: 600;
+                        display: none;
+                        text-align: center;
+                        text-transform: capitalize;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .testimonials-area {
+        margin-top: 50px;
+        position: relative;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3) inset, 10px 0 10px -5px rgba(0, 0, 0, 0.3), -10px 0 10px -5px rgba(0, 0, 0, 0.3);
+        //height: 850px;
+        border-radius: 20px;
+        padding: 20px;
+        background: $background1;
+        
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+           
+            .swiper-slide {
+               // text-align: center;
+               // font-size: 18px;
+              //  background: $background1;
+               // display: flex;
+               // justify-content: center;
+               // align-items: center;
+               
+
+                .image-area {
+                    background: $white;
+                   
+                   p{
+                    color: $background1;
+                    font-size: 20px;
+                    font-family: $textfont;
+                    font-weight: 500;
+                    text-align: center;
+                    padding: 40px;
+                    line-height: 30px;
+                  
+                   }
+                   h1{
+                    color: $background1;
+                    font-size: 20px;
+                    font-family: $mainfont;
+                    font-weight: 600;
+                    text-align: center;
+                    padding: 40px;
+                    line-height: 30px;
+                   }
+                  
+                }
+            }
+
+            .swiper-button-next {
+                background: #fff;
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+               
+                &::after {
+                    font-family: "fontawesome";
+                    content: "\f105";
+                    font-size: 20px;
+                    
+                }
+            }
+            .swiper-button-prev {
+                background: #fff;
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+                &::after {
+                    font-family: "fontawesome";
+                    content: "\f104";
+                    font-size: 20px;
+                    
+                }
+            }
+            .swiper-pagination{
+                .swiper-pagination-bullet-active{
+                    width: 15px;
+                    background: $yellow;
+                    border-radius: 5px;
+                }
+            }
+            
+            .autoplay-progress {
+                position: absolute;
+                right: 16px;
+                bottom: 16px;
+                z-index: 10;
+                width: 48px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                color: var(--swiper-theme-color);
+            }
+
+            .autoplay-progress svg {
+                --progress: 0;
+                position: absolute;
+                left: 0;
+                top: 0px;
+                z-index: 10;
+                width: 100%;
+                height: 100%;
+                stroke-width: 4px;
+                stroke: var(--swiper-theme-color);
+                fill: none;
+                stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+                stroke-dasharray: 125.6;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+ 
 
 }
 
