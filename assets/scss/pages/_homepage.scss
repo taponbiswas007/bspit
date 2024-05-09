@@ -20,7 +20,20 @@
         height: 100px;
 
         .logo {
-            width: 160px;
+
+            a {
+                display: block;
+                height: 100px;
+                width: 120px;
+
+                img {
+                    max-width: 100%;
+                    /* Ensures the image does not exceed the width of its container */
+                    max-height: 100%;
+                    /* Ensures the image does not exceed the height of its container */
+                    height: auto;
+                }
+            }
         }
 
         .navbar {
@@ -1120,28 +1133,29 @@
                     font-weight: 600;
                 }
 
-                .content-list {
-                    background: rgb(241, 9, 191);
+                .content-list-container {
+
                     height: 40px;
-                    width: 150px;
-                    position: relative;
+                    width: 120px !important;
                     overflow: hidden;
+                    background: $white;
+                    margin: 0;
+
+                    .content-list {
 
 
-                    .list-item {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        line-height: 40px;
-                        margin: 0;
-                        font-size: 30px;
-                        color: $white;
-                        font-family: $mainfont;
-                        font-weight: 600;
-                        display: none;
-                        text-align: center;
-                        text-transform: capitalize;
+
+                        .list-item {
+                            color: $background1;
+                            text-transform: capitalize;
+                            font-size: 20px;
+                            font-family: $mainfont;
+                            font-weight: 600;
+
+                            text-align: center;
+                            padding-top: 10px;
+
+                        }
 
                     }
                 }
@@ -1238,7 +1252,7 @@
 
                     &:hover .service-box-content {
                         opacity: 1;
-                        transition: .5s;
+                        transition: .3s;
                         bottom: 100px;
 
                     }
@@ -1350,28 +1364,29 @@
                     font-weight: 600;
                 }
 
-                .content-list {
-                    background: rgb(241, 9, 191);
+                .content-list-container {
+
                     height: 40px;
-                    width: 150px;
-                    position: relative;
+                    width: 120px !important;
                     overflow: hidden;
+                    background: #060454;
+                    margin: 0;
+
+                    .content-list {
 
 
-                    .list-item {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        line-height: 40px;
-                        margin: 0;
-                        font-size: 30px;
-                        color: $white;
-                        font-family: $mainfont;
-                        font-weight: 600;
-                        display: none;
-                        text-align: center;
-                        text-transform: capitalize;
+
+                        .list-item {
+                            color: $white;
+
+                            font-size: 20px;
+                            font-family: $mainfont;
+                            font-weight: 600;
+                            text-transform: capitalize;
+                            text-align: center;
+                            padding-top: 10px;
+
+                        }
 
                     }
                 }
@@ -1386,7 +1401,7 @@
         //height: 850px;
         border-radius: 20px;
         padding: 20px;
-        background: $background1;
+        // background: $background1;
 
 
         .swiper {
@@ -1411,13 +1426,14 @@
                         height: 100%;
 
                     }
-                    .work-details{
+
+                    .work-details {
                         position: absolute;
                         inset: 0;
                         background: rgba(0, 0, 0, 0.5);
-                     
-                       
-                        p{
+
+
+                        p {
                             color: $white;
                             text-align: center;
                             vertical-align: middle;
@@ -1538,28 +1554,29 @@
                     font-weight: 600;
                 }
 
-                .content-list {
-                    background: rgb(241, 9, 191);
+                .content-list-container {
+
                     height: 40px;
-                    width: 150px;
-                    position: relative;
+                    width: 120px !important;
                     overflow: hidden;
+                    background: #060454;
+                    margin: 0;
+
+                    .content-list {
 
 
-                    .list-item {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        line-height: 40px;
-                        margin: 0;
-                        font-size: 30px;
-                        color: $white;
-                        font-family: $mainfont;
-                        font-weight: 600;
-                        display: none;
-                        text-align: center;
-                        text-transform: capitalize;
+
+                        .list-item {
+                            color: $white;
+                            text-transform: capitalize;
+                            font-size: 20px;
+                            font-family: $mainfont;
+                            font-weight: 600;
+
+                            text-align: center;
+                            padding-top: 10px;
+
+                        }
 
                     }
                 }
@@ -1570,12 +1587,12 @@
     .testimonials-area {
         margin-top: 50px;
         position: relative;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3) inset, 10px 0 10px -5px rgba(0, 0, 0, 0.3), -10px 0 10px -5px rgba(0, 0, 0, 0.3);
+        //box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3) inset, 10px 0 10px -5px rgba(0, 0, 0, 0.3), -10px 0 10px -5px rgba(0, 0, 0, 0.3);
         //height: 850px;
-        border-radius: 20px;
-        padding: 20px;
-        background: $background1;
+        
+        padding: 50px;
 
+        background-color: #42e599;
 
         .swiper {
             width: 100%;
@@ -1687,17 +1704,66 @@
 
 
 }
-.askanything-wrapper{
+
+.askanything-wrapper {
     margin-top: 50px;
-    .askanything-main-area{
-        h1{
+    margin-bottom: 50px;
+
+    .askanything-main-area {
+        h1 {
             color: #060454;
             font-family: $mainfont;
             font-weight: 600;
             text-align: center;
-            font-size: 25px;
+            font-size: 16px;
             text-transform: uppercase;
+            margin-bottom: 30px;
+        }
 
+        .service-area-description {
+            .content {
+                .content-main-area {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 10px;
+
+                    .content-header {
+                        color: #060454;
+                        font-size: 20px;
+                        font-family: $mainfont;
+                        font-weight: 600;
+                    }
+
+                    .content-list-container {
+
+                        height: 40px;
+                        width: 120px !important;
+                        overflow: hidden;
+                        background: #060454;
+                        margin: 0;
+
+                        .content-list {
+
+
+
+                            .list-item {
+                                color: $white;
+                                text-transform: capitalize;
+                                font-size: 20px;
+                                font-family: $mainfont;
+                                font-weight: 600;
+
+                                text-align: center;
+                                padding-top: 10px;
+
+                            }
+
+                        }
+                    }
+
+                }
+            }
         }
     }
 }

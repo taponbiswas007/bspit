@@ -103,8 +103,17 @@ p, h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   height: 100px;
 }
-.header .header-main-content .logo {
-  width: 160px;
+.header .header-main-content .logo a {
+  display: block;
+  height: 100px;
+  width: 120px;
+}
+.header .header-main-content .logo a img {
+  max-width: 100%;
+  /* Ensures the image does not exceed the width of its container */
+  max-height: 100%;
+  /* Ensures the image does not exceed the height of its container */
+  height: auto;
 }
 .header .header-main-content .navbar {
   padding-top: 0;
@@ -1276,27 +1285,21 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "Andada Pro", serif;
   font-weight: 600;
 }
-.ourservice-wrapper .service-area-description .content .content-main-area .content-list {
-  background: rgb(241, 9, 191);
+.ourservice-wrapper .service-area-description .content .content-main-area .content-list-container {
   height: 40px;
-  width: 150px;
-  position: relative;
+  width: 120px !important;
   overflow: hidden;
-}
-.ourservice-wrapper .service-area-description .content .content-main-area .content-list .list-item {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  line-height: 40px;
+  background: #ffffff;
   margin: 0;
-  font-size: 30px;
-  color: #ffffff;
+}
+.ourservice-wrapper .service-area-description .content .content-main-area .content-list-container .content-list .list-item {
+  color: #070630;
+  text-transform: capitalize;
+  font-size: 20px;
   font-family: "Andada Pro", serif;
   font-weight: 600;
-  display: none;
   text-align: center;
-  text-transform: capitalize;
+  padding-top: 10px;
 }
 .ourservice-wrapper .service-area {
   margin-top: 30px;
@@ -1383,8 +1386,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .ourservice-wrapper .service-area .service-list .service-item .servicelink:hover .service-box-content {
   opacity: 1;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   bottom: 100px;
 }
 .ourservice-wrapper .service-area .service-list .service-item .servicelink:hover .gobtn {
@@ -1512,27 +1515,21 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "Andada Pro", serif;
   font-weight: 600;
 }
-.ourportfulio-wrapper .service-area-description .content .content-main-area .content-list {
-  background: rgb(241, 9, 191);
+.ourportfulio-wrapper .service-area-description .content .content-main-area .content-list-container {
   height: 40px;
-  width: 150px;
-  position: relative;
+  width: 120px !important;
   overflow: hidden;
-}
-.ourportfulio-wrapper .service-area-description .content .content-main-area .content-list .list-item {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  line-height: 40px;
+  background: #060454;
   margin: 0;
-  font-size: 30px;
+}
+.ourportfulio-wrapper .service-area-description .content .content-main-area .content-list-container .content-list .list-item {
   color: #ffffff;
+  font-size: 20px;
   font-family: "Andada Pro", serif;
   font-weight: 600;
-  display: none;
-  text-align: center;
   text-transform: capitalize;
+  text-align: center;
+  padding-top: 10px;
 }
 .ourportfulio-wrapper .portfulio-slider-area {
   margin-top: 50px;
@@ -1541,7 +1538,6 @@ p, h1, h2, h3, h4, h5, h6 {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3) inset, 10px 0 10px -5px rgba(0, 0, 0, 0.3), -10px 0 10px -5px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   padding: 20px;
-  background: #070630;
 }
 .ourportfulio-wrapper .portfulio-slider-area .swiper {
   width: 100%;
@@ -1674,36 +1670,27 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "Andada Pro", serif;
   font-weight: 600;
 }
-.testimonials-wrapper .service-area-description .content .content-main-area .content-list {
-  background: rgb(241, 9, 191);
+.testimonials-wrapper .service-area-description .content .content-main-area .content-list-container {
   height: 40px;
-  width: 150px;
-  position: relative;
+  width: 120px !important;
   overflow: hidden;
-}
-.testimonials-wrapper .service-area-description .content .content-main-area .content-list .list-item {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  line-height: 40px;
+  background: #060454;
   margin: 0;
-  font-size: 30px;
+}
+.testimonials-wrapper .service-area-description .content .content-main-area .content-list-container .content-list .list-item {
   color: #ffffff;
+  text-transform: capitalize;
+  font-size: 20px;
   font-family: "Andada Pro", serif;
   font-weight: 600;
-  display: none;
   text-align: center;
-  text-transform: capitalize;
+  padding-top: 10px;
 }
 .testimonials-wrapper .testimonials-area {
   margin-top: 50px;
   position: relative;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3) inset, 10px 0 10px -5px rgba(0, 0, 0, 0.3), -10px 0 10px -5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3) inset, 10px 0 10px -5px rgba(0, 0, 0, 0.3), -10px 0 10px -5px rgba(0, 0, 0, 0.3);
-  border-radius: 20px;
-  padding: 20px;
-  background: #070630;
+  padding: 50px;
+  background-color: #42e599;
 }
 .testimonials-wrapper .testimonials-area .swiper {
   width: 100%;
@@ -1795,14 +1782,52 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .askanything-wrapper {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 .askanything-wrapper .askanything-main-area h1 {
   color: #060454;
   font-family: "Andada Pro", serif;
   font-weight: 600;
   text-align: center;
-  font-size: 25px;
+  font-size: 16px;
   text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.askanything-wrapper .askanything-main-area .service-area-description .content .content-main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.askanything-wrapper .askanything-main-area .service-area-description .content .content-main-area .content-header {
+  color: #060454;
+  font-size: 20px;
+  font-family: "Andada Pro", serif;
+  font-weight: 600;
+}
+.askanything-wrapper .askanything-main-area .service-area-description .content .content-main-area .content-list-container {
+  height: 40px;
+  width: 120px !important;
+  overflow: hidden;
+  background: #060454;
+  margin: 0;
+}
+.askanything-wrapper .askanything-main-area .service-area-description .content .content-main-area .content-list-container .content-list .list-item {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family: "Andada Pro", serif;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 10px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2122,4 +2147,4 @@ p, h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   background: #ffffff;
   border: 1px solid #ffffff;
-}/*# sourceMappingURL=styles.css.map */
+}

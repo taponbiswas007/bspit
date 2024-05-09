@@ -190,41 +190,8 @@ $(document).ready(function () {
     }, 5700);
     //welcome screen end
 
-    //service area start
-    var items = $(".list-item");
-    var currentIndex = 0;
-    var duration = 1500; // Duration of animation in milliseconds
-    var delay = 100; // Delay before starting animation loop
-    var gap = 300; // Gap between animation cycles
-    var firstLoop = true; // Flag to track the first iteration
-    
-    function animateItems() {
-        var currentItem = items.eq(currentIndex);
-        var nextIndex = (currentIndex + 1) % items.length;
-        var nextItem = items.eq(nextIndex);
-    
-        currentItem.css({ bottom: '0', display: 'block' }).delay(delay).animate({ bottom: '-40px' }, duration / 2, function () {
-            $(this).hide();
-        });
-    
-        nextItem.css({ bottom: '100%', display: 'block' }).delay(delay).animate({ bottom: '0' }, duration / 2);
-    
-        currentIndex = nextIndex;
-    
-        // After the first iteration, reduce the delay
-        if (!firstLoop) {
-            delay = 0; // Adjusted delay for subsequent iterations
-        }
-        firstLoop = false;
-    }
-    
-    // Start animation loop after a delay
-    setTimeout(function() {
-        animateItems(); // Run the animation once before starting the interval
-        setInterval(animateItems, duration + delay + gap);
-        setTimeout(startAnimationLoop, gap); // Start the interval with adjusted duration
-    });
-    
+  
+
 
 
     $('.responsive').slick({
@@ -315,6 +282,7 @@ var swiper = new Swiper(".mySwiper", {
     delay: 2500,
     disableOnInteraction: false
   },
+  loop: true, 
   pagination: {
     el: ".swiper-pagination",
     clickable: true
@@ -330,3 +298,17 @@ var swiper = new Swiper(".mySwiper", {
     }
   }
 });
+
+var swiper = new Swiper(".mySwiper2", {
+    direction: 'vertical', // Set direction to vertical
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    loop: true, // Enable loop mode
+    
+});
+
+  
