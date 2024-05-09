@@ -1547,13 +1547,23 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
 }
-.ourportfulio-wrapper .portfulio-slider-area .swiper .swiper-slide .images-area {
+.ourportfulio-wrapper .portfulio-slider-area .swiper .swiper-slide .image-area {
   position: relative;
 }
-.ourportfulio-wrapper .portfulio-slider-area .swiper .swiper-slide .images-area img {
+.ourportfulio-wrapper .portfulio-slider-area .swiper .swiper-slide .image-area img {
   display: block;
   width: 100%;
   height: 100%;
+}
+.ourportfulio-wrapper .portfulio-slider-area .swiper .swiper-slide .image-area .work-details {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.ourportfulio-wrapper .portfulio-slider-area .swiper .swiper-slide .image-area .work-details p {
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
 }
 .ourportfulio-wrapper .portfulio-slider-area .swiper .swiper-button-next {
   background: #fff;
