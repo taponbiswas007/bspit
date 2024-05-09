@@ -1706,17 +1706,17 @@
 }
 
 .askanything-wrapper {
-    margin-top: 50px;
-    margin-bottom: 50px;
-
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url(../images/black-bg-with-logo.jpg) no-repeat 0 0 / 100% 100%;
     .askanything-main-area {
         h1 {
-            color: #060454;
+            color: $white;
             font-family: $mainfont;
             font-weight: 600;
             text-align: center;
             font-size: 16px;
-            text-transform: uppercase;
+            text-transform: capitalize;
             margin-bottom: 30px;
         }
 
@@ -1729,7 +1729,7 @@
                     column-gap: 10px;
 
                     .content-header {
-                        color: #060454;
+                        color: $white;
                         font-size: 20px;
                         font-family: $mainfont;
                         font-weight: 600;
@@ -1763,6 +1763,42 @@
                     }
 
                 }
+            }
+        }
+        .question-area{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .left{
+                width: 50%;
+                .question-item{
+                    padding: 15px;
+                   cursor: pointer;
+                   border-bottom: 2px solid $white;
+                   padding-left: 0;
+                    li{
+                       color: $white;
+                       font-family: $lato;
+                        ul{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .rotate-90 {
+                                transform: rotate(90deg);
+                            }
+                            
+                        }
+                        p{
+                            margin-top: 15px;
+                            display: none;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+            .right{
+                width: 50%;
             }
         }
     }

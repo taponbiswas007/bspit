@@ -2,10 +2,14 @@ $(document).ready(function () {
 
     //toggle bar
     $(".togglebar").click(function () {
-        $(".navbar").animate({ "left": "0" }, 500);
+        $(".navbar").animate({
+            "left": "0"
+        }, 500);
     });
     $(".toggleclose").click(function () {
-        $(".navbar").animate({ "left": "-100%" }, 500);
+        $(".navbar").animate({
+            "left": "-100%"
+        }, 500);
     });
     //contact button area start 
     $(".contact-button").hover(function () {
@@ -190,7 +194,7 @@ $(document).ready(function () {
     }, 5700);
     //welcome screen end
 
-  
+
 
 
 
@@ -199,8 +203,7 @@ $(document).ready(function () {
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 3,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 1300,
                 settings: {
                     slidesToShow: 3.5,
@@ -249,16 +252,32 @@ $(document).ready(function () {
 
     //service area end
 
-    //protfulio start
- 
+    //question area start
+  // Define the function
+function toggleAnswer(clickedElement) {
+    $(clickedElement).find(".answer").slideToggle();
+    $(clickedElement).find(".angles").toggleClass("rotate-90");
+}
 
-    
-    
+// Call the function when a question item is clicked
+$(".question-item").click(function(){
+    toggleAnswer(this);
+});
+
+
+
+
+
+
+
+
 
 });
 
 //sticky border
-window.onscroll = function () { myFunction() };
+window.onscroll = function () {
+    myFunction()
+};
 
 var header = document.getElementById("header");
 var sticky = header.offsetTop;
@@ -276,27 +295,27 @@ function myFunction() {
 const progressCircle = document.querySelector(".autoplay-progress svg");
 const progressContent = document.querySelector(".autoplay-progress span");
 var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false
-  },
-  loop: true, 
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-  on: {
-    autoplayTimeLeft(s, time, progress) {
-      progressCircle.style.setProperty("--progress", 1 - progress);
-      progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+    },
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    on: {
+        autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
     }
-  }
 });
 
 var swiper = new Swiper(".mySwiper2", {
@@ -308,7 +327,5 @@ var swiper = new Swiper(".mySwiper2", {
         disableOnInteraction: false,
     },
     loop: true, // Enable loop mode
-    
-});
 
-  
+});

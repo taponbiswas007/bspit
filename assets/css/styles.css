@@ -1781,16 +1781,17 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .askanything-wrapper {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url(../images/black-bg-with-logo.jpg) no-repeat 0 0/100% 100%;
 }
 .askanything-wrapper .askanything-main-area h1 {
-  color: #060454;
+  color: #ffffff;
   font-family: "Andada Pro", serif;
   font-weight: 600;
   text-align: center;
   font-size: 16px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 30px;
 }
 .askanything-wrapper .askanything-main-area .service-area-description .content .content-main-area {
@@ -1808,7 +1809,7 @@ p, h1, h2, h3, h4, h5, h6 {
           column-gap: 10px;
 }
 .askanything-wrapper .askanything-main-area .service-area-description .content .content-main-area .content-header {
-  color: #060454;
+  color: #ffffff;
   font-size: 20px;
   font-family: "Andada Pro", serif;
   font-weight: 600;
@@ -1828,6 +1829,53 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   text-align: center;
   padding-top: 10px;
+}
+.askanything-wrapper .askanything-main-area .question-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.askanything-wrapper .askanything-main-area .question-area .left {
+  width: 50%;
+}
+.askanything-wrapper .askanything-main-area .question-area .left .question-item {
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 2px solid #ffffff;
+  padding-left: 0;
+}
+.askanything-wrapper .askanything-main-area .question-area .left .question-item li {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+}
+.askanything-wrapper .askanything-main-area .question-area .left .question-item li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.askanything-wrapper .askanything-main-area .question-area .left .question-item li ul .rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.askanything-wrapper .askanything-main-area .question-area .left .question-item li p {
+  margin-top: 15px;
+  display: none;
+  margin-left: 20px;
+}
+.askanything-wrapper .askanything-main-area .question-area .right {
+  width: 50%;
 }
 
 @media screen and (max-width: 1200px) {
