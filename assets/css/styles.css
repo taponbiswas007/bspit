@@ -1793,6 +1793,18 @@ p, h1, h2, h3, h4, h5, h6 {
           transform: rotate(-90deg);
 }
 
+.askanything-wrapper {
+  margin-top: 50px;
+}
+.askanything-wrapper .askanything-main-area h1 {
+  color: #060454;
+  font-family: "Andada Pro", serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 1200px) {
   .header-and-banner .banner-animation-main-area .my-profession-heading {
     height: 100px !important;
