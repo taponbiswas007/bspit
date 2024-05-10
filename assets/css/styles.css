@@ -1627,11 +1627,12 @@ p, h1, h2, h3, h4, h5, h6 {
 .testimonials-wrapper {
   background: #ffffff;
   padding: 100px 0;
+  background: url(../images/blackbricks.jpeg) no-repeat 0 0/100% 100%;
 }
 .testimonials-wrapper .service-header h1 {
   font-family: "Andada Pro", serif;
   font-size: 20px;
-  color: #111;
+  color: #ffffff;
   font-weight: 600;
   text-transform: capitalize;
   text-align: center;
@@ -1666,7 +1667,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .testimonials-wrapper .service-area-description .content .content-main-area .content-header {
   font-size: 30px;
-  color: #111;
+  color: #ffffff;
   font-family: "Andada Pro", serif;
   font-weight: 600;
 }
@@ -1690,32 +1691,106 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-top: 50px;
   position: relative;
   padding: 50px;
-  background-color: #42e599;
+  background: rgba(0, 0, 0, 0.5);
 }
 .testimonials-wrapper .testimonials-area .swiper {
   width: 100%;
   height: 100%;
 }
-.testimonials-wrapper .testimonials-area .swiper .swiper-slide .image-area {
-  background: #ffffff;
+.testimonials-wrapper .testimonials-area .swiper .swiper-slide .image-area .block {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000), to(#272727));
+  background: linear-gradient(0deg, #000, #272727);
+  z-index: 2;
 }
-.testimonials-wrapper .testimonials-area .swiper .swiper-slide .image-area p {
-  color: #070630;
-  font-size: 20px;
+.testimonials-wrapper .testimonials-area .swiper .swiper-slide .image-area .block::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: 1;
+  -webkit-animation: steam 20s linear infinite;
+          animation: steam 20s linear infinite;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+.testimonials-wrapper .testimonials-area .swiper .swiper-slide .image-area .block::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: 1;
+  -webkit-animation: steam 20s linear infinite;
+          animation: steam 20s linear infinite;
+}
+.testimonials-wrapper .testimonials-area .swiper .swiper-slide .image-area .block .content-area {
+  position: absolute;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  inset: 2px;
+  z-index: 3;
+  padding: 10px;
+}
+.testimonials-wrapper .testimonials-area .swiper .swiper-slide .image-area .block .content-area p {
+  color: #ffffff;
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   text-align: center;
   padding: 40px;
-  line-height: 30px;
+  line-height: 20px;
 }
-.testimonials-wrapper .testimonials-area .swiper .swiper-slide .image-area h1 {
-  color: #070630;
-  font-size: 20px;
+.testimonials-wrapper .testimonials-area .swiper .swiper-slide .image-area .block .content-area h1 {
+  color: #ffffff;
+  font-size: 14px;
   font-family: "Andada Pro", serif;
   font-weight: 600;
   text-align: center;
-  padding: 40px;
   line-height: 30px;
+}
+@-webkit-keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 .testimonials-wrapper .testimonials-area .swiper .swiper-button-next {
   background: #fff;
@@ -2006,17 +2081,6 @@ p, h1, h2, h3, h4, h5, h6 {
           justify-content: center;
   margin-top: 20px;
 }
-@-webkit-keyframes steam {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
 @keyframes steam {
   0% {
     background-position: 0 0;
@@ -2146,6 +2210,17 @@ p, h1, h2, h3, h4, h5, h6 {
   }
   .ourservice-wrapper .service-area-description .content .content-main-area .content-list .list-item {
     font-size: 19px;
+  }
+  .testimonials-wrapper .testimonials-area .project-portfulio-area .project-portfulio-main-area .protfulio-item .image-area .block {
+    height: 300px;
+  }
+  .testimonials-wrapper .testimonials-area .project-portfulio-area .project-portfulio-main-area .protfulio-item .image-area .block .content-area p {
+    font-size: 13px;
+    line-height: 15px;
+    padding: 10px;
+  }
+  .testimonials-wrapper .testimonials-area .project-portfulio-area .project-portfulio-main-area .protfulio-item .image-area .block .content-area h1 {
+    font-size: 11px;
   }
   .askanything-wrapper .askanything-main-area .question-area {
     -webkit-box-orient: vertical;

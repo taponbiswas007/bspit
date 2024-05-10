@@ -1519,6 +1519,7 @@
 .testimonials-wrapper {
     background: $white;
     padding: 100px 0;
+    background: url(../images/blackbricks.jpeg) no-repeat 0 0 / 100% 100%;
 
     .service-header {
 
@@ -1526,7 +1527,7 @@
         h1 {
             font-family: $mainfont;
             font-size: 20px;
-            color: $black;
+            color: $white;
             font-weight: 600;
             text-transform: capitalize;
             text-align: center;
@@ -1551,7 +1552,7 @@
 
                 .content-header {
                     font-size: 30px;
-                    color: $black;
+                    color: $white;
                     font-family: $mainfont;
                     font-weight: 600;
                 }
@@ -1594,7 +1595,7 @@
 
         padding: 50px;
 
-        background-color: #42e599;
+        background: rgba(0, 0, 0, 0.5);
 
         .swiper {
             width: 100%;
@@ -1610,28 +1611,93 @@
 
 
                 .image-area {
-                    background: $white;
 
-                    p {
-                        color: $background1;
-                        font-size: 20px;
-                        font-family: $textfont;
-                        font-weight: 500;
-                        text-align: center;
-                        padding: 40px;
-                        line-height: 30px;
+                    // background: $white;
+                    .block {
+                        position: relative;
+                        width: 100%;
+                        height: 350px;
+                        background: linear-gradient(0deg, #000, #272727);
+                        z-index: 2;
 
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: -2px;
+                            top: -2px;
+                            background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+                            background-size: 400%;
+                            width: calc(100% + 4px);
+                            height: calc(100% + 4px);
+                            z-index: 1;
+                            animation: steam 20s linear infinite;
+                            filter: blur(10px);
+
+
+                        }
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            left: -2px;
+                            top: -2px;
+                            background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+                            background-size: 400%;
+                            width: calc(100% + 4px);
+                            height: calc(100% + 4px);
+                            z-index: 1;
+                            animation: steam 20s linear infinite;
+                        }
+
+                        .content-area {
+                            position: absolute;
+                            background: #000;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            inset: 2px;
+                            z-index: 3;
+                            padding: 10px;
+
+                            p {
+                                color: $white;
+                                font-size: 16px;
+                                font-family: $textfont;
+                                font-weight: 500;
+                                text-align: center;
+                                padding: 40px;
+                                line-height: 20px;
+
+                            }
+
+                            h1 {
+                                color: $white;
+                                font-size: 14px;
+                                font-family: $mainfont;
+                                font-weight: 600;
+                                text-align: center;
+                                line-height: 30px;
+                            }
+
+
+                        }
                     }
 
-                    h1 {
-                        color: $background1;
-                        font-size: 20px;
-                        font-family: $mainfont;
-                        font-weight: 600;
-                        text-align: center;
-                        padding: 40px;
-                        line-height: 30px;
+                    @keyframes steam {
+                        0% {
+                            background-position: 0 0;
+                        }
+
+                        50% {
+                            background-position: 400% 0;
+                        }
+
+                        100% {
+                            background-position: 0 0;
+                        }
                     }
+
 
                 }
             }
@@ -2132,6 +2198,35 @@
 
                         .list-item {
                             font-size: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .testimonials-wrapper {
+        .testimonials-area {
+            .project-portfulio-area {
+                .project-portfulio-main-area {
+                    .protfulio-item {
+                        .image-area {
+                            .block {
+                                height: 300px;
+
+                                .content-area {
+
+                                    p {
+                                        font-size: 13px;
+                                        line-height: 15px;
+                                        padding: 10px;
+                                    }
+
+                                    h1 {
+                                        font-size: 11px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
