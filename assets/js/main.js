@@ -266,7 +266,9 @@ $(document).ready(function () {
         var $angles = $(clickedElement).find(".angles");
 
         $answer.slideToggle(700); // Adjust animation time here (e.g., 700 milliseconds)
-        $underlinemark.toggle().animate({ width: "100%" }, 700); // Adjust animation time here
+        $underlinemark.toggle().animate({
+            width: "100%"
+        }, 700); // Adjust animation time here
         $angles.toggleClass("rotate-90");
     }
 
