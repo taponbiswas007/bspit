@@ -204,46 +204,46 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidesToScroll: 3,
         responsive: [{
-                breakpoint: 1300,
-                settings: {
-                    slidesToShow: 3.5,
-                    slidesToScroll: 1,
-                    infinite: false,
-                }
-            },
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2.5,
-                    slidesToScroll: 1,
-                    infinite: false,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: false,
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1.5,
-                    slidesToScroll: 1,
-                    infinite: false,
-                }
-            },
-
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: false,
-                }
+            breakpoint: 1300,
+            settings: {
+                slidesToShow: 3.5,
+                slidesToScroll: 1,
+                infinite: false,
             }
+        },
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2.5,
+                slidesToScroll: 1,
+                infinite: false,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: false,
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1.5,
+                slidesToScroll: 1,
+                infinite: false,
+            }
+        },
+
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false,
+            }
+        }
             // You can unslick at a given breakpoint now by adding:
             // settings: "unslick"
             // instead of a settings object
@@ -253,16 +253,36 @@ $(document).ready(function () {
     //service area end
 
     //question area start
-  // Define the function
-function toggleAnswer(clickedElement) {
-    $(clickedElement).find(".answer").slideToggle();
-    $(clickedElement).find(".angles").toggleClass("rotate-90");
-}
+    // Define the function
+    function toggleAnswer(clickedElement) {
+        // Close all other answer items
+        $(".question-item").not(clickedElement).find(".answer").slideUp();
+        $(".question-item").not(clickedElement).find(".underlinemark").hide().css("width", "0%");
+        $(".question-item").not(clickedElement).find(".angles").removeClass("rotate-90");
+    
+        // Toggle the answer item of the clicked element
+        var $answer = $(clickedElement).find(".answer");
+        var $underlinemark = $(clickedElement).find(".underlinemark");
+        var $angles = $(clickedElement).find(".angles");
+    
+        $answer.slideToggle(700); // Adjust animation time here (e.g., 700 milliseconds)
+        $underlinemark.toggle().animate({ width: "100%" }, 700); // Adjust animation time here
+        $angles.toggleClass("rotate-90");
+    }
+    
 
-// Call the function when a question item is clicked
-$(".question-item").click(function(){
-    toggleAnswer(this);
-});
+    // Call the function when a question item is clicked
+    $(".question-item").click(function () {
+        toggleAnswer(this);
+    });
+
+    // Additional functionality
+    $(".some-other-element").on("click", function () {
+        // Add your additional functionality here
+    });
+
+
+
 
 
 
