@@ -2158,11 +2158,11 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
   .askanything-wrapper .askanything-main-area .question-area .left .question-item li {
-    font-size: 12px;
+    font-size: 14px;
   }
   .askanything-wrapper .askanything-main-area .question-area .left .question-item li p {
-    font-size: 10px;
-    line-height: 13px;
+    font-size: 12px;
+    line-height: 15px;
   }
   .askanything-wrapper .askanything-main-area .question-area .right {
     width: 100%;
