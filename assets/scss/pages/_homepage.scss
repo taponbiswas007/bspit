@@ -1731,6 +1731,10 @@
             }
 
             .swiper-pagination {
+                .swiper-pagination-bullet {
+                    background: $white;
+                }
+
                 .swiper-pagination-bullet-active {
                     width: 15px;
                     background: $yellow;

@@ -1814,6 +1814,9 @@ p, h1, h2, h3, h4, h5, h6 {
   content: "\f104";
   font-size: 20px;
 }
+.testimonials-wrapper .testimonials-area .swiper .swiper-pagination .swiper-pagination-bullet {
+  background: #ffffff;
+}
 .testimonials-wrapper .testimonials-area .swiper .swiper-pagination .swiper-pagination-bullet-active {
   width: 15px;
   background: #f5ab0c;

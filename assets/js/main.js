@@ -337,6 +337,20 @@ var swiper = new Swiper(".mySwiper", {
         }
     }
 });
+var swiper = new Swiper(".mySwiper1", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: false,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+
+});
 
 var swiper = new Swiper(".mySwiper2", {
     direction: 'vertical', // Set direction to vertical
