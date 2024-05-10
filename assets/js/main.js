@@ -259,17 +259,17 @@ $(document).ready(function () {
         $(".question-item").not(clickedElement).find(".answer").slideUp();
         $(".question-item").not(clickedElement).find(".underlinemark").hide().css("width", "0%");
         $(".question-item").not(clickedElement).find(".angles").removeClass("rotate-90");
-    
+
         // Toggle the answer item of the clicked element
         var $answer = $(clickedElement).find(".answer");
         var $underlinemark = $(clickedElement).find(".underlinemark");
         var $angles = $(clickedElement).find(".angles");
-    
+
         $answer.slideToggle(700); // Adjust animation time here (e.g., 700 milliseconds)
         $underlinemark.toggle().animate({ width: "100%" }, 700); // Adjust animation time here
         $angles.toggleClass("rotate-90");
     }
-    
+
 
     // Call the function when a question item is clicked
     $(".question-item").click(function () {

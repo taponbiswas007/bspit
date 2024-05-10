@@ -1788,7 +1788,8 @@
                     padding-left: 0;
                     margin-bottom: 8px;
                     position: relative;
-                    .underlinemark{
+
+                    .underlinemark {
                         position: absolute;
                         content: ' ';
                         height: 2px;
@@ -1797,16 +1798,17 @@
                         left: 0;
                         background: #faa82d;
                         z-index: 2;
-                        
+
                         display: none;
-                       
+
                     }
+
                     li {
                         color: $white;
                         font-family: $lato;
                         font-size: 18px;
                         font-weight: 600;
-                       
+
                         ul {
                             display: flex;
                             justify-content: space-between;
@@ -1816,8 +1818,9 @@
                                 transform: rotate(90deg);
                                 color: #faa82d;
                             }
-                            li{
-                                span{
+
+                            li {
+                                span {
                                     font-size: 25px;
                                     font-weight: 700;
                                     margin-right: 10px;
@@ -1843,13 +1846,14 @@
                 width: 50%;
                 display: flex;
                 justify-content: center;
+
                 .different-questions-area {
                     padding: 30px;
 
                     .block {
                         position: relative;
                         width: 300px;
-                       height: 430px;
+                        height: 430px;
                         background: linear-gradient(0deg, #000, #272727);
                         z-index: 2;
 
@@ -1888,11 +1892,13 @@
                             inset: 2px;
                             z-index: 3;
                             padding: 10px;
-                            .content-header{
+
+                            .content-header {
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                span{
+
+                                span {
                                     display: block;
                                     background: $yellow;
                                     height: 100px;
@@ -1900,20 +1906,23 @@
                                     border-radius: 50%;
                                     padding-left: 25px;
                                     padding-top: 10px;
-                                    .questionmark{
+
+                                    .questionmark {
                                         color: $background1;
                                         font-size: 70px;
                                     }
                                 }
                             }
-                            h1{
+
+                            h1 {
                                 margin-top: 20px;
                                 text-transform: none;
                                 font-family: $lato;
                                 font-size: 25px;
                                 font-weight: 600;
                             }
-                            p{
+
+                            p {
                                 color: $white;
                                 text-align: center;
                                 font-family: $textfont;
@@ -1921,7 +1930,8 @@
                                 line-height: 20px;
                                 font-size: 15px;
                             }
-                            .contactbtn{
+
+                            .contactbtn {
                                 display: flex;
                                 justify-content: center;
                                 margin-top: 20px;
@@ -1970,18 +1980,19 @@
             }
         }
     }
-    .askanything-wrapper{
-       .askanything-main-area{
-        .question-area{
-            .left{
-                .question-item{
-                    li{
-                        font-size: 16px;
+
+    .askanything-wrapper {
+        .askanything-main-area {
+            .question-area {
+                .left {
+                    .question-item {
+                        li {
+                            font-size: 16px;
+                        }
                     }
                 }
             }
         }
-       } 
     }
 }
 
@@ -2057,29 +2068,34 @@
 
         }
     }
-    .askanything-wrapper{
-        .askanything-main-area{
-         .question-area{
-            flex-direction: column;
-            row-gap: 20px;
-             .left{
-                width: 100%;
-                 .question-item{
-                     li{
-                         font-size: 16px;
-                         p{
-                            font-size: 12px;
-                            line-height: 15px;
-                         }
-                     }
-                 }
-             }
-             .right{
-                width: 100%;
-             }
-         }
-        } 
-     }
+
+    .askanything-wrapper {
+        .askanything-main-area {
+            .question-area {
+                flex-direction: column;
+                row-gap: 20px;
+
+                .left {
+                    width: 100%;
+
+                    .question-item {
+                        li {
+                            font-size: 16px;
+
+                            p {
+                                font-size: 12px;
+                                line-height: 15px;
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    width: 100%;
+                }
+            }
+        }
+    }
 
 }
 
@@ -2122,29 +2138,34 @@
             }
         }
     }
-    .askanything-wrapper{
-        .askanything-main-area{
-         .question-area{
-            flex-direction: column;
-            row-gap: 20px;
-             .left{
-                width: 100%;
-                 .question-item{
-                     li{
-                         font-size: 12px;
-                         p{
-                            font-size: 10px;
-                            line-height: 13px;
-                         }
-                     }
-                 }
-             }
-             .right{
-                width: 100%;
-             }
-         }
-        } 
-     }
+
+    .askanything-wrapper {
+        .askanything-main-area {
+            .question-area {
+                flex-direction: column;
+                row-gap: 20px;
+
+                .left {
+                    width: 100%;
+
+                    .question-item {
+                        li {
+                            font-size: 12px;
+
+                            p {
+                                font-size: 10px;
+                                line-height: 13px;
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -2311,15 +2332,16 @@
             }
         }
     }
-    .askanything-wrapper{
-        .askanything-main-area{
-            .service-area-description{
-                .content{
-                   .content-main-area{
-                    .content-header{
-                        font-size: 16px;
+
+    .askanything-wrapper {
+        .askanything-main-area {
+            .service-area-description {
+                .content {
+                    .content-main-area {
+                        .content-header {
+                            font-size: 16px;
+                        }
                     }
-                   } 
                 }
             }
         }
