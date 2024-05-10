@@ -1399,7 +1399,7 @@
     .portfulio-slider-area {
         margin-top: 50px;
         position: relative;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3) inset, 10px 0 10px -5px rgba(0, 0, 0, 0.3), -10px 0 10px -5px rgba(0, 0, 0, 0.3);
+        //box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3) inset, 10px 0 10px -5px rgba(0, 0, 0, 0.3), -10px 0 10px -5px rgba(0, 0, 0, 0.3);
         //height: 850px;
         border-radius: 20px;
         padding: 20px;
@@ -1519,7 +1519,7 @@
 .testimonials-wrapper {
     background: $white;
     padding: 100px 0;
-    background: url(../images/blackbricks.jpeg) no-repeat 0 0 / 100% 100%;
+    background: $background1;
 
     .service-header {
 
@@ -1781,6 +1781,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
     background: url(../images/3d-logo.jpg) no-repeat 0 0 / 100% 100%;
+    margin-top: 40px;
 
     .askanything-main-area {
         background: rgba(0, 0, 0, 0.5);
@@ -2029,6 +2030,127 @@
 
 
             }
+        }
+    }
+}
+
+.footer-wrapper {
+    margin-top: 50px;
+    background: $background1;
+    padding: 50px 0;
+
+    .footer-header {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 150px;
+        }
+    }
+
+    .footer-main-content-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .footer-item {
+            ul {
+                li {
+                    color: $white;
+                    font-family: $headerfont;
+                    margin-bottom: 20px;
+                    font-size: 16px;
+
+                    a {
+                        color: $white;
+                        font-family: $headerfont;
+                        margin-bottom: 20px;
+                        font-size: 16px;
+                    }
+
+                    span {
+                        margin-right: 15px;
+                        font-size: 25px;
+                    }
+
+                    input {
+                        width: 100%;
+                        padding: 10px 20px;
+                        background: $white;
+                        color: $black;
+                        border-radius: 10px;
+                        border: none;
+                    }
+                }
+
+
+            }
+
+            &:last-child {
+                ul {
+                    li {
+                        &:first-child {
+                            text-transform: capitalize;
+                            font-size: 25px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-social-icon-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+
+        .border {
+            width: 100%;
+        }
+
+        .social-icon {
+            min-width: 215px;
+
+            ul {
+                li {
+                    display: inline-block;
+
+                    a {
+                        display: block;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                        height: 30px;
+                        width: 30px;
+                        background: $white;
+                        color: $background1;
+                        border-radius: 50%;
+                        font-size: 20px;
+                        padding: 4px 0 0 6px;
+                        transition: .3s ease;
+
+                        &:hover {
+                            transform: scale(1.2);
+                            background: $yellow;
+                            color: $black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copiwrite-area {
+        padding: 20px 0;
+        margin-top: 40px;
+
+        p {
+            color: $white;
+            font-size: 12px;
+            font-family: $mainfont;
+            font-weight: 500;
+            text-align: center;
         }
     }
 }
