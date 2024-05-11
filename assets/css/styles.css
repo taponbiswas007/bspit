@@ -2100,6 +2100,26 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #070630;
   padding: 50px 0;
 }
+.footer-wrapper .customer-logo-area .customer-logo {
+  background: #000;
+}
+.footer-wrapper .customer-logo-area .customer-logo .logo-item {
+  height: 100px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
+}
+.footer-wrapper .customer-logo-area .customer-logo .logo-item img {
+  width: 100px;
+}
 .footer-wrapper .footer-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2121,6 +2141,15 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 40px;
+}
+.footer-wrapper .footer-main-content-area .footer-item {
+  min-width: 368px;
 }
 .footer-wrapper .footer-main-content-area .footer-item ul li {
   color: #ffffff;
@@ -2582,4 +2611,4 @@ p, h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   background: #ffffff;
   border: 1px solid #ffffff;
-}
+}/*# sourceMappingURL=styles.css.map */
