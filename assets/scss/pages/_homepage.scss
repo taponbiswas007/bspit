@@ -2184,7 +2184,26 @@
         }
     }
 }
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
 
+.goog-te-gadget-icon {
+    display: none !important;
+}
+.goog-te-gadget{
+    
+}
+#google_translate_element{
+    background: $white;
+    border: 2px solid $background1;
+    border-radius: 10px;
+}
+.skiptranslate{
+    span{
+        display: none !important;
+    }
+}
 @media screen and (max-width: 1200px) {
     .header-and-banner {
         .banner-animation-main-area {

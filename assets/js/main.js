@@ -365,3 +365,21 @@ var swiper = new Swiper(".mySwiper2", {
     loop: true, // Enable loop mode
 
 });
+
+//google translate 
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+
+// Function to handle language selection and trigger translation
+document.getElementById('langSelect').addEventListener('change', function() {
+    var selectedLang = this.value;
+    var content = document.getElementById('langtrns').innerHTML;
+    
+    // Translate content
+    googleTranslateElementInit();
+    google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+
+    // Reload content to trigger translation
+    document.getElementById('langtrns').innerHTML = content;
+});

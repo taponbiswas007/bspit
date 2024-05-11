@@ -2247,6 +2247,24 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+#google_translate_element {
+  background: #ffffff;
+  border: 2px solid #070630;
+  border-radius: 10px;
+}
+
+.skiptranslate span {
+  display: none !important;
+}
+
 @media screen and (max-width: 1200px) {
   .header-and-banner .banner-animation-main-area .my-profession-heading {
     height: 100px !important;
