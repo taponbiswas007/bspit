@@ -2103,7 +2103,20 @@ p, h1, h2, h3, h4, h5, h6 {
 .footer-wrapper .customer-logo-area .customer-logo {
   background: #000;
 }
-.footer-wrapper .customer-logo-area .customer-logo .logo-item {
+.footer-wrapper .customer-logo-area .customer-logo .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.footer-wrapper .customer-logo-area .customer-logo .logo-container .logo-item {
   height: 100px;
   width: 100px;
   display: -webkit-box;
@@ -2117,7 +2130,7 @@ p, h1, h2, h3, h4, h5, h6 {
           align-items: center;
   float: left;
 }
-.footer-wrapper .customer-logo-area .customer-logo .logo-item img {
+.footer-wrapper .customer-logo-area .customer-logo .logo-container .logo-item img {
   width: 100px;
 }
 .footer-wrapper .footer-header {

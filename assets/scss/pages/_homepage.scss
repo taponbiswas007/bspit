@@ -2041,6 +2041,11 @@
     .customer-logo-area{
         .customer-logo{
           background: #000;
+         .logo-container{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-wrap: nowrap;
            .logo-item{
             height: 100px;
             width: 100px;
@@ -2052,6 +2057,7 @@
                 width: 100px;
             }
            }
+         }
            
         }
     }
