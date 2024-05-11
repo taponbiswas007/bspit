@@ -2247,6 +2247,61 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.toolsbar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 9999999999;
+  background: #ffffff;
+  height: 50px;
+  width: 50px;
+  padding: 3px;
+  border-radius: 23px 0 0 23px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid #060454;
+  border-right: none;
+  cursor: pointer;
+}
+.toolsbar img {
+  fill: orange;
+  width: 41px;
+  position: relative;
+  -webkit-animation: spin 2s infinite linear;
+          animation: spin 2s infinite linear;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.setting-area {
+  top: 50%;
+  right: -100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: fixed;
+  z-index: 99999999999;
+}
+
 .goog-te-banner-frame.skiptranslate {
   display: none !important;
 }
@@ -2263,6 +2318,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .skiptranslate span {
+  display: none !important;
+}
+
+.goog-te-banner {
   display: none !important;
 }
 

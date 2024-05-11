@@ -195,8 +195,23 @@ $(document).ready(function () {
     //welcome screen end
 
 
+//setting spinner
+function startSpin() {
+    $('#settings').css('animation', 'spin 2s infinite linear');
+}
 
+// jQuery function to stop spinning the element
+function stopSpin() {
+    $('#settings').css('animation', 'none');
+}
 
+// Call startSpin() to start spinning initially
+startSpin();
+
+//toolber open
+$(".toolsbar").click(function(){
+    $(".setting-area").animate({"right":"0"},300);
+});
 
     $('.responsive').slick({
         infinite: false,
@@ -368,34 +383,8 @@ var swiper = new Swiper(".mySwiper2", {
 
 // Function to initialize Google Translate
 function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+    }, 'google_translate_element');
 }
 
-// Function to handle language selection and trigger translation
-document.addEventListener('DOMContentLoaded', function() {
-    var langSelect = document.getElementById('langSelect');
-    var content = document.getElementById('langtrns').innerHTML;
-
-    // Initialize Google Translate
-    googleTranslateElementInit();
-
-    // Handle language selection change
-    langSelect.addEventListener('change', function() {
-        var selectedLang = this.value;
-
-        // Translate content
-        google.translate.TranslateElement({
-            pageLanguage: 'en', 
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        }, 'google_translate_element');
-
-        // Reload content to trigger translation
-        document.getElementById('langtrns').innerHTML = content;
-    });
-
-    // Set default language
-    var defaultLang = langSelect.value;
-    if (defaultLang !== 'en') {
-        langSelect.dispatchEvent(new Event('change'));
-    }
-});
