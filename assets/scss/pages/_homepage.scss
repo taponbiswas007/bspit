@@ -2194,10 +2194,11 @@
 .goog-te-gadget{
     
 }
-#google_translate_element{
+.goog-te-combo{
     background: $white;
-    border: 2px solid $background1;
-    border-radius: 10px;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
 }
 .skiptranslate{
     span{

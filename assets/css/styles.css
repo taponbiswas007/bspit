@@ -2255,10 +2255,11 @@ p, h1, h2, h3, h4, h5, h6 {
   display: none !important;
 }
 
-#google_translate_element {
+.goog-te-combo {
   background: #ffffff;
-  border: 2px solid #070630;
-  border-radius: 10px;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 5px;
 }
 
 .skiptranslate span {
