@@ -2266,7 +2266,6 @@ p, h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 .toolsbar img {
-  fill: orange;
   width: 41px;
   position: relative;
   -webkit-animation: spin 2s infinite linear;
@@ -2300,6 +2299,10 @@ p, h1, h2, h3, h4, h5, h6 {
           transform: translateY(-50%);
   position: fixed;
   z-index: 99999999999;
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #070630;
+  border-radius: 10px 0 0 10px;
 }
 
 .goog-te-banner-frame.skiptranslate {
