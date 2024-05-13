@@ -2963,6 +2963,22 @@ p, h1, h2, h3, h4, h5, h6 {
           box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
   outline: none;
 }
+.contact-hero-area .contact-hero-main-area .block .content-area .information-input-area .input-item textarea {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 2px solid #0ef;
+  background: #070630;
+  color: #ffffff;
+  resize: none;
+  overflow: auto;
+}
+.contact-hero-area .contact-hero-main-area .block .content-area .information-input-area .input-item textarea:focus {
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
+          box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
+  outline: none;
+}
 .contact-hero-area .contact-hero-main-area .block .content-area .contactbtn {
   display: -webkit-box;
   display: -ms-flexbox;
