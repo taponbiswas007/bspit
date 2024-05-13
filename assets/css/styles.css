@@ -136,11 +136,11 @@ p, h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .header .header-main-content .navbar nav ul li .navlink:hover {
-  color: #f5ab0c;
+  color: #0ef;
 }
 .header .header-main-content .navbar nav ul li .navlink:hover::after {
   content: " ";
-  background: #f5ab0c;
+  background: #0ef;
   height: 2px;
   width: 100%;
   position: absolute;
@@ -166,14 +166,14 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 .header .header-main-content .navbar nav ul li .navlink:focus {
-  color: #f5ab0c;
+  color: #0ef;
 }
 .header .header-main-content .navbar nav ul li .active {
-  color: #f5ab0c;
+  color: #0ef;
 }
 .header .header-main-content .navbar nav ul li .active::after {
   content: " ";
-  background: #f5ab0c;
+  background: #0ef;
   height: 2px;
   width: 100%;
   position: absolute;
@@ -459,7 +459,7 @@ p, h1, h2, h3, h4, h5, h6 {
           animation: item2 ease 0.5s forwards;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
-  color: #f5ab0c;
+  color: #0ef;
 }
 @-webkit-keyframes item2 {
   0% {
@@ -584,7 +584,7 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 .header-and-banner .banner-animation-area .banner-animation-main-area .my-profession-heading .owner-name-area .owner-name-bg {
-  background: #f5ab0c;
+  background: #0ef;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1173,7 +1173,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .about-wrapper .about-area .images-side .images-main-area .images-item .images {
   height: 400px;
-  background: #f5ab0c;
+  background: #0ef;
   border-radius: 10px;
 }
 .about-wrapper .about-area .images-side .images-main-area .images-item .images img {
@@ -1230,7 +1230,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .about-wrapper .about-area .content-side .about-description p span {
   font-weight: 700;
-  color: #f5ab0c;
+  color: #0ef;
 }
 .about-wrapper .about-area .content-side .contact-us-button {
   margin-top: 15px;
@@ -1289,7 +1289,9 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 40px;
   width: 120px !important;
   overflow: hidden;
-  background: #ffffff;
+  background: #0ef;
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
+          box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
   margin: 0;
 }
 .ourservice-wrapper .service-area-description .content .content-main-area .content-list-container .content-list .list-item {
@@ -1393,7 +1395,9 @@ p, h1, h2, h3, h4, h5, h6 {
 .ourservice-wrapper .service-area .service-list .service-item .servicelink:hover .gobtn {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  background: #f5ab0c;
+  background: #0ef;
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
+          box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
   left: 50%;
   -webkit-transform: scale(2);
           transform: scale(2);
@@ -1520,6 +1524,8 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 120px !important;
   overflow: hidden;
   background: #060454;
+  -webkit-box-shadow: 0 0 10px 2px rgba(7, 4, 84, 0.8705882353);
+          box-shadow: 0 0 10px 2px rgba(7, 4, 84, 0.8705882353);
   margin: 0;
 }
 .ourportfulio-wrapper .service-area-description .content .content-main-area .content-list-container .content-list .list-item {
@@ -1583,7 +1589,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .ourportfulio-wrapper .portfulio-slider-area .swiper .swiper-pagination .swiper-pagination-bullet-active {
   width: 15px;
-  background: #f5ab0c;
+  background: #0ef;
   border-radius: 5px;
 }
 .ourportfulio-wrapper .portfulio-slider-area .swiper .autoplay-progress {
@@ -1673,11 +1679,13 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 40px;
   width: 120px !important;
   overflow: hidden;
-  background: #060454;
+  background: #0ef;
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
+          box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
   margin: 0;
 }
 .testimonials-wrapper .service-area-description .content .content-main-area .content-list-container .content-list .list-item {
-  color: #ffffff;
+  color: #070630;
   text-transform: capitalize;
   font-size: 20px;
   font-family: "Andada Pro", serif;
@@ -1817,7 +1825,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .testimonials-wrapper .testimonials-area .swiper .swiper-pagination .swiper-pagination-bullet-active {
   width: 15px;
-  background: #f5ab0c;
+  background: #0ef;
   border-radius: 5px;
 }
 .testimonials-wrapper .testimonials-area .swiper .autoplay-progress {
@@ -1900,6 +1908,8 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 120px !important;
   overflow: hidden;
   background: #060454;
+  -webkit-box-shadow: 0 0 10px 2px rgba(7, 4, 84, 0.7137254902);
+          box-shadow: 0 0 10px 2px rgba(7, 4, 84, 0.7137254902);
   margin: 0;
 }
 .askanything-wrapper .askanything-main-area .service-area-description .content .content-main-area .content-list-container .content-list .list-item {
@@ -1939,7 +1949,9 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -2px;
   left: 0;
-  background: #faa82d;
+  background: #0ef;
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.6);
+          box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.6);
   z-index: 2;
   display: none;
 }
@@ -1963,7 +1975,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .askanything-wrapper .askanything-main-area .question-area .left .question-item li ul .rotate-90 {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  color: #faa82d;
+  color: #0ef;
 }
 .askanything-wrapper .askanything-main-area .question-area .left .question-item li ul li span {
   font-size: 25px;
@@ -1978,7 +1990,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   line-height: 25px;
-  color: #dfff00;
+  color: #faa82d;
 }
 .askanything-wrapper .askanything-main-area .question-area .right {
   width: 50%;
@@ -2048,7 +2060,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .askanything-wrapper .askanything-main-area .question-area .right .different-questions-area .block .content-area .content-header span {
   display: block;
-  background: #f5ab0c;
+  background: #0ef;
   height: 100px;
   width: 100px;
   border-radius: 50%;
@@ -2065,6 +2077,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
   font-size: 25px;
   font-weight: 600;
+  color: #faa82d;
 }
 .askanything-wrapper .askanything-main-area .question-area .right .different-questions-area .block .content-area p {
   color: #ffffff;
@@ -2178,10 +2191,15 @@ p, h1, h2, h3, h4, h5, h6 {
 .footer-wrapper .footer-main-content-area .footer-item ul li input {
   width: 100%;
   padding: 10px 20px;
-  background: #ffffff;
-  color: #111;
-  border-radius: 10px;
-  border: none;
+  border-radius: 7px;
+  border: 2px solid #0ef;
+  background: #070630;
+  color: #ffffff;
+}
+.footer-wrapper .footer-main-content-area .footer-item ul li input:focus {
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
+          box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
+  outline: none;
 }
 .footer-wrapper .footer-main-content-area .footer-item:last-child ul li:first-child {
   text-transform: capitalize;
@@ -2221,7 +2239,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-left: 10px;
   height: 30px;
   width: 30px;
-  background: #ffffff;
+  background: #0ef;
   color: #070630;
   border-radius: 50%;
   font-size: 20px;
@@ -2232,7 +2250,8 @@ p, h1, h2, h3, h4, h5, h6 {
 .footer-wrapper .footer-social-icon-area .social-icon ul li a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  background: #f5ab0c;
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
+          box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
   color: #111;
 }
 .footer-wrapper .copiwrite-area {
@@ -2377,7 +2396,7 @@ p, h1, h2, h3, h4, h5, h6 {
   .header .header-main-content .navbar nav ul li a {
     display: block;
     width: 100%;
-    background: #f5ab0c;
+    background: #0ef;
     color: #111 !important;
     padding: 10px;
   }
@@ -2506,7 +2525,7 @@ p, h1, h2, h3, h4, h5, h6 {
   .header .header-main-content .navbar nav ul li a {
     display: block;
     width: 100%;
-    background: #f5ab0c;
+    background: #0ef;
     color: #111 !important;
     padding: 10px;
   }
@@ -2635,11 +2654,11 @@ p, h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .header .contact-header-main-content .navbar nav ul li .navlink:hover {
-  color: #f5ab0c;
+  color: #0ef;
 }
 .header .contact-header-main-content .navbar nav ul li .navlink:hover::after {
   content: " ";
-  background: #f5ab0c;
+  background: #0ef;
   height: 2px;
   width: 100%;
   position: absolute;
@@ -2657,14 +2676,14 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 .header .contact-header-main-content .navbar nav ul li .navlink:focus {
-  color: #f5ab0c;
+  color: #0ef;
 }
 .header .contact-header-main-content .navbar nav ul li .active {
-  color: #f5ab0c;
+  color: #0ef;
 }
 .header .contact-header-main-content .navbar nav ul li .active::after {
   content: " ";
-  background: #f5ab0c;
+  background: #0ef;
   height: 2px;
   width: 100%;
   position: absolute;
@@ -3025,7 +3044,7 @@ p, h1, h2, h3, h4, h5, h6 {
   .header .contact-header-main-content .navbar nav ul li a {
     display: block;
     width: 100%;
-    background: #f5ab0c;
+    background: #0ef;
     color: #111 !important;
     padding: 10px;
   }
@@ -3062,7 +3081,7 @@ p, h1, h2, h3, h4, h5, h6 {
   .header .contact-header-main-content .navbar nav ul li a {
     display: block;
     width: 100%;
-    background: #f5ab0c;
+    background: #0ef;
     color: #111 !important;
     padding: 10px;
   }
@@ -3133,7 +3152,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .contact-button .contact-mainbtn-area .default-bg {
   position: absolute;
   inset: 1px 2px;
-  background: #f5ab0c;
+  background: #0ef;
   z-index: 3;
   -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
           transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -3197,7 +3216,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .contact-buttonwhite .contact-mainbtn-area .default-bg {
   position: absolute;
   inset: 1px 2px;
-  background: #f5ab0c;
+  background: #0ef;
   z-index: 3;
   -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
           transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -3224,4 +3243,4 @@ p, h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   background: #ffffff;
   border: 1px solid #ffffff;
-}/*# sourceMappingURL=styles.css.map */
+}
