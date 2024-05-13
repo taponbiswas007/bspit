@@ -303,8 +303,173 @@ $(".toolsbar").click(function(){
 
 
 
+    //input box area start
+
+    var $prevClickedLabel = null;
+
+    $('.infolabel').on('click', function () {
+        var $inputField = $(this).closest('.info-input-box').find('input, select');
+        if ($inputField.length === 0) {
+            return;
+        }
+
+        // Stop ongoing animations before starting new ones
+        $('.infolabel').stop(true, true);
+
+        $('.info-input-box').css('border-color', '#202020');
+        $(this).closest('.info-input-box').css('border-color', '#003087');
+
+        if ($prevClickedLabel !== null && $prevClickedLabel[0] !== this) {
+            var $prevInputField = $prevClickedLabel.closest('.info-input-box').find('input, select');
+            var isPrevSelect = $prevInputField.is('select');
+            if (isPrevSelect) {
+                $prevClickedLabel.animate({
+                    "top": "-15px",
+                    "left": "10px",
+                    "background": "#F5F5F5",
+                    "height": "15px",
+                    "padding-top": "8px",
+                    "margin-right": "0",
+                    "border-radius": "0",
+                    "width": "120px"
+                }, 300);
+            } else {
+                if ($prevInputField.val().trim() === '') {
+                    $prevClickedLabel.animate({
+                        "top": "0",
+                        "left": "0",
+                        "color": "#000",
+                        "background": "#ffffff",
+                        "height": "100%",
+                        "border-radius": "8px",
+                        "padding-top": "15px",
+                        "margin-right": "1px",
+                        "z-index": "1",
+                        "width": "100%"
+                    }, 300);
+                }
+            }
+        }
+
+        $(this).animate({
+            "top": "-15px",
+            "left": "10px",
+            "background": "#F5F5F5",
+            "height": "15px",
+            "padding-top": "8px",
+            "margin-right": "0",
+            "border-radius": "0",
+            "width": "120px"
+        }, 300);
+
+        $prevClickedLabel = $(this);
+
+        $inputField.eq($inputField.index(this) + 1).focus();
+        $(this).data('clicked', true);
+    });
+
+    // Unbind and rebind event handlers to prevent multiple bindings
+    $('.person-info-item input, .person-info-item select').off('keydown').on('keydown', function (e) {
+        if (e.which === 9) { // Tab key
+            e.preventDefault();
+            var $nextInputField = $(this).closest('.person-info-item').nextAll('.person-info-item').find('input, select').first();
+            if ($nextInputField.length !== 0) {
+                var $infolabel = $nextInputField.closest('.person-info-item').find('.infolabel').first();
+                $infolabel.data('clicked', false); // Reset clicked status
+                $infolabel.click();
+            }
+        }
+    });
+
+    $('.card-details-item input, .card-details-item select').off('keydown').on('keydown', function (e) {
+        if (e.which === 9) { // Tab key
+            e.preventDefault();
+            var $nextInputField = $(this).closest('.card-details-item').nextAll('.card-details-item').find('input, select').first();
+            if ($nextInputField.length !== 0) {
+                var $infolabel = $nextInputField.closest('.card-details-item').find('.infolabel').first();
+                $infolabel.data('clicked', false); // Reset clicked status
+                $infolabel.click();
+            }
+        }
+    });
 
 
+    //select box design area start
+    $('.info-input-box').each(function () {
+        var $this = $(this);
+    
+        // Click event for .selectbox
+        $this.find('.selectbox').click(function () {
+            var $selectManu = $this.find('.select-manu');
+            var $downArrow = $this.find('.downarrowbtn');
+            var isSelectManuVisible = $selectManu.is(':visible');
+    
+            // Close all other open dropdowns
+            $('.select-manu').not($selectManu).hide();
+            $('.downarrowbtn').not($downArrow).css({ "transform": "" });
+    
+            // Toggle visibility of this dropdown
+            $selectManu.slideToggle();
+            if (!isSelectManuVisible) {
+                $downArrow.css({ "transform": "rotateZ(180deg) translateY(45%)" });
+            } else {
+                $downArrow.css({ "transform": "" }); // Reset to default transform
+            }
+        });
+    
+        // Click event for items in dropdown
+        $this.find('.select-manu li').click(function () {
+            var selectedValue = $(this).text();
+            $this.find('.selectbox').val(selectedValue);
+            $this.find('.select-manu').hide();
+            toggleArrow(false);
+        });
+    
+        // Click event for .downarrowbtn
+        $this.find('.downarrowbtn').click(function (event) {
+            event.stopPropagation(); // Prevent event from bubbling up to document body
+    
+            var $selectManu = $this.find('.select-manu');
+            var isSelectManuVisible = $selectManu.is(':visible');
+    
+            // Close all other open dropdowns
+            $('.select-manu').not($selectManu).hide();
+            $('.downarrowbtn').not($(this)).css({ "transform": "" });
+    
+            // Toggle visibility of this dropdown
+            $selectManu.slideToggle();
+            toggleArrow(!isSelectManuVisible);
+        });
+    
+        // Click event for .infolabel
+        $this.find('.infolabel').click(function () {
+            $('.select-manu').hide();
+            $('.downarrowbtn').css({ "transform": "" }); // Reset arrow transform for all dropdowns
+        });
+    
+        function toggleArrow(isVisible) {
+            var $downArrow = $this.find('.downarrowbtn');
+            if (isVisible) {
+                $downArrow.css({ "transform": "rotateZ(180deg) translateY(45%)" });
+            } else {
+                $downArrow.css({ "transform": "" }); // Reset to default transform
+            }
+        }
+    });
+    
+    // Click event for the document body
+    $(document.body).click(function (event) {
+        // Check if the click was outside of the dropdown or another box
+        if (!$(event.target).closest('.info-input-box').length) {
+            $('.select-manu').hide();
+            $('.downarrowbtn').css({ "transform": "" }); // Reset arrow transform for all dropdowns
+        }
+    });
+    
+
+    
+
+    //select box design area end
 
 
 
