@@ -144,6 +144,21 @@ $(document).ready(function () {
     });
     //contact button area end    
 
+    //password box area
+    $('.look').click(function() {
+        var passwordInput = $(this).siblings('input[type="password"]');
+        var icon = $(this).find(' .fa-eye-slash');
+        
+        if (passwordInput.attr('type') === 'password') {
+            passwordInput.attr('type', 'text');
+            $(this).css('color', '#0ef');
+            icon.removeClass('fa-eye-slash').addClass('fa-eye');
+        } else {
+            passwordInput.attr('type', 'password');
+            $(this).css('color', '');
+            icon.removeClass('fa-eye').addClass('fa-eye-slash');
+        }
+    });
     //welcome screen start
     setTimeout(function () {
         $(".my-profession-heading-main-area").hide();
