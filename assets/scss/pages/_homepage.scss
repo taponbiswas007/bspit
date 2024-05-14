@@ -2063,6 +2063,13 @@
                             color: $black;
                         }
                     }
+                    &:nth-child(1) {
+                        a {
+
+                            padding: 4px 0 0 9px;
+
+                        }
+                    }
                 }
             }
         }

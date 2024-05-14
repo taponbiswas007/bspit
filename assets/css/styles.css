@@ -2258,6 +2258,9 @@ p, h1, h2, h3, h4, h5, h6 {
           box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
   color: #111;
 }
+.footer-wrapper .footer-social-icon-area .social-icon ul li:nth-child(1) a {
+  padding: 4px 0 0 9px;
+}
 .footer-wrapper .copiwrite-area {
   padding: 20px 0;
   margin-top: 40px;
@@ -3163,17 +3166,22 @@ p, h1, h2, h3, h4, h5, h6 {
   background: rgba(17, 17, 17, 0.0666666667);
   z-index: 99999999999;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block {
+.contact-popup-area .contact-popup-main-area {
+  padding: 0 20px;
+}
+.contact-popup-area .contact-popup-main-area #loginArea {
+  height: 540px;
+}
+.contact-popup-area .contact-popup-main-area .contact-details .block {
   position: relative;
-  max-width: 500px;
   width: 100%;
-  height: 400px;
+  height: 100%;
   border-radius: 20px;
   background: -webkit-gradient(linear, left bottom, left top, from(#000), to(#272727));
   background: linear-gradient(0deg, #000, #272727);
   z-index: 2;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block::after {
+.contact-popup-area .contact-popup-main-area .contact-details .block::after {
   content: "";
   position: absolute;
   left: -2px;
@@ -3189,7 +3197,7 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-filter: blur(10px);
           filter: blur(10px);
 }
-.contact-popup-area .contact-popup-main-area .login-area .block::before {
+.contact-popup-area .contact-popup-main-area .contact-details .block::before {
   content: "";
   position: absolute;
   left: -2px;
@@ -3203,7 +3211,7 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-animation: steam 20s linear infinite;
           animation: steam 20s linear infinite;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area {
   position: absolute;
   background: #111;
   inset: 2px;
@@ -3211,7 +3219,7 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 30px;
   border-radius: 20px;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area h1 {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area h1 {
   color: #fbb800;
   font-size: 25px;
   font-family: "Andada Pro", serif;
@@ -3219,24 +3227,24 @@ p, h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   padding-bottom: 10px;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area {
   margin-top: 20px;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area .input-item {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-item {
   margin-bottom: 20px;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area .input-item label {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-item label {
   color: #0ef;
   font-size: 17px;
   font-weight: 400;
   font-family: "Roboto Slab", serif;
   text-transform: capitalize;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area .input-item .input-feild {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-item .input-feild {
   position: relative;
   margin-top: 10px;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area .input-item .input-feild input {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-item .input-feild input {
   width: 100%;
   font-family: "Roboto Slab", serif;
   font-size: 15px;
@@ -3246,12 +3254,12 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #070630;
   color: #ffffff;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area .input-item .input-feild input:focus {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-item .input-feild input:focus {
   -webkit-box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
           box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
   outline: none;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area .input-item textarea {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-item textarea {
   margin-top: 10px;
   width: 100%;
   padding: 10px 20px;
@@ -3262,12 +3270,12 @@ p, h1, h2, h3, h4, h5, h6 {
   resize: none;
   overflow: auto;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area .input-item textarea:focus {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-item textarea:focus {
   -webkit-box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
           box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
   outline: none;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area .input-group {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-group {
   width: 100%;
   position: relative;
   display: -webkit-box;
@@ -3281,18 +3289,18 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 40px;
 }
 @supports (mix-blend-mode: darken) {
-  .contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area .input-group {
+  .contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-group {
     position: relative;
     mix-blend-mode: lighten;
   }
-  .contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area .input-group__label {
+  .contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-group__label {
     position: absolute;
     left: 20px;
     top: -10px;
     background: #000;
   }
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area .input-group__label {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-group__label {
   padding: 0 0.5em;
   margin-bottom: 0.5em;
   color: #0ef;
@@ -3302,7 +3310,7 @@ p, h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   cursor: pointer;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area .input-group__input {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-group__input {
   color: #fff;
   font-size: 1.25rem;
   line-height: 1;
@@ -3320,14 +3328,14 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-transition: background-position 0.4s ease-out;
   transition: background-position 0.4s ease-out;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area .input-group__input:hover {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-group__input:hover {
   background-position: 100% 0;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area .input-group__input:focus {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-group__input:focus {
   -webkit-box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
           box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area .input-group .look {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-group .look {
   color: #0ef;
   font-size: 20px;
   position: absolute;
@@ -3336,10 +3344,10 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area .information-input-area .input-group .look .fa-eye {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-group .look .fa-eye {
   display: none;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area .contactbtn {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .contactbtn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3348,7 +3356,7 @@ p, h1, h2, h3, h4, h5, h6 {
           justify-content: flex-end;
   margin-top: 20px;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area h2 {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area h2 {
   color: #0ef;
   font-family: "Andada Pro", serif;
   font-weight: 500;
@@ -3356,15 +3364,87 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-top: 40px;
   text-align: center;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area h2 button {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area h2 button {
   color: #ffffff;
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
-.contact-popup-area .contact-popup-main-area .login-area .block .content-area h2 button:hover {
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area h2 button:hover {
   color: #fbb800;
+}
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area h3 {
+  color: #ffffff;
+  font-family: "Andada Pro", serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 15px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .footer-social-icon-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .footer-social-icon-area .border {
+  width: 100%;
+}
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .footer-social-icon-area .social-icon {
+  min-width: 110px;
+}
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .footer-social-icon-area .social-icon p {
+  color: #0ef;
+  font-size: 20px;
+  font-family: "Andada Pro", serif;
+  font-style: italic;
+  text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area ul li {
+  display: inline-block;
+}
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area ul li a {
+  display: block;
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 30px;
+  width: 30px;
+  background: #0ef;
+  color: #070630;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 4px 0 0 6px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area ul li a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
+          box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
+  color: #111;
+}
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area ul li:nth-child(1) a {
+  padding: 4px 0 0 9px;
 }
 @keyframes steam {
   0% {
