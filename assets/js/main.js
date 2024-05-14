@@ -311,7 +311,11 @@ $(".toolsbar").click(function(){
 
 
 
-
+   //contact form open area
+   $(".contact-button").click(function(){
+    $('#loginArea').fadeIn();
+    $('.overlay').fadeIn();
+});
 
 
 
@@ -398,3 +402,35 @@ function googleTranslateElementInit() {
     }, 'google_translate_element');
 }
 
+//mobile number area
+function updateCountryCode() {
+    var dropdown = document.getElementById("country-dropdown");
+    var codeInput = document.getElementById("country-code");
+
+    // Get the selected country code
+    var selectedCountry = dropdown.value;
+    var countryCode;
+
+    // Map country codes to their respective mobile codes
+    switch (selectedCountry) {
+        case "US":
+            countryCode = "+1";
+            break;
+        case "UK":
+            countryCode = "+44";
+            break;
+        case "IN":
+            countryCode = "+91";
+            break;
+        case "BAN":
+            countryCode = "+880";
+            break;
+        // Add more cases as needed
+        default:
+            countryCode = "";
+            break;
+    }
+
+    // Update the text field with the selected country's mobile code
+    codeInput.value = countryCode;
+}

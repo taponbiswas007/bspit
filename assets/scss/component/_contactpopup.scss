@@ -10,7 +10,8 @@
     top: 0;
     left: 0;
     z-index: 9999999999;
-}
+    display: none;
+}   
 
 .contact-popup-area {
     position: fixed;
@@ -25,13 +26,15 @@
     z-index: 99999999999;
 
     .contact-popup-main-area {
+     
         padding: 0 20px;
         #loginArea{
             height: 540px;
             display: none;
         }
         #registrationArea{
-            height: 540px; 
+            height: 820px;
+            display: none;
         }
         .contact-details {
             .block {
@@ -237,6 +240,25 @@
 
                                 .fa-eye {
                                     display: none;
+                                }
+                            }
+                            #country-code{
+                                padding-left: 70px;
+                            }
+                            .cuntry-code{
+                                position: absolute;
+                                top: 50%;
+                                left: 7px;
+                                transform: translateY(-50%);
+                                select{
+                                    width: 60px;
+                                    background: transparent;
+                                    color: #0ef;
+                                    font-size: 15px;
+                                    text-transform: uppercase;
+                                    border: none;
+                                    font-weight: 600;
+                                    font-family: $headerfont;
                                 }
                             }
                         }

@@ -117,7 +117,7 @@
                         </p>
                         <h1>Unlock Your <br> online business Potential <br> with <span style="color:#f5ab0c ;">BSP
                                 Digital Solutions</span></h1>
-                        <a class="contact-button" href="contact-page.html">
+                        <a class="contact-button" href="#">
                             <div class="contact-mainbtn-area">
                                 <div class="default-text">contact</div>
                                 <div class="hover-text">contact</div>
@@ -912,12 +912,29 @@
                                     <input type="email" id="myInput" class="input-group__input" placeholder="Enter email" />
                                 </div>
                                 <div class="input-group">
-                                    <label class="input-group__label" for="myInput"><i class="fa-regular fa-envelope m-r"></i>email</label>
-                                    <input type="text" id="myInput" class="input-group__input" placeholder="Enter email" />
+                                    <label class="input-group__label" for="country-code"><i class="fa-solid fa-phone m-r"></i>mobile number</label>
+                                    <input type="text" id="country-code" class="input-group__input" placeholder="Enter mobile number" />
+                                    <div class="cuntry-code">
+                                        <select id="country-dropdown" onchange="updateCountryCode()">
+                                            <option value="BAN">BAN</option>
+                                            <option value="US">Us</option>
+                                            <option value="UK">Uk</option>
+                                            <option value="IN">Ind</option>
+                                            <!-- Add more options as needed -->
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="input-group">
                                     <label class="input-group__label" for="myInput"><i class="fa-solid fa-lock m-r"></i>password</label>
                                     <input type="password" id="myInput" class="input-group__input" placeholder="Enter your password" />
+                                    <button class="look">
+                                        <i class="fa-regular fa-eye p-show"></i>
+                                        <i class="fa-regular fa-eye-slash p-hide"></i>
+                                    </button>
+                                  </div>
+                                <div class="input-group">
+                                    <label class="input-group__label" for="myInput"><i class="fa-solid fa-lock m-r"></i>confirm password</label>
+                                    <input type="password" id="myInput" class="input-group__input" placeholder="Enter confirm password" />
                                     <button class="look">
                                         <i class="fa-regular fa-eye p-show"></i>
                                         <i class="fa-regular fa-eye-slash p-hide"></i>
@@ -928,33 +945,15 @@
                             <div class="contactbtn">
                                 <a class="contact-button" href="#">
                                     <div class="contact-mainbtn-area">
-                                        <div class="default-text">login</div>
-                                        <div class="hover-text">login</div>
+                                        <div class="default-text">sign up</div>
+                                        <div class="hover-text">sign up</div>
                                         <div class="default-bg"></div>
                                         <div class="hover-box"></div>
                                         <div class="box-shadow"></div>
                                     </div>
                                 </a>
                             </div>
-                            <h2>I don't have Account. <button>_Registration</button> </h2>
-                            <h3>or</h3>
-                            <div class="footer-social-icon-area">
-                                <div class="border"></div>
-                                <div class="social-icon">
-                                    <p>login with</p>
-                                  
-                                </div>
-                                <div class="border"></div>
-                            </div>
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa-brands fa-google"></i></a>
-                                </li>
-                               
-                            </ul>
+                            <h2>Already have an Account. <button>_Login</button> </h2>
                         </div>
                     </div>
                 </div>

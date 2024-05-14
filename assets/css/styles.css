@@ -3153,6 +3153,7 @@ p, h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   z-index: 9999999999;
+  display: none;
 }
 
 .contact-popup-area {
@@ -3174,7 +3175,8 @@ p, h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 .contact-popup-area .contact-popup-main-area #registrationArea {
-  height: 540px;
+  height: 820px;
+  display: none;
 }
 .contact-popup-area .contact-popup-main-area .contact-details .block {
   position: relative;
@@ -3350,6 +3352,26 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-group .look .fa-eye {
   display: none;
+}
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-group #country-code {
+  padding-left: 70px;
+}
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-group .cuntry-code {
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-group .cuntry-code select {
+  width: 60px;
+  background: transparent;
+  color: #0ef;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 600;
+  font-family: "Roboto Slab", serif;
 }
 .contact-popup-area .contact-popup-main-area .contact-details .block .content-area .contactbtn {
   display: -webkit-box;
