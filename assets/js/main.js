@@ -146,19 +146,15 @@ $(document).ready(function () {
 
     //password box area
     $('.look').click(function() {
-        var passwordInput = $(this).siblings('input[type="password"]');
-        var icon = $(this).find(' .fa-eye-slash');
-        
-        if (passwordInput.attr('type') === 'password') {
-            passwordInput.attr('type', 'text');
-            $(this).css('color', '#0ef');
-            icon.removeClass('fa-eye-slash').addClass('fa-eye');
+        $(".fa-eye, .fa-eye-slash").toggle();
+        var inputField = $(this).prev("input");
+        if (inputField.attr("type") === "password") {
+            inputField.attr("type", "text");
         } else {
-            passwordInput.attr('type', 'password');
-            $(this).css('color', '');
-            icon.removeClass('fa-eye').addClass('fa-eye-slash');
+            inputField.attr("type", "password");
         }
     });
+    
     //welcome screen start
     setTimeout(function () {
         $(".my-profession-heading-main-area").hide();
