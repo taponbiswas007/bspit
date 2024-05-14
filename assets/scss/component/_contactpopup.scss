@@ -28,6 +28,10 @@
         padding: 0 20px;
         #loginArea{
             height: 540px;
+            display: none;
+        }
+        #registrationArea{
+            height: 540px; 
         }
         .contact-details {
             .block {

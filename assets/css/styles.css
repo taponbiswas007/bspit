@@ -3171,6 +3171,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .contact-popup-area .contact-popup-main-area #loginArea {
   height: 540px;
+  display: none;
+}
+.contact-popup-area .contact-popup-main-area #registrationArea {
+  height: 540px;
 }
 .contact-popup-area .contact-popup-main-area .contact-details .block {
   position: relative;
