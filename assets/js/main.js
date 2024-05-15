@@ -358,9 +358,9 @@ $(document).ready(function () {
   });
 
   //chat box start
+  var chatBox = $('#chatBox');
   var chatBubble = $('#chatBubble');
   var chatIcon = $('#chatIcon');
-  var closeChat = $('#closeChat');
   var chatInput = $('#chatInput');
   var messages = $('#messages');
   var attachFile = $('#attachFile');
@@ -369,15 +369,26 @@ $(document).ready(function () {
   var sendMessage = $('#sendMessage');
 
   // Toggle chat bubble
-  chatIcon.click(function() {
-      chatBubble.show();
-      chatIcon.hide();
-  });
+  const animationDuration = 400; // Adjust the duration as needed
 
-  closeChat.click(function() {
-      chatBubble.hide();
-      chatIcon.show();
+  chatIcon.click(function() {
+      chatBubble.toggle({
+          duration: animationDuration,
+          complete: function() {
+              if (chatBubble.is(':visible')) {
+                  chatBox.animate({ width: '300px', height:'300px' }, animationDuration);
+                  chatBubble.animate({ width: '300px', height:'300px' }, animationDuration);
+              } else {
+                  chatBox.animate({ width: '60px', height: '60px' }, animationDuration);
+                  chatBubble.animate({ width: '0', height: '0' }, animationDuration);
+              }
+          }
+      });
   });
+  
+
+
+  
 
   // Send message
   sendMessage.click(function() {
@@ -420,12 +431,8 @@ $(document).ready(function () {
       alert('Voice recording not implemented yet.');
   });
 
-  // Make chat bubble movable
-//   chatBubble.draggable({
-//       containment: "window"
-//   });
-  $('#chatBubble').draggable();
-  $('#chatIcon').draggable();
+  $('.chatting-box-area').draggable();
+ 
 });
 
 
