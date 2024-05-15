@@ -3619,6 +3619,7 @@ p, h1, h2, h3, h4, h5, h6 {
   right: 30px;
   width: 60px;
   height: 60px;
+  z-index: 10000000000000000000;
 }
 .chatting-box-area .chatbox-main-area {
   position: relative;
@@ -3728,6 +3729,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .chatting-box-area .chatbox-main-area .chat-icon {
   position: absolute;
+  z-index: 10000000000000000000;
   top: 0;
   left: 0;
   width: 60px;
