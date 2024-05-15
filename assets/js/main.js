@@ -358,106 +358,117 @@ $(document).ready(function () {
   });
 
   //chat box start
-  var chatBox = $('#chatBox');
-  var chatBubble = $('#chatBubble');
-  var chatIcon = $('#chatIcon');
-  var chatInput = $('#chatInput');
-  var messages = $('#messages');
-  var attachFile = $('#attachFile');
-  var fileInput = $('#fileInput');
-  var recordVoice = $('#recordVoice');
-  var sendMessage = $('#sendMessage');
+  var chatBox = $("#chatBox");
+  var chatBubble = $("#chatBubble");
+  var chatIcon = $("#chatIcon");
+  var chatInput = $("#chatInput");
+  var messages = $("#messages");
+  var attachFile = $("#attachFile");
+  var fileInput = $("#fileInput");
+  var recordVoice = $("#recordVoice");
+  var sendMessage = $("#sendMessage");
   const animationDuration = 400; // Adjust the duration as needed
-const holdDuration = 300; // Duration to hold before triggering the toggle
-const holdThreshold = 200; // Maximum hold time for toggle and animation to work
-let holdTimer;
-let holdStartTime;
-
-chatIcon.on('mousedown', function() {
+  const holdDuration = 300; // Duration to hold before triggering the toggle
+  const holdThreshold = 200; // Maximum hold time for toggle and animation to work
+  let holdTimer;
+  let holdStartTime;
+  
+  // Function to handle the start of the interaction
+  function handleStart() {
     holdStartTime = new Date().getTime(); // Record the start time
-});
-
-chatIcon.on('mouseup', function() {
+  }
+  
+  // Function to handle the end of the interaction
+  function handleEnd() {
     const holdEndTime = new Date().getTime(); // Record the end time
     const actualHoldDuration = holdEndTime - holdStartTime; // Calculate the hold duration
-
+  
     if (actualHoldDuration < holdThreshold) {
-        holdTimer = setTimeout(function() {
-            chatBubble.toggle({
-                duration: animationDuration,
-                complete: function() {
-                    if (chatBubble.is(':visible')) {
-                        chatBox.animate({ width: '300px', height: '300px' }, animationDuration);
-                        chatBubble.animate({ width: '300px', height: '300px' }, animationDuration);
-                    } else {
-                        chatBox.animate({ width: '60px', height: '60px' }, animationDuration);
-                        chatBubble.animate({ width: '0', height: '0' }, animationDuration);
-                    }
-                }
-            });
-        }, holdDuration);
+      holdTimer = setTimeout(function () {
+        chatBubble.toggle({
+          duration: animationDuration,
+          complete: function () {
+            if (chatBubble.is(":visible")) {
+              chatBox.animate(
+                { width: "300px", height: "300px" },
+                animationDuration
+              );
+              chatBubble.animate(
+                { width: "300px", height: "300px" },
+                animationDuration
+              );
+            } else {
+              chatBox.animate(
+                { width: "60px", height: "60px" },
+                animationDuration
+              );
+              chatBubble.animate(
+                { width: "0", height: "0" },
+                animationDuration
+              );
+            }
+          },
+        });
+      }, holdDuration);
     }
-});
-
-chatIcon.on('mouseleave', function() {
+  }
+  
+  // Bind the start and end events for mouse and touch
+  chatIcon.on("mousedown touchstart", handleStart);
+  chatIcon.on("mouseup touchend", handleEnd);
+  
+  // Clear the timer if the interaction is canceled
+  chatIcon.on("mouseleave touchcancel", function () {
     clearTimeout(holdTimer);
-});
-
-  
-  
-  
-  
-
-
+  });
   
 
   // Send message
-  sendMessage.click(function() {
-      sendMessageHandler();
+  sendMessage.click(function () {
+    sendMessageHandler();
   });
 
-  chatInput.keypress(function(event) {
-      if (event.which == 13) {  // Enter key
-          sendMessageHandler();
-          event.preventDefault();
-      }
+  chatInput.keypress(function (event) {
+    if (event.which == 13) {
+      // Enter key
+      sendMessageHandler();
+      event.preventDefault();
+    }
   });
 
   function sendMessageHandler() {
-      var messageText = chatInput.val().trim();
-      if (messageText) {
-          var messageElement = $('<div class="message"></div>').text(messageText);
-          messages.append(messageElement);
-          chatInput.val('');
-          messages.scrollTop(messages.prop('scrollHeight'));
-      }
+    var messageText = chatInput.val().trim();
+    if (messageText) {
+      var messageElement = $('<div class="message"></div>').text(messageText);
+      messages.append(messageElement);
+      chatInput.val("");
+      messages.scrollTop(messages.prop("scrollHeight"));
+    }
   }
 
   // File attachment
-  attachFile.click(function() {
-      fileInput.click();
+  attachFile.click(function () {
+    fileInput.click();
   });
 
-  fileInput.change(function() {
-      var file = fileInput[0].files[0];
-      if (file) {
-          var messageElement = $('<div class="message"></div>').text('Attached: ' + file.name);
-          messages.append(messageElement);
-          messages.scrollTop(messages.prop('scrollHeight'));
-      }
+  fileInput.change(function () {
+    var file = fileInput[0].files[0];
+    if (file) {
+      var messageElement = $('<div class="message"></div>').text(
+        "Attached: " + file.name
+      );
+      messages.append(messageElement);
+      messages.scrollTop(messages.prop("scrollHeight"));
+    }
   });
 
   // Voice recording (basic placeholder)
-  recordVoice.click(function() {
-      alert('Voice recording not implemented yet.');
+  recordVoice.click(function () {
+    alert("Voice recording not implemented yet.");
   });
 
-  $('.chatting-box-area').draggable();
- 
+  $(".chatting-box-area").draggable();
 });
-
-
-
 
 //sticky border
 window.onscroll = function () {

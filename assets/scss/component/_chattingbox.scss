@@ -16,7 +16,7 @@
           width: 0px;
            // max-width: 80%;
            height: 0px;
-            background-color: white;
+            background-color: #014b4f;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             display: none;
@@ -25,7 +25,7 @@
             z-index: 9999999999999999999;
             .chat-header {
                 padding: 10px;
-            background-color: #0078ff;
+            background-color: #0058bb;
             color: white;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
@@ -43,11 +43,14 @@
                 padding: 10px;
                 display: flex;
                 flex-direction: column;
+                justify-content: flex-end;
+                height: calc(100% - 50px);
                 .messages {
                     flex-grow: 1;
                     overflow-y: auto;
-                   // max-height: 200px;
                     margin-bottom: 10px;
+                    padding: 5px;
+                    text-align: left;
                 }
                 .input-area {
                     display: flex;
