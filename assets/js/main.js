@@ -315,6 +315,31 @@ $(".toolsbar").click(function(){
    $(".contact-button").click(function(){
     $('#loginArea').fadeIn();
     $('.overlay').fadeIn();
+    $('.blur-bg').css('filter','blur(4px)');
+});
+   $(".overlay").click(function(){
+    $('#loginArea').fadeOut();
+    $('#registrationArea').fadeOut();
+    $('.overlay').fadeOut();
+    $('.blur-bg').css('filter','blur(0px');
+});
+   $(".registrationhere").click(function(){
+    $('#loginArea').hide();
+    $('#registrationArea').show();
+
+    
+});
+   $(".loginhere").click(function(){
+    $('#loginArea').show();
+    $('#registrationArea').hide();
+
+    
+});
+   $(".singup").click(function(){
+    $('#loginArea').show();
+    $('#registrationArea').hide();
+
+    
 });
 
 
