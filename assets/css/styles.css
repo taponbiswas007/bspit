@@ -3730,4 +3730,7 @@ p, h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   overflow: hidden;
   z-index: 10000000000000000000;
+  background: #0ef;
+  -webkit-box-shadow: rgba(0, 238, 220, 0.1);
+          box-shadow: rgba(0, 238, 220, 0.1);
 }/*# sourceMappingURL=styles.css.map */

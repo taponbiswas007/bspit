@@ -367,24 +367,45 @@ $(document).ready(function () {
   var fileInput = $('#fileInput');
   var recordVoice = $('#recordVoice');
   var sendMessage = $('#sendMessage');
-
-  // Toggle chat bubble
   const animationDuration = 400; // Adjust the duration as needed
+const holdDuration = 300; // Duration to hold before triggering the toggle
+const holdThreshold = 200; // Maximum hold time for toggle and animation to work
+let holdTimer;
+let holdStartTime;
 
-  chatIcon.click(function() {
-      chatBubble.toggle({
-          duration: animationDuration,
-          complete: function() {
-              if (chatBubble.is(':visible')) {
-                  chatBox.animate({ width: '300px', height:'300px' }, animationDuration);
-                  chatBubble.animate({ width: '300px', height:'300px' }, animationDuration);
-              } else {
-                  chatBox.animate({ width: '60px', height: '60px' }, animationDuration);
-                  chatBubble.animate({ width: '0', height: '0' }, animationDuration);
-              }
-          }
-      });
-  });
+chatIcon.on('mousedown', function() {
+    holdStartTime = new Date().getTime(); // Record the start time
+});
+
+chatIcon.on('mouseup', function() {
+    const holdEndTime = new Date().getTime(); // Record the end time
+    const actualHoldDuration = holdEndTime - holdStartTime; // Calculate the hold duration
+
+    if (actualHoldDuration < holdThreshold) {
+        holdTimer = setTimeout(function() {
+            chatBubble.toggle({
+                duration: animationDuration,
+                complete: function() {
+                    if (chatBubble.is(':visible')) {
+                        chatBox.animate({ width: '300px', height: '300px' }, animationDuration);
+                        chatBubble.animate({ width: '300px', height: '300px' }, animationDuration);
+                    } else {
+                        chatBox.animate({ width: '60px', height: '60px' }, animationDuration);
+                        chatBubble.animate({ width: '0', height: '0' }, animationDuration);
+                    }
+                }
+            });
+        }, holdDuration);
+    }
+});
+
+chatIcon.on('mouseleave', function() {
+    clearTimeout(holdTimer);
+});
+
+  
+  
+  
   
 
 
