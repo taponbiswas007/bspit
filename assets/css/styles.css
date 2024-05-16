@@ -1871,11 +1871,9 @@ p, h1, h2, h3, h4, h5, h6 {
 .askanything-wrapper {
   padding-top: 50px;
   padding-bottom: 50px;
-  background: url(../images/3d-logo.jpg) no-repeat 0 0/100% 100%;
   margin-top: 40px;
 }
 .askanything-wrapper .askanything-main-area {
-  background: rgba(0, 0, 0, 0.5);
   padding: 30px;
 }
 .askanything-wrapper .askanything-main-area h1 {
@@ -3720,4 +3718,4 @@ p, h1, h2, h3, h4, h5, h6 {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
-}/*# sourceMappingURL=styles.css.map */
+}

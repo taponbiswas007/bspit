@@ -138,7 +138,7 @@
                                     padding: 10px 20px;
                                     border-radius: 7px;
                                     border: 2px solid #0ef;
-                                    background: $background1;
+                                    background: $darkbackground;
                                     color: $white;
 
                                     &:focus {
@@ -155,7 +155,7 @@
                                 padding: 10px 20px;
                                 border-radius: 7px;
                                 border: 2px solid #0ef;
-                                background: $background1;
+                                background: $darkbackground;
                                 color: $white;
                                 resize: none;
                                 overflow: auto;
@@ -336,8 +336,8 @@
                                 margin-left: 10px;
                                 height: 30px;
                                 width: 30px;
-                                background: $yellow;
-                                color: $background1;
+                                background: $cyan;
+                                color: $darkfontcolor;
                                 border-radius: 50%;
                                 font-size: 20px;
                                 padding: 4px 0 0 6px;

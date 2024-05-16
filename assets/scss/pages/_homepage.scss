@@ -9,7 +9,7 @@
     position: sticky;
     top: 0;
     z-index: 9999999999999999;
-    background: $background1;
+    background: $darkbackground;
     border-bottom: 1px solid transparent;
 
     .header-main-content {
@@ -49,7 +49,7 @@
                         }
 
                         .navlink {
-                            color: $white;
+                            color: $lightfontcolor;
                             font-size: 20px;
                             font-weight: 400;
                             font-family: $headerfont;
@@ -59,11 +59,11 @@
 
                             // -webkit-text-stroke: .3px navy;
                             &:hover {
-                                color: $yellow;
+                                color: $cyan;
 
                                 &::after {
                                     content: " ";
-                                    background: $yellow;
+                                    background: $cyan;
                                     height: 2px;
                                     width: 100%;
                                     position: absolute;
@@ -84,16 +84,16 @@
                             }
 
                             &:focus {
-                                color: $yellow;
+                                color: $cyan;
                             }
                         }
 
                         .active {
-                            color: $yellow;
+                            color: $cyan;
 
                             &::after {
                                 content: " ";
-                                background: $yellow;
+                                background: $cyan;
                                 height: 2px;
                                 width: 100%;
                                 position: absolute;
@@ -138,8 +138,7 @@
 
                         .project-complete {
                             font-family: $mainfont;
-                            color: $white;
-                            //border: 2px solid $white;
+                            color: $lightfontcolor;
                             background: transparent;
                             display: flex;
                             justify-content: center;
@@ -268,7 +267,7 @@
 
             .toggleclose {
                 cursor: pointer;
-                color: $background1;
+                color: $darkbackground;
                 font-size: 30px;
                 position: absolute;
                 top: 25px;
@@ -283,7 +282,7 @@
                 display: none;
 
                 &:hover {
-                    color: #42e599;
+                    color: $cyan;
                 }
 
                 .close {
@@ -295,7 +294,7 @@
 
         .togglebar {
             cursor: pointer;
-            color: $background1;
+            color: $darkbackground;
             font-size: 30px;
             background: rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
@@ -320,7 +319,7 @@
 
 .header-and-banner {
 
-    background: $background1;
+    background: $darkbackground;
     position: relative;
     overflow: hidden;
 
@@ -373,7 +372,7 @@
                         &:nth-child(2) {
                             animation: item2 ease 0.5s forwards;
                             animation-delay: 0.5s;
-                            color: $yellow;
+                            color: $cyan;
 
                             @keyframes item2 {
                                 0% {
@@ -458,7 +457,7 @@
                     }
 
                     .name {
-                        color: $white;
+                        color: $black;
                         font-family: $mainfont;
                         font-weight: 700;
                         font-size: 30px;
@@ -992,7 +991,7 @@
                 h1 {
                     font-family: $mainfont;
                     font-size: 20px;
-                    color: $background1;
+                    color: $darkfontcolor;
                     font-weight: 600;
                     text-transform: capitalize;
                 }
@@ -1023,7 +1022,7 @@
 
                     span {
                         font-weight: 700;
-                        color: $yellow;
+                        color: $cyan;
                     }
                 }
             }
@@ -1036,7 +1035,7 @@
 }
 
 .ourservice-wrapper {
-    background: $background1;
+    background: $darkbackground;
     padding: 100px 0;
 
     .service-header {
@@ -1084,7 +1083,7 @@
 
                     .content-list {
                         .list-item {
-                            color: $background1;
+                            color: $darkbackground;
                             text-transform: capitalize;
                             font-size: 20px;
                             font-family: $mainfont;
@@ -1169,7 +1168,7 @@
 
                         button {
                             background: $white;
-                            color: $background1;
+                            color: $darkbackground;
                             border-radius: 50%;
                             padding: 5px 6px;
                             font-size: 10px;
@@ -1184,7 +1183,7 @@
 
                     &:hover .gobtn {
                         transition: 0.5s ease;
-                        background: $yellow;
+                        background: $cyan;
                         box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
                         left: 50%;
                         transform: scale(2);
@@ -1409,7 +1408,7 @@
 .testimonials-wrapper {
     background: $white;
     padding: 100px 0;
-    background: $background1;
+    background: $darkbackground;
 
     .service-header {
         h1 {
@@ -1454,7 +1453,7 @@
 
                     .content-list {
                         .list-item {
-                            color: $background1;
+                            color: $darkbackground;
                             text-transform: capitalize;
                             font-size: 20px;
                             font-family: $mainfont;
@@ -1617,7 +1616,7 @@
 
                 .swiper-pagination-bullet-active {
                     width: 15px;
-                    background: $yellow;
+                    background: $cyan;
                     border-radius: 5px;
                 }
             }
@@ -1658,11 +1657,11 @@
 .askanything-wrapper {
     padding-top: 50px;
     padding-bottom: 50px;
-    background: url(../images/3d-logo.jpg) no-repeat 0 0 / 100% 100%;
+   // background: url(../images/3d-logo.jpg) no-repeat 0 0 / 100% 100%;
     margin-top: 40px;
 
     .askanything-main-area {
-        background: rgba(0, 0, 0, 0.5);
+       // background: rgba(0, 0, 0, 0.5);
         padding: 30px;
 
         h1 {
@@ -1700,7 +1699,7 @@
 
                         .content-list {
                             .list-item {
-                                color: $white;
+                                color: $darkfontcolor;
                                 text-transform: capitalize;
                                 font-size: 20px;
                                 font-family: $mainfont;
@@ -1726,7 +1725,7 @@
                 .question-item {
                     padding: 15px;
                     cursor: pointer;
-                    border-bottom: 2px solid $white;
+                    border-bottom: 2px solid $black;
                     padding-left: 0;
                     margin-bottom: 8px;
                     position: relative;
@@ -1746,7 +1745,7 @@
                     }
 
                     li {
-                        color: $white;
+                        color: $darkfontcolor;
                         font-family: $lato;
                         font-size: 18px;
                         font-weight: 600;
@@ -1869,7 +1868,7 @@
                                     padding-top: 10px;
 
                                     .questionmark {
-                                        color: $background1;
+                                        color: $black;
                                         font-size: 70px;
                                     }
                                 }
@@ -1934,12 +1933,12 @@
             li{
                 font-family: $mainfont;
                 font-size: 20px;
-                color: $background1;
+                color: $darkfontcolor;
                 text-align: center;
                 text-transform: capitalize;
                 margin-bottom: 10px;
                 .clienticon-shape{
-                    background: $background1;
+                    background: $darkbackground;
                    padding: 10px;
                    border-radius: 10px;
                    height: 50px;
@@ -1955,7 +1954,7 @@
 }
 .footer-wrapper {
     margin-top: 50px;
-    background: $background1;
+    background: $darkbackground;
     padding: 50px 0;
 
     .customer-logo-area {
@@ -2026,7 +2025,7 @@
                             padding: 10px 20px;
                             border-radius: 7px;
                             border: 2px solid #0ef;
-                            background: $background1;
+                            background: $darkbackground;
                             color: $white;
 
                             &:focus{
@@ -2083,8 +2082,8 @@
                         margin-left: 10px;
                         height: 30px;
                         width: 30px;
-                        background: $yellow;
-                        color: $background1;
+                        background: $cyan;
+                        color: $darkbackground;
                         border-radius: 50%;
                         font-size: 20px;
                         padding: 4px 0 0 6px;
@@ -2435,7 +2434,7 @@
                             a {
                                 display: block;
                                 width: 100%;
-                                background: $yellow;
+                                background: $cyan;
                                 color: $black !important;
                                 padding: 10px;
 
