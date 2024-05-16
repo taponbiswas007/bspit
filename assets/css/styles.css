@@ -2500,6 +2500,15 @@ p, h1, h2, h3, h4, h5, h6 {
   .askanything-wrapper .askanything-main-area .question-area .right {
     width: 100%;
   }
+  .happy-client-wrapper .client-main-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .happy-client-wrapper .client-main-area .client-item {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 420px) {
   .header .header-main-content .navbar nav {
