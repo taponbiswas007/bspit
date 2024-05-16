@@ -356,7 +356,35 @@ $(document).ready(function () {
     $("#loginArea").show();
     $("#registrationArea").hide();
   });
+  //happy customer counter box start
+  var counting = false;
 
+    function countUp(element, start, end, duration) {
+      var current = start;
+      var increment = end > start ? 1 : -1;
+      var stepTime = Math.abs(Math.floor(duration / (end - start)));
+      
+      var timer = setInterval(function() {
+        current += increment;
+        $(element).text(current);
+        if (current == end) {
+          clearInterval(timer);
+        }
+      }, stepTime);
+    }
+
+    $(window).on('scroll', function() {
+      if (!counting) {
+        counting = true;
+        countUp('.totalnumber', 0, 170, 2000);
+        countUp('.happyclient', 0, 150, 2000);
+        countUp('.nocomment', 0, 20, 2000);
+        setTimeout(function() {
+          counting = false;
+        }, 2000); // prevent counting multiple times in quick succession
+      }
+    });
+  //happy customer counter box end
   //chat box start
   var chatBox = $("#chatBox");
   var chatBubble = $("#chatBubble");
