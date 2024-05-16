@@ -28,7 +28,7 @@
 @mixin defaultbg{
     position: absolute;
     inset: 1px 2px;
-    background: $yellow;
+    background: $cyan;
     z-index: 3;
 }
 @mixin boxshadow{

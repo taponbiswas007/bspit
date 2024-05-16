@@ -157,14 +157,19 @@ $(document).ready(function () {
 
   //password box area
   $(".look").click(function () {
-    $(".fa-eye, .fa-eye-slash").toggle();
+    // Find the icons and toggle their visibility within the clicked element's parent
+    $(this).find(".fa-eye, .fa-eye-slash").toggle();
+    
+    // Find the previous input field within the same parent and toggle its type
     var inputField = $(this).prev("input");
     if (inputField.attr("type") === "password") {
-      inputField.attr("type", "text");
+        inputField.attr("type", "text");
     } else {
-      inputField.attr("type", "password");
+        inputField.attr("type", "password");
     }
-  });
+});
+
+  
 
   //welcome screen start
   setTimeout(function () {
@@ -359,31 +364,31 @@ $(document).ready(function () {
   //happy customer counter box start
   var counting = false;
 
-    function countUp(element, start, end, duration) {
-      var current = start;
-      var increment = end > start ? 1 : -1;
-      var stepTime = Math.abs(Math.floor(duration / (end - start)));
-      
-      var timer = setInterval(function() {
-        current += increment;
-        $(element).text(current);
-        if (current == end) {
-          clearInterval(timer);
-        }
-      }, stepTime);
-    }
+  function countUp(element, start, end, duration) {
+    var current = start;
+    var increment = end > start ? 1 : -1;
+    var stepTime = Math.abs(Math.floor(duration / (end - start)));
 
-    $(window).on('scroll', function() {
-      if (!counting) {
-        counting = true;
-        countUp('.totalnumber', 0, 170, 2000);
-        countUp('.happyclient', 0, 150, 2000);
-        countUp('.nocomment', 0, 20, 2000);
-        setTimeout(function() {
-          counting = false;
-        }, 2000); // prevent counting multiple times in quick succession
+    var timer = setInterval(function () {
+      current += increment;
+      $(element).text(current);
+      if (current == end) {
+        clearInterval(timer);
       }
-    });
+    }, stepTime);
+  }
+
+  $(window).on('scroll', function () {
+    if (!counting) {
+      counting = true;
+      countUp('.totalnumber', 0, 170, 2000);
+      countUp('.happyclient', 0, 150, 2000);
+      countUp('.nocomment', 0, 20, 2000);
+      setTimeout(function () {
+        counting = false;
+      }, 2000); // prevent counting multiple times in quick succession
+    }
+  });
   //happy customer counter box end
   //chat box start
   var chatBox = $("#chatBox");
@@ -394,17 +399,17 @@ $(document).ready(function () {
   const holdThreshold = 200; // Maximum hold time for toggle and animation to work
   let holdTimer;
   let holdStartTime;
-  
+
   // Function to handle the start of the interaction
   function handleStart() {
     holdStartTime = new Date().getTime(); // Record the start time
   }
-  
+
   // Function to handle the end of the interaction
   function handleEnd() {
     const holdEndTime = new Date().getTime(); // Record the end time
     const actualHoldDuration = holdEndTime - holdStartTime; // Calculate the hold duration
-  
+
     if (actualHoldDuration < holdThreshold) {
       holdTimer = setTimeout(function () {
         chatBubble.toggle({
@@ -434,22 +439,22 @@ $(document).ready(function () {
       }, holdDuration);
     }
   }
-  
+
   // Function to handle interaction cancellation
   function handleCancel() {
     clearTimeout(holdTimer);
   }
-  
+
   // Bind the start and end events for mouse and touch
   chatIcon.on("mousedown touchstart", handleStart);
   chatIcon.on("mouseup touchend", handleEnd);
   chatIcon.on("mouseleave touchcancel", handleCancel);
-  
+
   // Ensure touch events work inside the chatBubble
   chatBubble.on("touchstart touchend touchmove", function (e) {
     e.stopPropagation(); // Prevent touch events from bubbling up to chatIcon
   });
-  
+
 
   $(".chatting-box-area").draggable();
 });
