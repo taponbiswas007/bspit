@@ -353,7 +353,7 @@ p, h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 .header .header-main-content .navbar .toggleclose:hover {
-  color: #42e599;
+  color: #0ef;
 }
 .header .header-main-content .navbar .toggleclose .close {
   margin-top: 5px;
@@ -588,14 +588,14 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 .header-and-banner .banner-animation-area .banner-animation-main-area .my-profession-heading .owner-name-area .owner-name-bg {
-  background: #0ef;
+  background: #f5ab0c;
   position: absolute;
   top: 0;
   bottom: 0;
   z-index: 1;
 }
 .header-and-banner .banner-animation-area .banner-animation-main-area .my-profession-heading .owner-name-area .name {
-  color: #ffffff;
+  color: #111;
   font-family: "Andada Pro", serif;
   font-weight: 700;
   font-size: 30px;
@@ -1177,7 +1177,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .about-wrapper .about-area .images-side .images-main-area .images-item .images {
   height: 400px;
-  background: #0ef;
+  background: #f5ab0c;
   border-radius: 10px;
 }
 .about-wrapper .about-area .images-side .images-main-area .images-item .images img {
@@ -1293,7 +1293,7 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 40px;
   width: 120px !important;
   overflow: hidden;
-  background: #0ef;
+  background: #f5ab0c;
   -webkit-box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
           box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
   margin: 0;
@@ -1593,7 +1593,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .ourportfulio-wrapper .portfulio-slider-area .swiper .swiper-pagination .swiper-pagination-bullet-active {
   width: 15px;
-  background: #0ef;
+  background: #f5ab0c;
   border-radius: 5px;
 }
 .ourportfulio-wrapper .portfulio-slider-area .swiper .autoplay-progress {
@@ -1915,7 +1915,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 .askanything-wrapper .askanything-main-area .service-area-description .content .content-main-area .content-list-container .content-list .list-item {
-  color: #ffffff;
+  color: #070630;
   text-transform: capitalize;
   font-size: 20px;
   font-family: "Andada Pro", serif;
@@ -1940,7 +1940,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .askanything-wrapper .askanything-main-area .question-area .left .question-item {
   padding: 15px;
   cursor: pointer;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #111;
   padding-left: 0;
   margin-bottom: 8px;
   position: relative;
@@ -1958,7 +1958,7 @@ p, h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 .askanything-wrapper .askanything-main-area .question-area .left .question-item li {
-  color: #ffffff;
+  color: #070630;
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -2062,7 +2062,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .askanything-wrapper .askanything-main-area .question-area .right .different-questions-area .block .content-area .content-header span {
   display: block;
-  background: #0ef;
+  background: #f5ab0c;
   height: 100px;
   width: 100px;
   border-radius: 50%;
@@ -2070,7 +2070,7 @@ p, h1, h2, h3, h4, h5, h6 {
   padding-top: 10px;
 }
 .askanything-wrapper .askanything-main-area .question-area .right .different-questions-area .block .content-area .content-header span .questionmark {
-  color: #070630;
+  color: #111;
   font-size: 70px;
 }
 .askanything-wrapper .askanything-main-area .question-area .right .different-questions-area .block .content-area h1 {
@@ -2385,7 +2385,7 @@ p, h1, h2, h3, h4, h5, h6 {
   .header .header-main-content .navbar nav ul li a {
     display: block;
     width: 100%;
-    background: #0ef;
+    background: #f5ab0c;
     color: #111 !important;
     padding: 10px;
   }
@@ -2652,11 +2652,11 @@ p, h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .header .contact-header-main-content .navbar nav ul li .navlink:hover {
-  color: #0ef;
+  color: #f5ab0c;
 }
 .header .contact-header-main-content .navbar nav ul li .navlink:hover::after {
   content: " ";
-  background: #0ef;
+  background: #f5ab0c;
   height: 2px;
   width: 100%;
   position: absolute;
@@ -2674,14 +2674,14 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 .header .contact-header-main-content .navbar nav ul li .navlink:focus {
-  color: #0ef;
+  color: #f5ab0c;
 }
 .header .contact-header-main-content .navbar nav ul li .active {
-  color: #0ef;
+  color: #f5ab0c;
 }
 .header .contact-header-main-content .navbar nav ul li .active::after {
   content: " ";
-  background: #0ef;
+  background: #f5ab0c;
   height: 2px;
   width: 100%;
   position: absolute;
@@ -3064,7 +3064,7 @@ p, h1, h2, h3, h4, h5, h6 {
   .header .contact-header-main-content .navbar nav ul li a {
     display: block;
     width: 100%;
-    background: #0ef;
+    background: #f5ab0c;
     color: #111 !important;
     padding: 10px;
   }
@@ -3101,7 +3101,7 @@ p, h1, h2, h3, h4, h5, h6 {
   .header .contact-header-main-content .navbar nav ul li a {
     display: block;
     width: 100%;
-    background: #0ef;
+    background: #f5ab0c;
     color: #111 !important;
     padding: 10px;
   }
@@ -3511,7 +3511,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .contact-button .contact-mainbtn-area .default-bg {
   position: absolute;
   inset: 1px 2px;
-  background: #0ef;
+  background: #f5ab0c;
   z-index: 3;
   -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
           transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -3575,7 +3575,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .contact-buttonwhite .contact-mainbtn-area .default-bg {
   position: absolute;
   inset: 1px 2px;
-  background: #0ef;
+  background: #f5ab0c;
   z-index: 3;
   -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
           transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
