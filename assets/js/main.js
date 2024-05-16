@@ -366,17 +366,17 @@ $(document).ready(function () {
   const holdThreshold = 200; // Maximum hold time for toggle and animation to work
   let holdTimer;
   let holdStartTime;
-
+  
   // Function to handle the start of the interaction
   function handleStart() {
     holdStartTime = new Date().getTime(); // Record the start time
   }
-
+  
   // Function to handle the end of the interaction
   function handleEnd() {
     const holdEndTime = new Date().getTime(); // Record the end time
     const actualHoldDuration = holdEndTime - holdStartTime; // Calculate the hold duration
-
+  
     if (actualHoldDuration < holdThreshold) {
       holdTimer = setTimeout(function () {
         chatBubble.toggle({
@@ -406,15 +406,22 @@ $(document).ready(function () {
       }, holdDuration);
     }
   }
-
+  
+  // Function to handle interaction cancellation
+  function handleCancel() {
+    clearTimeout(holdTimer);
+  }
+  
   // Bind the start and end events for mouse and touch
   chatIcon.on("mousedown touchstart", handleStart);
   chatIcon.on("mouseup touchend", handleEnd);
-
-  // Clear the timer if the interaction is canceled
-  chatIcon.on("mouseleave touchcancel", function () {
-    clearTimeout(holdTimer);
+  chatIcon.on("mouseleave touchcancel", handleCancel);
+  
+  // Ensure touch events work inside the chatBubble
+  chatBubble.on("touchstart touchend touchmove", function (e) {
+    e.stopPropagation(); // Prevent touch events from bubbling up to chatIcon
   });
+  
 
   $(".chatting-box-area").draggable();
 });
