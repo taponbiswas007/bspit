@@ -1168,24 +1168,17 @@ p, h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.about-wrapper .about-area .images-side .images-main-area .images-item h1 {
-  font-size: 20px;
-  color: #111;
-  font-family: "Andada Pro", serif;
-  font-weight: 500;
-  text-align: center;
-  margin-top: 20px;
-}
 .about-wrapper .about-area .images-side .images-main-area .images-item .images {
-  height: 400px;
-  background: #f5ab0c;
+  height: 500px;
+  background: -webkit-gradient(linear, left bottom, left top, from(yellow), color-stop(pink), color-stop(blue), to(cyan));
+  background: linear-gradient(360deg, yellow, pink, blue, cyan);
   border-radius: 10px;
 }
 .about-wrapper .about-area .images-side .images-main-area .images-item .images img {
@@ -1194,7 +1187,30 @@ p, h1, h2, h3, h4, h5, h6 {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.about-wrapper .about-area .content-side {
+.about-wrapper .about-area .images-side .images-main-area .images-item .owner-details {
+  background: #070630;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+}
+.about-wrapper .about-area .images-side .images-main-area .images-item .owner-details h3 {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+}
+.about-wrapper .about-area .images-side .images-main-area .images-item .owner-details h1 {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+}
+.about-wrapper .about-area .images-side .images-main-area .images-item .owner-details h2 {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+}
+.about-wrapper .content-side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1209,42 +1225,42 @@ p, h1, h2, h3, h4, h5, h6 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.about-wrapper .about-area .content-side .about-header {
+.about-wrapper .content-side .about-header {
   overflow: hidden;
 }
-.about-wrapper .about-area .content-side .about-header h1 {
+.about-wrapper .content-side .about-header h1 {
   font-family: "Andada Pro", serif;
   font-size: 20px;
   color: #070630;
   font-weight: 600;
   text-transform: capitalize;
 }
-.about-wrapper .about-area .content-side .about-subheader {
+.about-wrapper .content-side .about-subheader {
   margin-top: 20px;
   overflow: hidden;
 }
-.about-wrapper .about-area .content-side .about-subheader h2 {
+.about-wrapper .content-side .about-subheader h2 {
   font-family: "Andada Pro", serif;
   font-size: 30px;
   color: #111;
   font-weight: 600;
 }
-.about-wrapper .about-area .content-side .about-description {
+.about-wrapper .content-side .about-description {
   margin-top: 60px;
   overflow: hidden;
 }
-.about-wrapper .about-area .content-side .about-description p {
+.about-wrapper .content-side .about-description p {
   color: #7e7e7e;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
 }
-.about-wrapper .about-area .content-side .about-description p span {
+.about-wrapper .content-side .about-description p span {
   font-weight: 700;
   color: #0ef;
 }
-.about-wrapper .about-area .content-side .contact-us-button {
+.about-wrapper .content-side .contact-us-button {
   margin-top: 15px;
 }
 
