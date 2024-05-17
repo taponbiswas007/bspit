@@ -107,158 +107,164 @@
 
             .my-responsive-images-area {
                 display: none;
+                width: 100%;
 
-                .banner-right {
-                    height: 100%;
+                .imagesmainarea {
                     display: flex;
                     justify-content: center;
-                    align-items: center;
-                    width: 50%;
 
-                    .myimg-area {
-                        height: 350px;
-                        width: 350px;
-                        border-radius: 50%;
-                        //border: 2px solid $white;
-                        background-color: rgba(0, 0, 0, 0.4);
-                        position: relative;
-                        object-fit: cover;
+                    .banner-right {
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
 
-                        img {
-                            transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                            opacity: 1;
-                            transform-style: preserve-3d;
-                            filter: brightness(100%) saturate(148%);
-                            position: absolute;
-                            bottom: 35px;
-                            z-index: 1;
-                            width: 291px;
-                            left: 30px;
-                        }
 
-                        .project-complete {
-                            font-family: $mainfont;
-                            color: $lightfontcolor;
-                            background: transparent;
-                            display: flex;
-                            justify-content: center;
-                            align-items: flex-start;
-                            flex-direction: column;
-                            row-gap: 7px;
-                            padding: 5px;
-                            text-transform: capitalize;
-                            position: absolute;
-                            right: 100px;
-                            bottom: -57px;
-
-                            z-index: 2;
-                        }
-
-                        .snowfall {
-                            background: url(../images/whiteball.png);
-                            background-size: 350px 200px;
-                            background-repeat: repeat;
-
-                            position: absolute;
-
-                            inset: 0;
+                        .myimg-area {
+                            height: 350px;
+                            width: 350px;
                             border-radius: 50%;
-                            animation: snowfall 5s linear forwards infinite;
-                            -webkit-animation: snowfall 5s linear forwards infinite;
-                        }
+                            //border: 2px solid $white;
+                            background-color: rgba(0, 0, 0, 0.4);
+                            position: relative;
+                            object-fit: cover;
 
-                        @keyframes snowfall {
-                            0% {
-                                background-position: 0 0;
+                            img {
+                                transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                                opacity: 1;
+                                transform-style: preserve-3d;
+                                filter: brightness(100%) saturate(148%);
+                                position: absolute;
+                                bottom: 35px;
+                                z-index: 1;
+                                width: 291px;
+                                left: 30px;
                             }
 
-                            20% {
-                                background-position: 20px 20px;
+                            .project-complete {
+                                font-family: $mainfont;
+                                color: $lightfontcolor;
+                                background: transparent;
+                                display: flex;
+                                justify-content: center;
+                                align-items: flex-start;
+                                flex-direction: column;
+                                row-gap: 7px;
+                                padding: 5px;
+                                text-transform: capitalize;
+                                position: absolute;
+                                right: 100px;
+                                bottom: -57px;
+
+                                z-index: 2;
                             }
 
-                            40% {
-                                background-position: 40px 40px;
+                            .snowfall {
+                                background: url(../images/whiteball.png);
+                                background-size: 350px 200px;
+                                background-repeat: repeat;
+
+                                position: absolute;
+
+                                inset: 0;
+                                border-radius: 50%;
+                                animation: snowfall 5s linear forwards infinite;
+                                -webkit-animation: snowfall 5s linear forwards infinite;
                             }
 
-                            60% {
-                                background-position: 60px 60px;
+                            @keyframes snowfall {
+                                0% {
+                                    background-position: 0 0;
+                                }
+
+                                20% {
+                                    background-position: 20px 20px;
+                                }
+
+                                40% {
+                                    background-position: 40px 40px;
+                                }
+
+                                60% {
+                                    background-position: 60px 60px;
+                                }
+
+                                80% {
+                                    background-position: 80px 80px;
+                                }
+
+                                100% {
+                                    background-position: 100px 100px;
+                                }
                             }
 
-                            80% {
-                                background-position: 80px 80px;
+                            @-webkit-keyframes snowfall {
+                                0% {
+                                    background-position: 0 0;
+                                }
+
+                                20% {
+                                    background-position: 20px 20px;
+                                }
+
+                                40% {
+                                    background-position: 40px 40px;
+                                }
+
+                                60% {
+                                    background-position: 60px 60px;
+                                }
+
+                                80% {
+                                    background-position: 80px 80px;
+                                }
+
+                                100% {
+                                    background-position: 100px 100px;
+                                }
                             }
 
-                            100% {
-                                background-position: 100px 100px;
-                            }
-                        }
-
-                        @-webkit-keyframes snowfall {
-                            0% {
-                                background-position: 0 0;
-                            }
-
-                            20% {
-                                background-position: 20px 20px;
+                            .snow {
+                                height: 40px;
+                                width: 235px;
+                                background-color: white;
+                                position: absolute;
+                                left: 60px;
+                                top: 315px;
+                                border-radius: 8px;
                             }
 
-                            40% {
-                                background-position: 40px 40px;
-                            }
+                            .bottom {
 
-                            60% {
-                                background-position: 60px 60px;
-                            }
+                                background-color: #ca0404;
+                                height: 70px;
+                                width: 260px;
+                                position: absolute;
 
-                            80% {
-                                background-position: 80px 80px;
-                            }
+                                top: 100%;
+                                left: 47px;
 
-                            100% {
-                                background-position: 100px 100px;
-                            }
-                        }
+                                .bt1 {
 
-                        .snow {
-                            height: 40px;
-                            width: 235px;
-                            background-color: white;
-                            position: absolute;
-                            left: 60px;
-                            top: 315px;
-                            border-radius: 8px;
-                        }
+                                    background-color: #ff1919;
+                                    height: 20px;
+                                    width: 280px;
+                                    position: relative;
+                                    right: 10px;
+                                    border-radius: 10px;
+                                    bottom: 12px;
+                                }
 
-                        .bottom {
+                                .bt2 {
 
-                            background-color: #ca0404;
-                            height: 70px;
-                            width: 260px;
-                            position: absolute;
-
-                            top: 100%;
-                            left: 47px;
-
-                            .bt1 {
-
-                                background-color: #ff1919;
-                                height: 20px;
-                                width: 280px;
-                                position: relative;
-                                right: 10px;
-                                border-radius: 10px;
-                                bottom: 12px;
-                            }
-
-                            .bt2 {
-
-                                background-color: #ff1919;
-                                height: 20px;
-                                width: 280px;
-                                position: relative;
-                                right: 10px;
-                                border-radius: 10px;
-                                top: 40px;
+                                    background-color: #ff1919;
+                                    height: 20px;
+                                    width: 280px;
+                                    position: relative;
+                                    right: 10px;
+                                    border-radius: 10px;
+                                    top: 40px;
+                                }
                             }
                         }
                     }
@@ -1553,7 +1559,8 @@
                                 text-align: center;
                                 padding: 40px;
                                 line-height: 20px;
-                                .quotemark{
+
+                                .quotemark {
                                     font-size: 30px;
                                     margin: 0 10px;
                                 }
@@ -1722,6 +1729,7 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 40px;
+
             .left {
                 width: 50%;
 
@@ -2216,6 +2224,7 @@
                             width: 100%;
                             margin-bottom: 20px;
                             text-align: center;
+
                             &:last-child {
                                 display: none;
                             }
@@ -2223,12 +2232,12 @@
                             a {
                                 display: block;
                                 width: 100%;
-                               // background: $yellow;
-                               // color: $black !important;
+                                // background: $yellow;
+                                // color: $black !important;
                                 padding: 10px;
 
                                 &:hover {
-                                   // transform: translateX(10px);
+                                    // transform: translateX(10px);
                                     //color: $white !important;
                                 }
                             }
@@ -2436,6 +2445,7 @@
                             width: 100%;
                             margin-bottom: 20px;
                             text-align: center;
+
                             &:last-child {
                                 display: none;
                             }
@@ -2443,12 +2453,12 @@
                             a {
                                 display: block;
                                 width: 100%;
-                               // background: $yellow;
-                               // color: $black !important;
+                                // background: $yellow;
+                                // color: $black !important;
                                 padding: 10px;
 
                                 &:hover {
-                                   // transform: translateX(10px);
+                                    // transform: translateX(10px);
                                     //color: $white !important;
                                 }
                             }

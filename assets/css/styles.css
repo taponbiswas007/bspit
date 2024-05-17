@@ -186,8 +186,17 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .header .header-main-content .navbar .my-responsive-images-area {
   display: none;
+  width: 100%;
 }
-.header .header-main-content .navbar .my-responsive-images-area .banner-right {
+.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,9 +207,8 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
 }
-.header .header-main-content .navbar .my-responsive-images-area .banner-right .myimg-area {
+.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area {
   height: 350px;
   width: 350px;
   border-radius: 50%;
@@ -209,7 +217,7 @@ p, h1, h2, h3, h4, h5, h6 {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.header .header-main-content .navbar .my-responsive-images-area .banner-right .myimg-area img {
+.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area img {
   -webkit-transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
           transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   opacity: 1;
@@ -223,7 +231,7 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 291px;
   left: 30px;
 }
-.header .header-main-content .navbar .my-responsive-images-area .banner-right .myimg-area .project-complete {
+.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .project-complete {
   font-family: "Andada Pro", serif;
   color: #ffffff;
   background: transparent;
@@ -248,7 +256,7 @@ p, h1, h2, h3, h4, h5, h6 {
   bottom: -57px;
   z-index: 2;
 }
-.header .header-main-content .navbar .my-responsive-images-area .banner-right .myimg-area .snowfall {
+.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .snowfall {
   background: url(../images/whiteball.png);
   background-size: 350px 200px;
   background-repeat: repeat;
@@ -298,7 +306,7 @@ p, h1, h2, h3, h4, h5, h6 {
     background-position: 100px 100px;
   }
 }
-.header .header-main-content .navbar .my-responsive-images-area .banner-right .myimg-area .snow {
+.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .snow {
   height: 40px;
   width: 235px;
   background-color: white;
@@ -307,7 +315,7 @@ p, h1, h2, h3, h4, h5, h6 {
   top: 315px;
   border-radius: 8px;
 }
-.header .header-main-content .navbar .my-responsive-images-area .banner-right .myimg-area .bottom {
+.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .bottom {
   background-color: #ca0404;
   height: 70px;
   width: 260px;
@@ -315,7 +323,7 @@ p, h1, h2, h3, h4, h5, h6 {
   top: 100%;
   left: 47px;
 }
-.header .header-main-content .navbar .my-responsive-images-area .banner-right .myimg-area .bottom .bt1 {
+.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .bottom .bt1 {
   background-color: #ff1919;
   height: 20px;
   width: 280px;
@@ -324,7 +332,7 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   bottom: 12px;
 }
-.header .header-main-content .navbar .my-responsive-images-area .banner-right .myimg-area .bottom .bt2 {
+.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .bottom .bt2 {
   background-color: #ff1919;
   height: 20px;
   width: 280px;
@@ -2680,8 +2688,17 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .header .contact-header-main-content .navbar .my-responsive-images-area {
   display: none;
+  width: 100%;
 }
-.header .contact-header-main-content .navbar .my-responsive-images-area .banner-right {
+.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2692,9 +2709,8 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
 }
-.header .contact-header-main-content .navbar .my-responsive-images-area .banner-right .myimg-area {
+.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area {
   height: 350px;
   width: 350px;
   border-radius: 50%;
@@ -2703,7 +2719,7 @@ p, h1, h2, h3, h4, h5, h6 {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.header .contact-header-main-content .navbar .my-responsive-images-area .banner-right .myimg-area img {
+.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area img {
   -webkit-transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
           transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   opacity: 1;
@@ -2717,7 +2733,7 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 291px;
   left: 30px;
 }
-.header .contact-header-main-content .navbar .my-responsive-images-area .banner-right .myimg-area .project-complete {
+.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .project-complete {
   font-family: "Andada Pro", serif;
   color: #ffffff;
   background: transparent;
@@ -2742,7 +2758,7 @@ p, h1, h2, h3, h4, h5, h6 {
   bottom: -57px;
   z-index: 2;
 }
-.header .contact-header-main-content .navbar .my-responsive-images-area .banner-right .myimg-area .snowfall {
+.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .snowfall {
   background: url(../images/whiteball.png);
   background-size: 350px 200px;
   background-repeat: repeat;
@@ -2792,7 +2808,7 @@ p, h1, h2, h3, h4, h5, h6 {
     background-position: 100px 100px;
   }
 }
-.header .contact-header-main-content .navbar .my-responsive-images-area .banner-right .myimg-area .snow {
+.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .snow {
   height: 40px;
   width: 235px;
   background-color: white;
@@ -2801,7 +2817,7 @@ p, h1, h2, h3, h4, h5, h6 {
   top: 315px;
   border-radius: 8px;
 }
-.header .contact-header-main-content .navbar .my-responsive-images-area .banner-right .myimg-area .bottom {
+.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .bottom {
   background-color: #ca0404;
   height: 70px;
   width: 260px;
@@ -2809,7 +2825,7 @@ p, h1, h2, h3, h4, h5, h6 {
   top: 100%;
   left: 47px;
 }
-.header .contact-header-main-content .navbar .my-responsive-images-area .banner-right .myimg-area .bottom .bt1 {
+.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .bottom .bt1 {
   background-color: #ff1919;
   height: 20px;
   width: 280px;
@@ -2818,7 +2834,7 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   bottom: 12px;
 }
-.header .contact-header-main-content .navbar .my-responsive-images-area .banner-right .myimg-area .bottom .bt2 {
+.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .bottom .bt2 {
   background-color: #ff1919;
   height: 20px;
   width: 280px;
