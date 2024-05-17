@@ -52,11 +52,11 @@
 
                             // -webkit-text-stroke: .3px navy;
                             &:hover {
-                                color: $yellow;
+                                color: $cyan;
 
                                 &::after {
                                     content: " ";
-                                    background: $yellow;
+                                    background: $cyan;
                                     height: 2px;
                                     width: 100%;
                                     position: absolute;
@@ -77,16 +77,16 @@
                             }
 
                             &:focus {
-                                color: $yellow;
+                                color: $cyan;
                             }
                         }
 
                         .active {
-                            color: $yellow;
+                            color: $cyan;
 
                             &::after {
                                 content: " ";
-                                background: $yellow;
+                                background: $cyan;
                                 height: 2px;
                                 width: 100%;
                                 position: absolute;
@@ -261,7 +261,7 @@
 
             .toggleclose {
                 cursor: pointer;
-                color: $background1;
+                color: $darkbackground;
                 font-size: 30px;
                 position: absolute;
                 top: 25px;
@@ -288,7 +288,7 @@
 
         .togglebar {
             cursor: pointer;
-            color: $background1;
+            color: $darkbackground;
             font-size: 30px;
             background: rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
@@ -312,7 +312,7 @@
 }
 
 .contact-hero-area {
-    background: $background1;
+    background: $darkbackground;
 
     .contact-hero-main-area {
         display: flex;
@@ -419,7 +419,7 @@
                             padding: 10px 20px;
                             border-radius: 7px;
                             border: 2px solid #0ef;
-                            background: $background1;
+                            background: $darkbackground;
                             color: $white;
 
                             &:focus{
@@ -433,7 +433,7 @@
                             padding: 10px 20px;
                             border-radius: 7px;
                             border: 2px solid #0ef;
-                            background: $background1;
+                            background: $darkbackground;
                             color: $white;
                             resize: none;
                             overflow:auto;
@@ -468,7 +468,32 @@
         }
     }
 }
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
 
+.goog-te-gadget-icon {
+    display: none !important;
+}
+
+
+
+.goog-te-combo {
+    background: $white;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.skiptranslate {
+    span {
+        display: none !important;
+    }
+}
+
+.goog-te-banner {
+    display: none !important;
+}
 @media screen and (max-width: 992px) {
     .header {
         .contact-header-main-content {
@@ -500,13 +525,13 @@
                             a {
                                 display: block;
                                 width: 100%;
-                                background: $yellow;
+                                background: $cyan;
                                 color: $black !important;
                                 padding: 10px;
 
                                 &:hover {
                                     transform: translateX(10px);
-                                    color: $white !important;
+                                    color: $cyan !important;
                                 }
                             }
                         }
@@ -553,7 +578,7 @@
                             a {
                                 display: block;
                                 width: 100%;
-                                background: $yellow;
+                                background: $cyan;
                                 color: $black !important;
                                 padding: 10px;
 

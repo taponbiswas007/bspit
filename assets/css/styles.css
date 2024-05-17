@@ -2649,11 +2649,11 @@ p, h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .header .contact-header-main-content .navbar nav ul li .navlink:hover {
-  color: #f5ab0c;
+  color: #0ef;
 }
 .header .contact-header-main-content .navbar nav ul li .navlink:hover::after {
   content: " ";
-  background: #f5ab0c;
+  background: #0ef;
   height: 2px;
   width: 100%;
   position: absolute;
@@ -2671,14 +2671,14 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 .header .contact-header-main-content .navbar nav ul li .navlink:focus {
-  color: #f5ab0c;
+  color: #0ef;
 }
 .header .contact-header-main-content .navbar nav ul li .active {
-  color: #f5ab0c;
+  color: #0ef;
 }
 .header .contact-header-main-content .navbar nav ul li .active::after {
   content: " ";
-  background: #f5ab0c;
+  background: #0ef;
   height: 2px;
   width: 100%;
   position: absolute;
@@ -3030,6 +3030,29 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+.goog-te-combo {
+  background: #ffffff;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+
+.skiptranslate span {
+  display: none !important;
+}
+
+.goog-te-banner {
+  display: none !important;
+}
+
 @media screen and (max-width: 992px) {
   .header .contact-header-main-content .navbar {
     position: fixed;
@@ -3061,14 +3084,14 @@ p, h1, h2, h3, h4, h5, h6 {
   .header .contact-header-main-content .navbar nav ul li a {
     display: block;
     width: 100%;
-    background: #f5ab0c;
+    background: #0ef;
     color: #111 !important;
     padding: 10px;
   }
   .header .contact-header-main-content .navbar nav ul li a:hover {
     -webkit-transform: translateX(10px);
             transform: translateX(10px);
-    color: #ffffff !important;
+    color: #0ef !important;
   }
   .header .contact-header-main-content .navbar .my-responsive-images-area {
     display: block;
@@ -3098,7 +3121,7 @@ p, h1, h2, h3, h4, h5, h6 {
   .header .contact-header-main-content .navbar nav ul li a {
     display: block;
     width: 100%;
-    background: #f5ab0c;
+    background: #0ef;
     color: #111 !important;
     padding: 10px;
   }
