@@ -230,17 +230,17 @@
                         }
 
                         .bottom {
-                       
+
                             background-color: #ca0404;
                             height: 70px;
                             width: 260px;
                             position: absolute;
-                        
+
                             top: 100%;
                             left: 47px;
 
                             .bt1 {
-                              
+
                                 background-color: #ff1919;
                                 height: 20px;
                                 width: 280px;
@@ -251,7 +251,7 @@
                             }
 
                             .bt2 {
-                          
+
                                 background-color: #ff1919;
                                 height: 20px;
                                 width: 280px;
@@ -473,7 +473,7 @@
     }
 
     .main-banner-area {
-     
+
         display: none;
 
         .main-banner-area {
@@ -489,7 +489,7 @@
                 justify-content: center;
                 align-items: flex-start;
                 flex-direction: column;
-              
+
 
                 p {
                     font-family: $textfont;
@@ -517,7 +517,7 @@
             }
 
             .banner-right {
-                
+
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -527,7 +527,7 @@
                     height: 350px;
                     width: 350px;
                     border-radius: 50%;
-                 
+
                     background-color: rgba(0, 0, 0, 0.4);
                     position: relative;
                     object-fit: cover;
@@ -547,7 +547,7 @@
                     .project-complete {
                         font-family: $mainfont;
                         color: $white;
-                    
+
                         background: transparent;
                         display: flex;
                         justify-content: center;
@@ -639,17 +639,17 @@
                     }
 
                     .bottom {
-                   
+
                         background-color: #ca0404;
                         height: 70px;
                         width: 260px;
                         position: absolute;
-                       
+
                         top: 100%;
                         left: 47px;
 
                         .bt1 {
-                          
+
                             background-color: #ff1919;
                             height: 20px;
                             width: 280px;
@@ -660,7 +660,7 @@
                         }
 
                         .bt2 {
-                    
+
                             background-color: #ff1919;
                             height: 20px;
                             width: 280px;
@@ -1309,6 +1309,7 @@
         border-radius: 20px;
         padding: 20px;
 
+
         .swiper {
             width: 100%;
             height: 100%;
@@ -1655,11 +1656,11 @@
 .askanything-wrapper {
     padding-top: 50px;
     padding-bottom: 50px;
-   // background: url(../images/3d-logo.jpg) no-repeat 0 0 / 100% 100%;
+    // background: url(../images/3d-logo.jpg) no-repeat 0 0 / 100% 100%;
     margin-top: 40px;
 
     .askanything-main-area {
-       // background: rgba(0, 0, 0, 0.5);
+        // background: rgba(0, 0, 0, 0.5);
         padding: 30px;
 
         h1 {
@@ -1753,7 +1754,7 @@
                             .rotate-90 {
                                 transform: rotate(90deg);
                                 color: $yellow;
-                               
+
                             }
 
                             li {
@@ -1913,40 +1914,46 @@
         }
     }
 }
-.happy-client-wrapper{
+
+.happy-client-wrapper {
     padding: 40px 0;
-   .client-main-area{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 40px;
-    row-gap: 40px;
-    .client-item{
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-        padding: 20px;
-        ul{
-            li{
-                font-family: $mainfont;
-                font-size: 20px;
-                color: $darkfontcolor;
-                text-align: center;
-                text-transform: capitalize;
-                margin-bottom: 10px;
-                .clienticon-shape{
-                    background: $darkbackground;
-                   padding: 10px;
-                   border-radius: 10px;
-                   height: 50px;
-                   width: 50px;
-                    color: $white;
-                    font-size: 30px;
-                    font-weight: 700;
+
+    .client-main-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 40px;
+        row-gap: 40px;
+
+        .client-item {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+
+            ul {
+                li {
+                    font-family: $mainfont;
+                    font-size: 20px;
+                    color: $darkfontcolor;
+                    text-align: center;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+
+                    .clienticon-shape {
+                        background: $darkbackground;
+                        padding: 10px;
+                        border-radius: 10px;
+                        height: 50px;
+                        width: 50px;
+                        color: $white;
+                        font-size: 30px;
+                        font-weight: 700;
+                    }
                 }
             }
         }
     }
-   } 
 }
+
 .footer-wrapper {
     margin-top: 50px;
     background: $darkbackground;
@@ -2017,16 +2024,16 @@
 
                     input {
                         width: 100%;
-                            padding: 10px 20px;
-                            border-radius: 7px;
-                            border: 2px solid #0ef;
-                            background: $darkbackground;
-                            color: $white;
+                        padding: 10px 20px;
+                        border-radius: 7px;
+                        border: 2px solid #0ef;
+                        background: $darkbackground;
+                        color: $white;
 
-                            &:focus{
-                                box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
-                                outline: none;
-                            }
+                        &:focus {
+                            box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
+                            outline: none;
+                        }
                     }
                 }
             }
@@ -2061,7 +2068,7 @@
 
         .border {
             width: 100%;
-            
+
         }
 
         .social-icon {
@@ -2086,10 +2093,11 @@
 
                         &:hover {
                             transform: scale(1.2);
-                           box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
+                            box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
                             color: $black;
                         }
                     }
+
                     &:nth-child(1) {
                         a {
 
@@ -2399,10 +2407,12 @@
             }
         }
     }
-    .happy-client-wrapper{
-        .client-main-area{
+
+    .happy-client-wrapper {
+        .client-main-area {
             flex-direction: column;
-            .client-item{
+
+            .client-item {
                 width: 100%;
             }
         }
