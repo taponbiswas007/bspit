@@ -1553,6 +1553,10 @@
                                 text-align: center;
                                 padding: 40px;
                                 line-height: 20px;
+                                .quotemark{
+                                    font-size: 30px;
+                                    margin: 0 10px;
+                                }
                             }
 
                             h1 {
@@ -1717,7 +1721,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+            margin-top: 40px;
             .left {
                 width: 50%;
 
@@ -2204,14 +2208,14 @@
                 align-items: flex-start;
 
                 nav {
-                    width: 50%;
+                    width: 100%;
 
                     ul {
                         li {
                             display: block;
                             width: 100%;
                             margin-bottom: 20px;
-
+                            text-align: center;
                             &:last-child {
                                 display: none;
                             }
@@ -2219,13 +2223,13 @@
                             a {
                                 display: block;
                                 width: 100%;
-                                background: $yellow;
-                                color: $black !important;
+                               // background: $yellow;
+                               // color: $black !important;
                                 padding: 10px;
 
                                 &:hover {
-                                    transform: translateX(10px);
-                                    color: $white !important;
+                                   // transform: translateX(10px);
+                                    //color: $white !important;
                                 }
                             }
                         }
@@ -2424,14 +2428,14 @@
         .header-main-content {
             .navbar {
                 nav {
-                    width: 50%;
+                    width: 100%;
 
                     ul {
                         li {
                             display: block;
                             width: 100%;
                             margin-bottom: 20px;
-
+                            text-align: center;
                             &:last-child {
                                 display: none;
                             }
@@ -2439,13 +2443,13 @@
                             a {
                                 display: block;
                                 width: 100%;
-                                background: $cyan;
-                                color: $black !important;
+                               // background: $yellow;
+                               // color: $black !important;
                                 padding: 10px;
 
                                 &:hover {
-                                    transform: translateX(10px);
-                                    color: $white !important;
+                                   // transform: translateX(10px);
+                                    //color: $white !important;
                                 }
                             }
                         }

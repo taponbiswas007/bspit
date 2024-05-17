@@ -347,6 +347,7 @@ $(document).ready(function () {
     $("#loginArea").fadeOut();
     $("#registrationArea").fadeOut();
     $(".overlay").fadeOut();
+    $("#proposalarea").fadeOut();
     $(".blur-bg").css("filter", "blur(0px)");
   });
   $(".registrationhere").click(function () {
@@ -360,6 +361,17 @@ $(document).ready(function () {
   $(".singup").click(function () {
     $("#loginArea").show();
     $("#registrationArea").hide();
+  });
+  $(".loginnow").click(function () {
+    $("#proposalarea").show();
+    $("#loginArea").hide();
+  });
+  $(".submit").click(function () {
+    $("#loginArea").fadeOut();
+    $("#registrationArea").fadeOut();
+    $(".overlay").fadeOut();
+    $("#proposalarea").fadeOut();
+    $(".blur-bg").css("filter", "blur(0px)");
   });
   //happy customer counter box start
   var counting = false;
