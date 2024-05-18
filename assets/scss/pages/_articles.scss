@@ -41,8 +41,8 @@
             background: $cyan;
             padding: 20px;
 
-            ul{
-                li{
+            ul {
+                li {
                     color: $darkfontcolor;
                     font-size: 20px;
                     font-family: $textfont;
@@ -52,7 +52,7 @@
                     margin-bottom: 20px;
                 }
             }
-          
+
         }
 
         main {
@@ -89,7 +89,8 @@
                 background: #0155f0;
                 /* Color of the scrollbar thumb when hovered */
             }
-            .articles-item{
+
+            .articles-item {
                 p {
                     color: $darkfontcolor;
                     font-size: 13px;
@@ -98,20 +99,20 @@
                     line-height: 21px;
                     margin-bottom: 20px;
                 }
-    
+
                 ul {
                     li {
                         list-style-type: decimal;
                         margin-bottom: 15px;
                         color: $darkfontcolor;
-                    font-size: 13px;
-                    font-family: $textfont;
-                    font-weight: 500;
-                    line-height: 21px;
-    
+                        font-size: 13px;
+                        font-family: $textfont;
+                        font-weight: 500;
+                        line-height: 21px;
+
                         ul {
                             padding: 20px 0 20px 20px;
-                            
+
                             li {
                                 list-style-type: disc;
                                 margin-bottom: 15px;
@@ -120,10 +121,15 @@
                     }
                 }
             }
-            .frontend-articles{
+
+            .frontend-articles {
                 display: none;
             }
-           
+
+            .backend-articles {
+                display: none;
+            }
+
 
         }
 

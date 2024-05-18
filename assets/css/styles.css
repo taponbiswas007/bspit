@@ -3325,6 +3325,9 @@ p, h1, h2, h3, h4, h5, h6 {
 .articles-body .main main .frontend-articles {
   display: none;
 }
+.articles-body .main main .backend-articles {
+  display: none;
+}
 .articles-body .main .right {
   -webkit-box-flex: 2;
       -ms-flex: 2 0 150px;
