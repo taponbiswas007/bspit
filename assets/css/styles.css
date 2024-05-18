@@ -3256,12 +3256,14 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #0ef;
   padding: 20px;
 }
-.articles-body .main .left h1 {
+.articles-body .main .left ul li {
   color: #070630;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   line-height: 25px;
+  list-style-type: decimal;
+  margin-bottom: 20px;
 }
 .articles-body .main main {
   -webkit-box-flex: 5;
@@ -3296,7 +3298,7 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #0155f0;
   /* Color of the scrollbar thumb when hovered */
 }
-.articles-body .main main p {
+.articles-body .main main .articles-item p {
   color: #070630;
   font-size: 13px;
   font-family: "Poppins", sans-serif;
@@ -3304,7 +3306,7 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 21px;
   margin-bottom: 20px;
 }
-.articles-body .main main ul li {
+.articles-body .main main .articles-item ul li {
   list-style-type: decimal;
   margin-bottom: 15px;
   color: #070630;
@@ -3313,12 +3315,15 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   line-height: 21px;
 }
-.articles-body .main main ul li ul {
+.articles-body .main main .articles-item ul li ul {
   padding: 20px 0 20px 20px;
 }
-.articles-body .main main ul li ul li {
+.articles-body .main main .articles-item ul li ul li {
   list-style-type: disc;
   margin-bottom: 15px;
+}
+.articles-body .main main .frontend-articles {
+  display: none;
 }
 .articles-body .main .right {
   -webkit-box-flex: 2;

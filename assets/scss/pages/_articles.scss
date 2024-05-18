@@ -41,13 +41,18 @@
             background: $cyan;
             padding: 20px;
 
-            h1 {
-                color: $darkfontcolor;
-                font-size: 20px;
-                font-family: $textfont;
-                font-weight: 600;
-                line-height: 25px;
+            ul{
+                li{
+                    color: $darkfontcolor;
+                    font-size: 20px;
+                    font-family: $textfont;
+                    font-weight: 600;
+                    line-height: 25px;
+                    list-style-type: decimal;
+                    margin-bottom: 20px;
+                }
             }
+          
         }
 
         main {
@@ -84,36 +89,41 @@
                 background: #0155f0;
                 /* Color of the scrollbar thumb when hovered */
             }
-
-            p {
-                color: $darkfontcolor;
-                font-size: 13px;
-                font-family: $textfont;
-                font-weight: 500;
-                line-height: 21px;
-                margin-bottom: 20px;
-            }
-
-            ul {
-                li {
-                    list-style-type: decimal;
-                    margin-bottom: 15px;
+            .articles-item{
+                p {
                     color: $darkfontcolor;
-                font-size: 13px;
-                font-family: $textfont;
-                font-weight: 500;
-                line-height: 21px;
-
-                    ul {
-                        padding: 20px 0 20px 20px;
-                        
-                        li {
-                            list-style-type: disc;
-                            margin-bottom: 15px;
+                    font-size: 13px;
+                    font-family: $textfont;
+                    font-weight: 500;
+                    line-height: 21px;
+                    margin-bottom: 20px;
+                }
+    
+                ul {
+                    li {
+                        list-style-type: decimal;
+                        margin-bottom: 15px;
+                        color: $darkfontcolor;
+                    font-size: 13px;
+                    font-family: $textfont;
+                    font-weight: 500;
+                    line-height: 21px;
+    
+                        ul {
+                            padding: 20px 0 20px 20px;
+                            
+                            li {
+                                list-style-type: disc;
+                                margin-bottom: 15px;
+                            }
                         }
                     }
                 }
             }
+            .frontend-articles{
+                display: none;
+            }
+           
 
         }
 
