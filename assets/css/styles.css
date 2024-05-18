@@ -2138,6 +2138,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .happy-client-wrapper {
   padding: 40px 0;
+  background: url(../images/water.png) no-repeat 0 0/100% 100%;
 }
 .happy-client-wrapper .client-main-area {
   display: -webkit-box;
@@ -2146,9 +2147,9 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-column-gap: 40px;
      -moz-column-gap: 40px;
           column-gap: 40px;
@@ -3770,4 +3771,4 @@ p, h1, h2, h3, h4, h5, h6 {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
-}
+}/*# sourceMappingURL=styles.css.map */

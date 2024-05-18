@@ -1950,11 +1950,12 @@
 
 .happy-client-wrapper {
     padding: 40px 0;
-
+   background: url(../images/water.png) no-repeat 0 0 / 100% 100%;
+  
     .client-main-area {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         column-gap: 40px;
         row-gap: 40px;
 
