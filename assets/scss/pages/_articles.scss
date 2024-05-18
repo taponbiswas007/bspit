@@ -1,13 +1,16 @@
 @import "../utils/mixins";
 @import "../utils/variables";
-.artical-hero{
+
+.artical-hero {
     height: 300px;
     overflow: hidden;
     position: relative;
-    img{
+
+    img {
         background-size: contain;
     }
-    h1{
+
+    h1 {
         font-size: 30px;
         font-weight: 600;
         font-family: $mainfont;
@@ -17,45 +20,144 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: rgba(0 , 0, 0, .7);
+        background: rgba(0, 0, 0, .7);
         padding: 20px;
         text-transform: capitalize;
 
     }
 }
-.articles-body{
-    .main{
+
+.articles-body {
+    padding: 30px 0;
+    overflow: hidden;
+
+    .main {
         display: flex;
-        .left{
-            flex: 1 1 100px;
-            padding: 2em;
+        column-gap: 20px;
+        row-gap: 20px;
+
+        .left {
+            flex: 2 0 150px;
+            background: $cyan;
+            padding: 20px;
+
+            h1 {
+                color: $darkfontcolor;
+                font-size: 20px;
+                font-family: $textfont;
+                font-weight: 600;
+                line-height: 25px;
+            }
         }
-        main{
-            flex: 5 5 150px;
-            padding: 2em;
+
+        main {
+            flex: 5 5 200px;
+            padding: 20px;
+            background: $cyan;
+            overflow-y: scroll;
+            height: 500px;
+            scrollbar-width: thin;
+            /* For Firefox */
+            scrollbar-color: $darkbackground #f1f1f1;
+
+            /* Custom scrollbar styles */
+            &::-webkit-scrollbar {
+                width: 12px;
+                /* Width of the entire scrollbar */
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                /* Color of the scrollbar track */
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: $darkbackground;
+                /* Color of the scrollbar thumb */
+                border-radius: 10px;
+                /* Roundness of the scrollbar thumb */
+                border: 3px solid #f1f1f1;
+                /* Creates padding around thumb and matches track color */
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background: #0155f0;
+                /* Color of the scrollbar thumb when hovered */
+            }
+
+            p {
+                color: $darkfontcolor;
+                font-size: 13px;
+                font-family: $textfont;
+                font-weight: 500;
+                line-height: 21px;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                li {
+                    list-style-type: decimal;
+                    margin-bottom: 15px;
+                    color: $darkfontcolor;
+                font-size: 13px;
+                font-family: $textfont;
+                font-weight: 500;
+                line-height: 21px;
+
+                    ul {
+                        padding: 20px 0 20px 20px;
+                        
+                        li {
+                            list-style-type: disc;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+
         }
-        .right{
-            flex: 1 1 100px;
-            padding: 2em;
+
+        .right {
+            flex: 2 0 150px;
+            padding: 20px;
+            background: $cyan;
+
+            ul {
+                li {
+                    list-style-type: disclosure-closed;
+                    border-bottom: 2px solid $darkbackground;
+                    color: $darkfontcolor;
+                    font-family: $textfont;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 25px;
+                    margin-bottom: 15px;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
-@media  screen and (max-width: 540px) {
-    .articles-body{
-        .main{
+
+@media screen and (max-width: 768px) {
+    .articles-body {
+        .main {
             display: flex;
             flex-direction: column;
-            .left{
-                flex: 1 1 100px;
-                padding: 2em;
+
+            .left {
+                flex: 1 1 150px;
+
             }
-            main{
-                flex: 5 5 150px;
-                padding: 2em;
+
+            main {
+                flex: 5 5 200px;
+
             }
-            .right{
-                flex: 1 1 100px;
-                padding: 2em;
+
+            .right {
+                flex: 1 1 150px;
+
             }
         }
     }

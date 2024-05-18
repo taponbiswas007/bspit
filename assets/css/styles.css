@@ -3236,31 +3236,110 @@ p, h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
 }
 
+.articles-body {
+  padding: 30px 0;
+  overflow: hidden;
+}
 .articles-body .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
 }
 .articles-body .main .left {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100px;
-          flex: 1 1 100px;
-  padding: 2em;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0 150px;
+          flex: 2 0 150px;
+  background: #0ef;
+  padding: 20px;
+}
+.articles-body .main .left h1 {
+  color: #070630;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 25px;
 }
 .articles-body .main main {
   -webkit-box-flex: 5;
-      -ms-flex: 5 5 150px;
-          flex: 5 5 150px;
-  padding: 2em;
+      -ms-flex: 5 5 200px;
+          flex: 5 5 200px;
+  padding: 20px;
+  background: #0ef;
+  overflow-y: scroll;
+  height: 500px;
+  scrollbar-width: thin;
+  /* For Firefox */
+  scrollbar-color: #070630 #f1f1f1;
+  /* Custom scrollbar styles */
+}
+.articles-body .main main::-webkit-scrollbar {
+  width: 12px;
+  /* Width of the entire scrollbar */
+}
+.articles-body .main main::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Color of the scrollbar track */
+}
+.articles-body .main main::-webkit-scrollbar-thumb {
+  background-color: #070630;
+  /* Color of the scrollbar thumb */
+  border-radius: 10px;
+  /* Roundness of the scrollbar thumb */
+  border: 3px solid #f1f1f1;
+  /* Creates padding around thumb and matches track color */
+}
+.articles-body .main main::-webkit-scrollbar-thumb:hover {
+  background: #0155f0;
+  /* Color of the scrollbar thumb when hovered */
+}
+.articles-body .main main p {
+  color: #070630;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+.articles-body .main main ul li {
+  list-style-type: decimal;
+  margin-bottom: 15px;
+  color: #070630;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 21px;
+}
+.articles-body .main main ul li ul {
+  padding: 20px 0 20px 20px;
+}
+.articles-body .main main ul li ul li {
+  list-style-type: disc;
+  margin-bottom: 15px;
 }
 .articles-body .main .right {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100px;
-          flex: 1 1 100px;
-  padding: 2em;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0 150px;
+          flex: 2 0 150px;
+  padding: 20px;
+  background: #0ef;
+}
+.articles-body .main .right ul li {
+  list-style-type: disclosure-closed;
+  border-bottom: 2px solid #070630;
+  color: #070630;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
   .articles-body .main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3272,21 +3351,18 @@ p, h1, h2, h3, h4, h5, h6 {
   }
   .articles-body .main .left {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 100px;
-            flex: 1 1 100px;
-    padding: 2em;
+        -ms-flex: 1 1 150px;
+            flex: 1 1 150px;
   }
   .articles-body .main main {
     -webkit-box-flex: 5;
-        -ms-flex: 5 5 150px;
-            flex: 5 5 150px;
-    padding: 2em;
+        -ms-flex: 5 5 200px;
+            flex: 5 5 200px;
   }
   .articles-body .main .right {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 100px;
-            flex: 1 1 100px;
-    padding: 2em;
+        -ms-flex: 1 1 150px;
+            flex: 1 1 150px;
   }
 }
 .overlay {
@@ -3892,4 +3968,4 @@ p, h1, h2, h3, h4, h5, h6 {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
-}/*# sourceMappingURL=styles.css.map */
+}
