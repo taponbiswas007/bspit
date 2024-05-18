@@ -508,6 +508,46 @@
     display: none !important;
 }
 
+.abouthero-fullwrapper{
+    background: $white;
+    padding-bottom: 50px;
+    h1{
+      
+        color: $darkfontcolor;
+        font-family: $lato;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 60px;
+        font-weight: 600;
+    }
+    p{
+        margin-top: 40px;
+        text-align: center;
+        color: $darkfontcolor;
+        font-size: 18px;
+        font-family: $textfont;
+        line-height: 30px;
+        font-weight: 500;
+    }
+    .individual-side{
+        margin-top:40px;
+        .icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 70px;
+                padding: 10px;
+                background: $darkbackground;
+                border-radius: 10px;
+            }
+        }
+        h1{
+            margin-top: 20px;
+        }
+    }
+}
+
 @media screen and (max-width: 992px) {
     .header {
         .contact-header-main-content {
