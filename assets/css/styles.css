@@ -1897,7 +1897,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .askanything-wrapper {
   padding-top: 50px;
-  padding-bottom: 50px;
   margin-top: 40px;
 }
 .askanything-wrapper .askanything-main-area {
@@ -2137,7 +2136,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .happy-client-wrapper {
-  padding: 40px 0;
+  padding: 100px 0 40px 0;
   background: url(../images/water.png) no-repeat 0 0/100% 100%;
 }
 .happy-client-wrapper .client-main-area {
@@ -2159,6 +2158,7 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   padding: 20px;
+  background: #ffffff;
 }
 .happy-client-wrapper .client-main-area .client-item ul li {
   font-family: "Andada Pro", serif;
@@ -2180,7 +2180,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-wrapper {
-  margin-top: 50px;
   background: #070630;
   padding: 50px 0;
 }
