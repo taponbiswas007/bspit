@@ -265,17 +265,17 @@
 
             .toggleclose {
                 cursor: pointer;
-                color: $darkbackground;
+                color: $white;
                 font-size: 30px;
                 position: absolute;
                 top: 25px;
                 right: 30px;
-                background: rgba(255, 255, 255, 0.3);
-                backdrop-filter: blur(10px);
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-                width: 40px;
-                height: 40px;
-                border-radius: 4px;
+                //background: rgba(255, 255, 255, 0.3);
+                //backdrop-filter: blur(10px);
+                //box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                //width: 40px;
+                //height: 40px;
+                //border-radius: 4px;
                 transition: 0.5s;
                 display: none;
 
@@ -290,26 +290,56 @@
             }
         }
 
-        .togglebar {
-            cursor: pointer;
-            color: $darkbackground;
-            font-size: 30px;
-            background: rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            width: 40px;
-            height: 40px;
-            border-radius: 4px;
-            transition: 0.5s;
-            display: none;
+        .header-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 20px;
 
-            &:hover {
-                color: #42e599;
+            .profileicon {
+
+                border-radius: 50%;
+
+                span {
+                    box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
+                    display: block;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    background: $yellow;
+                    color: $black;
+                    text-align: center;
+                    font-size: 40px;
+                    font-family: $mainfont;
+                    font-weight: 600;
+                    padding-top: 5px;
+                    text-transform: capitalize;
+                }
+
+
             }
 
-            .bar {
-                margin-top: 5px;
-                margin-left: 8px;
+            .togglebar {
+                cursor: pointer;
+                color: $white;
+                font-size: 30px;
+                // background: rgba(255, 255, 255, 0.3);
+                // backdrop-filter: blur(10px);
+                // box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                //  width: 40px;
+                // height: 40px;
+                // border-radius: 4px;
+                transition: 0.5s;
+                display: none;
+
+                &:hover {
+                    color: #42e599;
+                }
+
+                .bar {
+                    margin-top: 5px;
+                    margin-left: 8px;
+                }
             }
         }
     }
@@ -508,11 +538,12 @@
     display: none !important;
 }
 
-.abouthero-fullwrapper{
+.abouthero-fullwrapper {
     background: $white;
     padding-bottom: 50px;
-    h1{
-      
+
+    h1 {
+
         color: $darkfontcolor;
         font-family: $lato;
         font-size: 20px;
@@ -520,7 +551,8 @@
         margin-top: 60px;
         font-weight: 600;
     }
-    p{
+
+    p {
         margin-top: 40px;
         text-align: center;
         color: $darkfontcolor;
@@ -529,20 +561,24 @@
         line-height: 30px;
         font-weight: 500;
     }
-    .individual-side{
-        margin-top:40px;
-        .icon{
+
+    .individual-side {
+        margin-top: 40px;
+
+        .icon {
             display: flex;
             justify-content: center;
             align-items: center;
-            img{
+
+            img {
                 width: 70px;
                 padding: 10px;
                 background: $darkbackground;
                 border-radius: 10px;
             }
         }
-        h1{
+
+        h1 {
             margin-top: 20px;
         }
     }
@@ -580,10 +616,10 @@
                             a {
                                 display: block;
                                 width: 100%;
-                             
+
                                 padding: 10px;
 
-                             
+
                             }
                         }
                     }
@@ -602,9 +638,12 @@
                 }
             }
 
-            .togglebar {
-                display: block;
+            .header-right {
+                .togglebar {
+                    display: block;
+                }
             }
+
         }
     }
 }
@@ -630,10 +669,10 @@
                             a {
                                 display: block;
                                 width: 100%;
-                              
+
                                 padding: 10px;
 
-                               
+
                             }
                         }
                     }

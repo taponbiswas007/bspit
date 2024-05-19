@@ -272,17 +272,17 @@
 
             .toggleclose {
                 cursor: pointer;
-                color: $darkbackground;
+                color: $white;
                 font-size: 30px;
                 position: absolute;
                 top: 25px;
                 right: 30px;
-                background: rgba(255, 255, 255, 0.3);
-                backdrop-filter: blur(10px);
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-                width: 40px;
-                height: 40px;
-                border-radius: 4px;
+                //background: rgba(255, 255, 255, 0.3);
+                //backdrop-filter: blur(10px);
+                //box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                // width: 40px;
+                //  height: 40px;
+                //border-radius: 4px;
                 transition: 0.5s;
                 display: none;
 
@@ -297,28 +297,59 @@
             }
         }
 
-        .togglebar {
-            cursor: pointer;
-            color: $darkbackground;
-            font-size: 30px;
-            background: rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            width: 40px;
-            height: 40px;
-            border-radius: 4px;
-            transition: 0.5s;
-            display: none;
+        .header-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 20px;
 
-            &:hover {
-                color: #42e599;
+            .profileicon {
+
+                border-radius: 50%;
+
+                span {
+                    box-shadow: 0 0 10px 2px rgba(0, 238, 255, 0.9);
+                    display: block;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    background: $yellow;
+                    color: $black;
+                    text-align: center;
+                    font-size: 40px;
+                    font-family: $mainfont;
+                    font-weight: 600;
+                    padding-top: 5px;
+                    text-transform: capitalize;
+                }
+
+
             }
 
-            .bar {
-                margin-top: 5px;
-                margin-left: 8px;
+            .togglebar {
+                cursor: pointer;
+                color: $white;
+                font-size: 30px;
+                // background: rgba(255, 255, 255, 0.3);
+                // backdrop-filter: blur(10px);
+                // box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                //  width: 40px;
+                // height: 40px;
+                // border-radius: 4px;
+                transition: 0.5s;
+                display: none;
+
+                &:hover {
+                    color: #42e599;
+                }
+
+                .bar {
+                    margin-top: 5px;
+                    margin-left: 8px;
+                }
             }
         }
+
     }
 }
 
@@ -1690,7 +1721,7 @@
     margin-top: 40px;
 
     .askanything-main-area {
-       
+
         padding: 30px;
 
         h1 {
@@ -1947,9 +1978,9 @@
 }
 
 .happy-client-wrapper {
-    padding: 100px  0 40px 0;
+    padding: 100px 0 40px 0;
     background: url(../images/water.png) no-repeat 0 0 / 100% 100%;
-  
+
     .client-main-area {
         display: flex;
         align-items: center;
@@ -2274,9 +2305,12 @@
                 }
             }
 
-            .togglebar {
-                display: block;
+            .header-right {
+                .togglebar {
+                    display: block;
+                }
             }
+
         }
     }
 
@@ -2469,10 +2503,10 @@
                             a {
                                 display: block;
                                 width: 100%;
-                               
+
                                 padding: 10px;
 
-                              
+
                             }
                         }
                     }
