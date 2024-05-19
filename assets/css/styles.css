@@ -372,6 +372,36 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
+  position: relative;
+}
+.header .header-main-content .header-right .logout-area {
+  width: 170px;
+  height: 91px;
+  border-radius: 15px;
+  padding: 20px;
+  background: #ffffff;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.header .header-main-content .header-right .logout-area button {
+  color: #ffffff;
+  background: #070630;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  text-transform: uppercase;
+}
+.header .header-main-content .header-right .logout-area button:hover {
+  background: #0ef;
 }
 .header .header-main-content .header-right .profileicon {
   border-radius: 50%;
@@ -390,6 +420,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "Andada Pro", serif;
   font-weight: 600;
   padding-top: 5px;
+  cursor: pointer;
   text-transform: capitalize;
 }
 .header .header-main-content .header-right .togglebar {
@@ -2907,6 +2938,36 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
+  position: relative;
+}
+.header .contact-header-main-content .header-right .logout-area {
+  width: 170px;
+  height: 91px;
+  border-radius: 15px;
+  padding: 20px;
+  background: #ffffff;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.header .contact-header-main-content .header-right .logout-area button {
+  color: #ffffff;
+  background: #070630;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  text-transform: uppercase;
+}
+.header .contact-header-main-content .header-right .logout-area button:hover {
+  background: #0ef;
 }
 .header .contact-header-main-content .header-right .profileicon {
   border-radius: 50%;
@@ -2925,6 +2986,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "Andada Pro", serif;
   font-weight: 600;
   padding-top: 5px;
+  cursor: pointer;
   text-transform: capitalize;
 }
 .header .contact-header-main-content .header-right .togglebar {

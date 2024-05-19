@@ -412,6 +412,9 @@ $(".uxuilink").click(function(){
   $(".uxui-articles").show();
 });
 
+$(".profileicon").click(function(){
+  $(".logout-area").slideToggle();
+});
   //happy customer counter box start
   var counting = false;
 

@@ -302,7 +302,34 @@
             align-items: center;
             justify-content: center;
             column-gap: 20px;
-
+            position: relative;
+            .logout-area{
+                width: 170px;
+                height: 91px;
+                border-radius: 15px;
+                padding: 20px;
+                background: $white;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+                display: none;
+                button{
+                    color: $white;
+                    background: $darkbackground;
+                    padding: 10px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    font-family: $headerfont;
+                    text-align: center;
+                    border-radius: 10px;
+                    transition: .5s ease;
+                    text-transform: uppercase;
+                    &:hover{
+                        background: $cyan;
+                    }
+                }
+            }
             .profileicon {
 
                 border-radius: 50%;
@@ -320,6 +347,7 @@
                     font-family: $mainfont;
                     font-weight: 600;
                     padding-top: 5px;
+                    cursor: pointer;
                     text-transform: capitalize;
                 }
 
