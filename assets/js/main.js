@@ -387,6 +387,30 @@ $(document).ready(function () {
     $("aside.right ul li").eq(index).addClass("active");
 });
   
+$(".frontendlink").click(function(){
+  $(".frontend-articles").show();
+  $(".backend-articles").hide();
+  $(".digitalmarketing-articles").hide();
+  $(".uxui-articles").hide();
+});
+$(".backendlink").click(function(){
+  $(".frontend-articles").hide();
+  $(".backend-articles").show();
+  $(".digitalmarketing-articles").hide();
+  $(".uxui-articles").hide();
+});
+$(".digitallink").click(function(){
+  $(".frontend-articles").hide();
+  $(".backend-articles").hide();
+  $(".digitalmarketing-articles").show();
+  $(".uxui-articles").hide();
+});
+$(".uxuilink").click(function(){
+  $(".frontend-articles").hide();
+  $(".backend-articles").hide();
+  $(".digitalmarketing-articles").hide();
+  $(".uxui-articles").show();
+});
 
   //happy customer counter box start
   var counting = false;
