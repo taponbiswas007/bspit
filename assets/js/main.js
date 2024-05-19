@@ -373,6 +373,21 @@ $(document).ready(function () {
     $("#proposalarea").fadeOut();
     $(".blur-bg").css("filter", "blur(0px)");
   });
+
+  //article page
+  $("aside.left ul li, aside.right ul li").click(function() {
+    // Get the index of the clicked <li> element
+    var index = $(this).index();
+
+    // Remove the 'active' class from all <li> elements in both asides
+    $("aside.left ul li, aside.right ul li").removeClass("active");
+
+    // Add the 'active' class to the clicked <li> element and the corresponding <li> element in the other aside
+    $("aside.left ul li").eq(index).addClass("active");
+    $("aside.right ul li").eq(index).addClass("active");
+});
+  
+
   //happy customer counter box start
   var counting = false;
 

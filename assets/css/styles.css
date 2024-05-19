@@ -3264,6 +3264,12 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 25px;
   list-style-type: decimal;
   margin-bottom: 20px;
+  cursor: pointer;
+  padding: 10px;
+}
+.articles-body .main .left ul .active {
+  background: #070630 !important;
+  color: #ffffff !important;
 }
 .articles-body .main main {
   -webkit-box-flex: 5;
@@ -3322,10 +3328,13 @@ p, h1, h2, h3, h4, h5, h6 {
   list-style-type: disc;
   margin-bottom: 15px;
 }
-.articles-body .main main .frontend-articles {
+.articles-body .main main .backend-articles {
   display: none;
 }
-.articles-body .main main .backend-articles {
+.articles-body .main main .digitalmarketing {
+  display: none;
+}
+.articles-body .main main .uxui-articles {
   display: none;
 }
 .articles-body .main .right {
@@ -3345,6 +3354,10 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 25px;
   margin-bottom: 15px;
   cursor: pointer;
+}
+.articles-body .main .right ul .active {
+  background: #070630 !important;
+  color: #ffffff !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -3976,4 +3989,4 @@ p, h1, h2, h3, h4, h5, h6 {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
-}
+}/*# sourceMappingURL=styles.css.map */

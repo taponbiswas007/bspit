@@ -50,6 +50,12 @@
                     line-height: 25px;
                     list-style-type: decimal;
                     margin-bottom: 20px;
+                    cursor: pointer;
+                    padding: 10px;
+                }
+                .active{
+                    background: $darkbackground !important;
+                    color: $white !important;
                 }
             }
 
@@ -122,14 +128,17 @@
                 }
             }
 
-            .frontend-articles {
-                display: none;
-            }
+
 
             .backend-articles {
                 display: none;
             }
+
             .digitalmarketing {
+                display: none;
+            }
+
+            .uxui-articles {
                 display: none;
             }
 
@@ -152,6 +161,10 @@
                     line-height: 25px;
                     margin-bottom: 15px;
                     cursor: pointer;
+                }
+                .active{
+                    background: $darkbackground !important;
+                    color: $white !important;
                 }
             }
         }
