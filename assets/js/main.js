@@ -381,24 +381,37 @@ $(".frontendlink").click(function(){
   $(".backend-articles").hide();
   $(".digitalmarketing-articles").hide();
   $(".uxui-articles").hide();
+  $('html, body').animate({
+    scrollTop: $(".frontend-articles").offset().top - 150
+  }, 500); 
 });
+
 $(".backendlink").click(function(){
   $(".frontend-articles").hide();
   $(".backend-articles").show();
   $(".digitalmarketing-articles").hide();
   $(".uxui-articles").hide();
+  $('html, body').animate({
+    scrollTop: $(".backend-articles").offset().top - 150
+  }, 500); 
 });
 $(".digitallink").click(function(){
   $(".frontend-articles").hide();
   $(".backend-articles").hide();
   $(".digitalmarketing-articles").show();
   $(".uxui-articles").hide();
+  $('html, body').animate({
+    scrollTop: $(".digitalmarketing-articles").offset().top - 150
+  }, 500); 
 });
 $(".uxuilink").click(function(){
   $(".frontend-articles").hide();
   $(".backend-articles").hide();
   $(".digitalmarketing-articles").hide();
   $(".uxui-articles").show();
+  $('html, body').animate({
+    scrollTop: $(".uxui-articles").offset().top - 150
+  }, 500); 
 });
 
 $(".profileicon").click(function(){
