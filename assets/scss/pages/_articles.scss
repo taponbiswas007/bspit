@@ -39,10 +39,11 @@
 
                 h1 {
                     text-transform: capitalize;
-                    font-size: 16px;
+                    font-size: 20px;
                     color: $black;
-                    font-family: $mainfont;
+                    font-family: $lato;
                     font-weight: 700;
+                    text-align: center;
                 }
 
                 p {
@@ -113,7 +114,7 @@
             padding: 20px;
             background: $white;
             padding: 20px;
-
+            
 
             .articles-item {
                 h1 {
@@ -123,11 +124,12 @@
                     font-family: $headerfont;
                     margin-bottom: 30px;
                     text-align: center;
+                 
                 }
 
                 p {
                     color: $darkfontcolor;
-                    font-size: 13px;
+                    font-size: 15px;
                     font-family: $textfont;
                     font-weight: 500;
                     line-height: 21px;
@@ -139,7 +141,7 @@
                         list-style-type: decimal;
                         margin-bottom: 15px;
                         color: $darkfontcolor;
-                        font-size: 13px;
+                        font-size: 15px;
                         font-family: $textfont;
                         font-weight: 500;
                         line-height: 21px;
