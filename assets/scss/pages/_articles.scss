@@ -2,101 +2,117 @@
 @import "../utils/variables";
 
 .artical-hero {
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-
-    img {
-        background-size: contain;
+   
+    padding-top: 100px;
+    .articleheromainarea{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+        row-gap: 20px;
+        .articles-card{
+            background: $white;
+            padding: 14px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            width: 24%;
+            height: 380px;
+            
+            .inner{
+                display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+                .images{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 130px;
+                    img{
+                        width: 130px;
+                    }
+                }
+                h1{
+                    text-transform: capitalize;
+                    font-size: 16px ;
+                    color: $black;
+                    font-family: $mainfont;
+                    font-weight: 700;
+                }
+                p{
+                    font-family: $textfont;
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: $darkbackground;
+                    text-align: center;
+               
+                    line-height: 20px;
+                }
+                button{
+                    background: linear-gradient(135deg, #ff4081, #ff80ab);
+                    border: none;
+                    border-radius: 50px;
+                    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+                    color: white;
+                    cursor: pointer;
+                    font-size: 18px;
+                    padding: 15px 30px;
+                    position: relative;
+                    text-transform: uppercase;
+                    transition: all 0.3s ease;
+                    z-index: 1;
+                    overflow: hidden;
+                    font-family: $headerfont;
+                    font-size: 16px;
+                    font-weight: 600;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 300%;
+                        height: 300%;
+                        background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+                        transition: all 0.5s ease;
+                        border-radius: 50%;
+                        z-index: -1;
+                        transform: translate(-50%, -50%) scale(0);
+                        &:hover{
+                            transform: translate(-50%, -50%) scale(1);
+                        }
+                    }
+                    &:hover{
+                        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+                        transform: translateY(-2px);
+                    }
+                    
+                }
+            }
+          }
     }
 
-    h1 {
-        font-size: 30px;
-        font-weight: 600;
-        font-family: $mainfont;
-        color: $lightfontcolor;
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(0, 0, 0, .7);
-        padding: 20px;
-        text-transform: capitalize;
-
-    }
 }
 
 .articles-body {
     padding: 30px 0;
     overflow: hidden;
-
-    .main {
-        display: flex;
-        column-gap: 20px;
-        row-gap: 20px;
-
-        .left {
-            flex: 2 0 150px;
-            background: $cyan;
-            padding: 20px;
-
-            ul {
-                li {
-                    color: $darkfontcolor;
-                    font-size: 20px;
-                    font-family: $textfont;
-                    font-weight: 600;
-                    line-height: 25px;
-                    list-style-type: decimal;
-                    margin-bottom: 20px;
-                    cursor: pointer;
-                    padding: 10px;
-                }
-                .active{
-                    background: $darkbackground !important;
-                    color: $white !important;
-                }
-            }
-
-        }
-
+    .articles-details{
         main {
             flex: 5 5 200px;
             padding: 20px;
-            background: $cyan;
-            overflow-y: scroll;
-            height: 550px;
-            scrollbar-width: thin;
-            /* For Firefox */
-            scrollbar-color: $darkbackground #f1f1f1;
-
-            /* Custom scrollbar styles */
-            &::-webkit-scrollbar {
-                width: 12px;
-                /* Width of the entire scrollbar */
-            }
-
-            &::-webkit-scrollbar-track {
-                background: #f1f1f1;
-                /* Color of the scrollbar track */
-            }
-
-            &::-webkit-scrollbar-thumb {
-                background-color: $darkbackground;
-                /* Color of the scrollbar thumb */
-                border-radius: 10px;
-                /* Roundness of the scrollbar thumb */
-                border: 3px solid #f1f1f1;
-                /* Creates padding around thumb and matches track color */
-            }
-
-            &::-webkit-scrollbar-thumb:hover {
-                background: #0155f0;
-                /* Color of the scrollbar thumb when hovered */
-            }
-
+            background: $white;
+            padding: 20px;
+           
+           
             .articles-item {
+                h1{
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: $black;
+                    font-family: $headerfont;
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
                 p {
                     color: $darkfontcolor;
                     font-size: 13px;
@@ -129,12 +145,14 @@
             }
 
 
-
+            .frontend-articles{
+                display: none;
+            }
             .backend-articles {
                 display: none;
             }
 
-            .digitalmarketing {
+            .digitalmarketing-articles {
                 display: none;
             }
 
@@ -145,51 +163,26 @@
 
         }
 
-        .right {
-            flex: 2 0 150px;
-            padding: 20px;
-            background: $cyan;
-
-            ul {
-                li {
-                    list-style-type: disclosure-closed;
-                    border-bottom: 2px solid $darkbackground;
-                    color: $darkfontcolor;
-                    font-family: $textfont;
-                    font-weight: 600;
-                    font-size: 15px;
-                    line-height: 25px;
-                    margin-bottom: 15px;
-                    cursor: pointer;
-                }
-                .active{
-                    background: $darkbackground !important;
-                    color: $white !important;
-                }
+    }
+  
+}
+@media screen and (max-width: 992px){
+    .artical-hero{
+        .articleheromainarea{
+            flex-wrap: wrap;
+            row-gap: 20px;
+            .articles-card{
+                width: 48%;
             }
         }
     }
 }
-
-@media screen and (max-width: 768px) {
-    .articles-body {
-        .main {
-            display: flex;
-            flex-direction: column;
-
-            .left {
-                flex: 1 1 150px;
-
-            }
-
-            main {
-                flex: 5 5 200px;
-
-            }
-
-            .right {
-                flex: 1 1 150px;
-
+@media screen and (max-width: 540px){
+    .artical-hero{
+        .articleheromainarea{
+           
+            .articles-card{
+                width: 100%;
             }
         }
     }

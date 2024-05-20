@@ -3309,98 +3309,142 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 .artical-hero {
-  height: 300px;
-  overflow: hidden;
-  position: relative;
+  padding-top: 100px;
 }
-.artical-hero img {
-  background-size: contain;
+.artical-hero .articleheromainarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
 }
-.artical-hero h1 {
-  font-size: 30px;
-  font-weight: 600;
+.artical-hero .articleheromainarea .articles-card {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  width: 24%;
+  height: 380px;
+}
+.artical-hero .articleheromainarea .articles-card .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+.artical-hero .articleheromainarea .articles-card .inner .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 130px;
+}
+.artical-hero .articleheromainarea .articles-card .inner .images img {
+  width: 130px;
+}
+.artical-hero .articleheromainarea .articles-card .inner h1 {
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #111;
   font-family: "Andada Pro", serif;
-  color: #ffffff;
+  font-weight: 700;
+}
+.artical-hero .articleheromainarea .articles-card .inner p {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #070630;
   text-align: center;
+  line-height: 20px;
+}
+.artical-hero .articleheromainarea .articles-card .inner button {
+  background: linear-gradient(135deg, #ff4081, #ff80ab);
+  border: none;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 15px 30px;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1;
+  overflow: hidden;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.artical-hero .articleheromainarea .articles-card .inner button::before {
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  text-transform: capitalize;
+  width: 300%;
+  height: 300%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+.artical-hero .articleheromainarea .articles-card .inner button::before:hover {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+.artical-hero .articleheromainarea .articles-card .inner button:hover {
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .articles-body {
   padding: 30px 0;
   overflow: hidden;
 }
-.articles-body .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
-  row-gap: 20px;
-}
-.articles-body .main .left {
-  -webkit-box-flex: 2;
-      -ms-flex: 2 0 150px;
-          flex: 2 0 150px;
-  background: #0ef;
-  padding: 20px;
-}
-.articles-body .main .left ul li {
-  color: #070630;
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  line-height: 25px;
-  list-style-type: decimal;
-  margin-bottom: 20px;
-  cursor: pointer;
-  padding: 10px;
-}
-.articles-body .main .left ul .active {
-  background: #070630 !important;
-  color: #ffffff !important;
-}
-.articles-body .main main {
+.articles-body .articles-details main {
   -webkit-box-flex: 5;
       -ms-flex: 5 5 200px;
           flex: 5 5 200px;
   padding: 20px;
-  background: #0ef;
-  overflow-y: scroll;
-  height: 550px;
-  scrollbar-width: thin;
-  /* For Firefox */
-  scrollbar-color: #070630 #f1f1f1;
-  /* Custom scrollbar styles */
+  background: #ffffff;
+  padding: 20px;
 }
-.articles-body .main main::-webkit-scrollbar {
-  width: 12px;
-  /* Width of the entire scrollbar */
+.articles-body .articles-details main .articles-item h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 30px;
+  text-align: center;
 }
-.articles-body .main main::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  /* Color of the scrollbar track */
-}
-.articles-body .main main::-webkit-scrollbar-thumb {
-  background-color: #070630;
-  /* Color of the scrollbar thumb */
-  border-radius: 10px;
-  /* Roundness of the scrollbar thumb */
-  border: 3px solid #f1f1f1;
-  /* Creates padding around thumb and matches track color */
-}
-.articles-body .main main::-webkit-scrollbar-thumb:hover {
-  background: #0155f0;
-  /* Color of the scrollbar thumb when hovered */
-}
-.articles-body .main main .articles-item p {
+.articles-body .articles-details main .articles-item p {
   color: #070630;
   font-size: 13px;
   font-family: "Poppins", sans-serif;
@@ -3408,7 +3452,7 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 21px;
   margin-bottom: 20px;
 }
-.articles-body .main main .articles-item ul li {
+.articles-body .articles-details main .articles-item ul li {
   list-style-type: decimal;
   margin-bottom: 15px;
   color: #070630;
@@ -3417,69 +3461,39 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   line-height: 21px;
 }
-.articles-body .main main .articles-item ul li ul {
+.articles-body .articles-details main .articles-item ul li ul {
   padding: 20px 0 20px 20px;
 }
-.articles-body .main main .articles-item ul li ul li {
+.articles-body .articles-details main .articles-item ul li ul li {
   list-style-type: disc;
   margin-bottom: 15px;
 }
-.articles-body .main main .backend-articles {
+.articles-body .articles-details main .frontend-articles {
   display: none;
 }
-.articles-body .main main .digitalmarketing {
+.articles-body .articles-details main .backend-articles {
   display: none;
 }
-.articles-body .main main .uxui-articles {
+.articles-body .articles-details main .digitalmarketing-articles {
   display: none;
 }
-.articles-body .main .right {
-  -webkit-box-flex: 2;
-      -ms-flex: 2 0 150px;
-          flex: 2 0 150px;
-  padding: 20px;
-  background: #0ef;
-}
-.articles-body .main .right ul li {
-  list-style-type: disclosure-closed;
-  border-bottom: 2px solid #070630;
-  color: #070630;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 25px;
-  margin-bottom: 15px;
-  cursor: pointer;
-}
-.articles-body .main .right ul .active {
-  background: #070630 !important;
-  color: #ffffff !important;
+.articles-body .articles-details main .uxui-articles {
+  display: none;
 }
 
-@media screen and (max-width: 768px) {
-  .articles-body .main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+@media screen and (max-width: 992px) {
+  .artical-hero .articleheromainarea {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 20px;
   }
-  .articles-body .main .left {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 150px;
-            flex: 1 1 150px;
+  .artical-hero .articleheromainarea .articles-card {
+    width: 48%;
   }
-  .articles-body .main main {
-    -webkit-box-flex: 5;
-        -ms-flex: 5 5 200px;
-            flex: 5 5 200px;
-  }
-  .articles-body .main .right {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 150px;
-            flex: 1 1 150px;
+}
+@media screen and (max-width: 540px) {
+  .artical-hero .articleheromainarea .articles-card {
+    width: 100%;
   }
 }
 .overlay {

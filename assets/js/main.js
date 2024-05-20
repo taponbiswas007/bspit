@@ -375,18 +375,7 @@ $(document).ready(function () {
   });
 
   //article page
-  $("aside.left ul li, aside.right ul li").click(function() {
-    // Get the index of the clicked <li> element
-    var index = $(this).index();
-
-    // Remove the 'active' class from all <li> elements in both asides
-    $("aside.left ul li, aside.right ul li").removeClass("active");
-
-    // Add the 'active' class to the clicked <li> element and the corresponding <li> element in the other aside
-    $("aside.left ul li").eq(index).addClass("active");
-    $("aside.right ul li").eq(index).addClass("active");
-});
-  
+ 
 $(".frontendlink").click(function(){
   $(".frontend-articles").show();
   $(".backend-articles").hide();
