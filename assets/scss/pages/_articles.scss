@@ -2,53 +2,60 @@
 @import "../utils/variables";
 
 .artical-hero {
-   
+
     padding-top: 100px;
-    .articleheromainarea{
+
+    .articleheromainarea {
         display: flex;
         justify-content: space-between;
         align-items: center;
         column-gap: 20px;
         row-gap: 20px;
-        .articles-card{
+
+        .articles-card {
             background: $white;
             padding: 14px;
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
             width: 24%;
             height: 380px;
-            
-            .inner{
+
+            .inner {
                 display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
-                .images{
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+
+                .images {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     height: 130px;
-                    img{
+
+                    img {
                         width: 130px;
                     }
                 }
-                h1{
+
+                h1 {
                     text-transform: capitalize;
-                    font-size: 16px ;
+                    font-size: 16px;
                     color: $black;
                     font-family: $mainfont;
                     font-weight: 700;
                 }
-                p{
+
+                p {
                     font-family: $textfont;
                     font-size: 13px;
                     font-weight: 600;
                     color: $darkbackground;
                     text-align: center;
-               
+
                     line-height: 20px;
                 }
-                button{
+
+                button {
                     background: linear-gradient(135deg, #ff4081, #ff80ab);
                     border: none;
                     border-radius: 50px;
@@ -65,6 +72,7 @@
                     font-family: $headerfont;
                     font-size: 16px;
                     font-weight: 600;
+
                     &::before {
                         content: '';
                         position: absolute;
@@ -77,18 +85,20 @@
                         border-radius: 50%;
                         z-index: -1;
                         transform: translate(-50%, -50%) scale(0);
-                        &:hover{
+
+                        &:hover {
                             transform: translate(-50%, -50%) scale(1);
                         }
                     }
-                    &:hover{
+
+                    &:hover {
                         box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
                         transform: translateY(-2px);
                     }
-                    
+
                 }
             }
-          }
+        }
     }
 
 }
@@ -96,16 +106,17 @@
 .articles-body {
     padding: 30px 0;
     overflow: hidden;
-    .articles-details{
+
+    .articles-details {
         main {
             flex: 5 5 200px;
             padding: 20px;
             background: $white;
             padding: 20px;
-           
-           
+
+
             .articles-item {
-                h1{
+                h1 {
                     font-size: 20px;
                     font-weight: 700;
                     color: $black;
@@ -113,6 +124,7 @@
                     margin-bottom: 30px;
                     text-align: center;
                 }
+
                 p {
                     color: $darkfontcolor;
                     font-size: 13px;
@@ -145,9 +157,10 @@
             }
 
 
-            .frontend-articles{
+            .frontend-articles {
                 display: none;
             }
+
             .backend-articles {
                 display: none;
             }
@@ -164,24 +177,27 @@
         }
 
     }
-  
+
 }
-@media screen and (max-width: 992px){
-    .artical-hero{
-        .articleheromainarea{
+
+@media screen and (max-width: 992px) {
+    .artical-hero {
+        .articleheromainarea {
             flex-wrap: wrap;
             row-gap: 20px;
-            .articles-card{
+
+            .articles-card {
                 width: 48%;
             }
         }
     }
 }
-@media screen and (max-width: 540px){
-    .artical-hero{
-        .articleheromainarea{
-           
-            .articles-card{
+
+@media screen and (max-width: 540px) {
+    .artical-hero {
+        .articleheromainarea {
+
+            .articles-card {
                 width: 100%;
             }
         }
