@@ -739,13 +739,9 @@ p, h1, h2, h3, h4, h5, h6 {
      object-fit: cover;
 }
 .header-and-banner .main-banner-area .main-banner-area .banner-right .myimg-area img {
-  -webkit-transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-          transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   opacity: 1;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-filter: brightness(70%) saturate(90%);
-          filter: brightness(70%) saturate(90%);
   position: absolute;
   bottom: 35px;
   z-index: 1;
@@ -4101,4 +4097,4 @@ p, h1, h2, h3, h4, h5, h6 {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
-}/*# sourceMappingURL=styles.css.map */
+}

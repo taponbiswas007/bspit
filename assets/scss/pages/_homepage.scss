@@ -601,10 +601,10 @@
                     object-fit: cover;
 
                     img {
-                        transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                        // transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
                         opacity: 1;
                         transform-style: preserve-3d;
-                        filter: brightness(70%) saturate(90%);
+                        // filter: brightness(70%) saturate(90%);
                         position: absolute;
                         bottom: 35px;
                         z-index: 1;
