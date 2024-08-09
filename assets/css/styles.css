@@ -133,7 +133,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   font-size: 20px;
   font-weight: 400;
-  font-family: "Roboto Slab", serif;
+  font-family: "Jost", sans-serif;
   text-transform: capitalize;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -183,163 +183,6 @@ p, h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 100%;
   left: 0;
-}
-.header .header-main-content .navbar .my-responsive-images-area {
-  display: none;
-  width: 100%;
-}
-.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area {
-  height: 350px;
-  width: 350px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.4);
-  position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area img {
-  -webkit-transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-          transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  opacity: 1;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-filter: brightness(100%) saturate(148%);
-          filter: brightness(100%) saturate(148%);
-  position: absolute;
-  bottom: 35px;
-  z-index: 1;
-  width: 291px;
-  left: 30px;
-}
-.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .project-complete {
-  font-family: "Andada Pro", serif;
-  color: #ffffff;
-  background: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  row-gap: 7px;
-  padding: 5px;
-  text-transform: capitalize;
-  position: absolute;
-  right: 100px;
-  bottom: -57px;
-  z-index: 2;
-}
-.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .snowfall {
-  background: url(../images/whiteball.png);
-  background-size: 350px 200px;
-  background-repeat: repeat;
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  animation: snowfall 5s linear forwards infinite;
-  -webkit-animation: snowfall 5s linear forwards infinite;
-}
-@keyframes snowfall {
-  0% {
-    background-position: 0 0;
-  }
-  20% {
-    background-position: 20px 20px;
-  }
-  40% {
-    background-position: 40px 40px;
-  }
-  60% {
-    background-position: 60px 60px;
-  }
-  80% {
-    background-position: 80px 80px;
-  }
-  100% {
-    background-position: 100px 100px;
-  }
-}
-@-webkit-keyframes snowfall {
-  0% {
-    background-position: 0 0;
-  }
-  20% {
-    background-position: 20px 20px;
-  }
-  40% {
-    background-position: 40px 40px;
-  }
-  60% {
-    background-position: 60px 60px;
-  }
-  80% {
-    background-position: 80px 80px;
-  }
-  100% {
-    background-position: 100px 100px;
-  }
-}
-.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .snow {
-  height: 40px;
-  width: 235px;
-  background-color: white;
-  position: absolute;
-  left: 60px;
-  top: 315px;
-  border-radius: 8px;
-}
-.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .bottom {
-  background-color: #ca0404;
-  height: 70px;
-  width: 260px;
-  position: absolute;
-  top: 100%;
-  left: 47px;
-}
-.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .bottom .bt1 {
-  background-color: #ff1919;
-  height: 20px;
-  width: 280px;
-  position: relative;
-  right: 10px;
-  border-radius: 10px;
-  bottom: 12px;
-}
-.header .header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .bottom .bt2 {
-  background-color: #ff1919;
-  height: 20px;
-  width: 280px;
-  position: relative;
-  right: 10px;
-  border-radius: 10px;
-  top: 40px;
 }
 .header .header-main-content .navbar .toggleclose {
   cursor: pointer;
@@ -393,7 +236,7 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 10px;
   font-size: 16px;
   font-weight: 600;
-  font-family: "Roboto Slab", serif;
+  font-family: "Jost", sans-serif;
   text-align: center;
   border-radius: 10px;
   -webkit-transition: 0.5s ease;
@@ -417,7 +260,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #111;
   text-align: center;
   font-size: 40px;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
   padding-top: 5px;
   cursor: pointer;
@@ -480,7 +323,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .header-and-banner .banner-animation-area .banner-animation-main-area .my-profession-heading .my-profession-heading-main-area span {
   color: #ffffff;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-size: 50px;
   font-weight: 600;
   text-transform: capitalize;
@@ -652,7 +495,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .header-and-banner .banner-animation-area .banner-animation-main-area .my-profession-heading .owner-name-area .name {
   color: #ffffff;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 700;
   font-size: 30px;
   position: absolute;
@@ -706,7 +549,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .header-and-banner .main-banner-area .main-banner-area .banner-left h1 {
   margin-top: 10px;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-size: 50px;
   color: #ffffff;
   font-weight: 700;
@@ -1198,7 +1041,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .about-wrapper {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 .about-wrapper .about-area {
   display: grid;
@@ -1241,18 +1084,21 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   font-weight: 600;
   text-align: center;
+  font-family: "Jost", sans-serif;
 }
 .about-wrapper .about-area .images-side .images-main-area .images-item .owner-details h1 {
   font-size: 20px;
   color: #ffffff;
   font-weight: 600;
   text-align: center;
+  font-family: "Jost", sans-serif;
 }
 .about-wrapper .about-area .images-side .images-main-area .images-item .owner-details h2 {
   font-size: 20px;
   color: #ffffff;
   font-weight: 600;
   text-align: center;
+  font-family: "Jost", sans-serif;
 }
 .about-wrapper .content-side {
   display: -webkit-box;
@@ -1273,7 +1119,7 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 .about-wrapper .content-side .about-header h1 {
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-size: 20px;
   color: #070630;
   font-weight: 600;
@@ -1284,7 +1130,7 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 .about-wrapper .content-side .about-subheader h2 {
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-size: 30px;
   color: #111;
   font-weight: 600;
@@ -1316,7 +1162,7 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 .ourservice-wrapper .service-header h1 {
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-size: 20px;
   color: #ffffff;
   font-weight: 600;
@@ -1354,7 +1200,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .ourservice-wrapper .service-area-description .content .content-main-area .content-header {
   font-size: 30px;
   color: #ffffff;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
 }
 .ourservice-wrapper .service-area-description .content .content-main-area .content-list-container {
@@ -1370,7 +1216,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #070630;
   text-transform: capitalize;
   font-size: 20px;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
   text-align: center;
   padding-top: 10px;
@@ -1417,7 +1263,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-top: 20px;
   font-size: 20px;
   color: #ffffff;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   text-align: center;
   text-transform: capitalize;
 }
@@ -1550,7 +1396,7 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 50px 0;
 }
 .ourportfulio-wrapper .service-header h1 {
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-size: 20px;
   color: #111;
   font-weight: 600;
@@ -1588,7 +1434,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .ourportfulio-wrapper .service-area-description .content .content-main-area .content-header {
   font-size: 30px;
   color: #111;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
 }
 .ourportfulio-wrapper .service-area-description .content .content-main-area .content-list-container {
@@ -1603,7 +1449,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .ourportfulio-wrapper .service-area-description .content .content-main-area .content-list-container .content-list .list-item {
   color: #ffffff;
   font-size: 20px;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
   text-transform: capitalize;
   text-align: center;
@@ -1712,7 +1558,7 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #070630;
 }
 .testimonials-wrapper .service-header h1 {
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-size: 20px;
   color: #ffffff;
   font-weight: 600;
@@ -1750,7 +1596,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .testimonials-wrapper .service-area-description .content .content-main-area .content-header {
   font-size: 30px;
   color: #ffffff;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
 }
 .testimonials-wrapper .service-area-description .content .content-main-area .content-list-container {
@@ -1766,7 +1612,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #070630;
   text-transform: capitalize;
   font-size: 20px;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
   text-align: center;
   padding-top: 10px;
@@ -1853,7 +1699,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .testimonials-wrapper .testimonials-area .swiper .swiper-slide .image-area .block .content-area h1 {
   color: #ffffff;
   font-size: 14px;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
   text-align: center;
   line-height: 30px;
@@ -1955,7 +1801,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .askanything-wrapper .askanything-main-area h1 {
   color: #070630;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
   text-align: center;
   font-size: 16px;
@@ -1979,7 +1825,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .askanything-wrapper .askanything-main-area .service-area-description .content .content-main-area .content-header {
   color: #070630;
   font-size: 20px;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
 }
 .askanything-wrapper .askanything-main-area .service-area-description .content .content-main-area .content-list-container {
@@ -1995,7 +1841,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   text-transform: capitalize;
   font-size: 20px;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
   text-align: center;
   padding-top: 10px;
@@ -2212,7 +2058,7 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #ffffff;
 }
 .happy-client-wrapper .client-main-area .client-item ul li {
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-size: 20px;
   color: #070630;
   text-align: center;
@@ -2295,13 +2141,13 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .footer-wrapper .footer-main-content-area .footer-item ul li {
   color: #ffffff;
-  font-family: "Roboto Slab", serif;
+  font-family: "Jost", sans-serif;
   margin-bottom: 20px;
   font-size: 16px;
 }
 .footer-wrapper .footer-main-content-area .footer-item ul li a {
   color: #ffffff;
-  font-family: "Roboto Slab", serif;
+  font-family: "Jost", sans-serif;
   margin-bottom: 20px;
   font-size: 16px;
 }
@@ -2385,7 +2231,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .footer-wrapper .copiwrite-area p {
   color: #ffffff;
   font-size: 12px;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 500;
   text-align: center;
 }
@@ -2456,9 +2302,6 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 100%;
     margin-bottom: 20px;
     text-align: center;
-  }
-  .header .header-main-content .navbar nav ul li:last-child {
-    display: none;
   }
   .header .header-main-content .navbar nav ul li a {
     display: block;
@@ -2592,9 +2435,6 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
     text-align: center;
   }
-  .header .header-main-content .navbar nav ul li:last-child {
-    display: none;
-  }
   .header .header-main-content .navbar nav ul li a {
     display: block;
     width: 100%;
@@ -2713,7 +2553,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   font-size: 20px;
   font-weight: 400;
-  font-family: "Roboto Slab", serif;
+  font-family: "Jost", sans-serif;
   text-transform: capitalize;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -2755,163 +2595,6 @@ p, h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 100%;
   left: 0;
-}
-.header .contact-header-main-content .navbar .my-responsive-images-area {
-  display: none;
-  width: 100%;
-}
-.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area {
-  height: 350px;
-  width: 350px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.4);
-  position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area img {
-  -webkit-transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-          transform: translate3d(0px, 0px, 0px) scaleX(-1) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  opacity: 1;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-filter: brightness(100%) saturate(148%);
-          filter: brightness(100%) saturate(148%);
-  position: absolute;
-  bottom: 35px;
-  z-index: 1;
-  width: 291px;
-  left: 30px;
-}
-.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .project-complete {
-  font-family: "Andada Pro", serif;
-  color: #ffffff;
-  background: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  row-gap: 7px;
-  padding: 5px;
-  text-transform: capitalize;
-  position: absolute;
-  right: 100px;
-  bottom: -57px;
-  z-index: 2;
-}
-.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .snowfall {
-  background: url(../images/whiteball.png);
-  background-size: 350px 200px;
-  background-repeat: repeat;
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  animation: snowfall 5s linear forwards infinite;
-  -webkit-animation: snowfall 5s linear forwards infinite;
-}
-@keyframes snowfall {
-  0% {
-    background-position: 0 0;
-  }
-  20% {
-    background-position: 20px 20px;
-  }
-  40% {
-    background-position: 40px 40px;
-  }
-  60% {
-    background-position: 60px 60px;
-  }
-  80% {
-    background-position: 80px 80px;
-  }
-  100% {
-    background-position: 100px 100px;
-  }
-}
-@-webkit-keyframes snowfall {
-  0% {
-    background-position: 0 0;
-  }
-  20% {
-    background-position: 20px 20px;
-  }
-  40% {
-    background-position: 40px 40px;
-  }
-  60% {
-    background-position: 60px 60px;
-  }
-  80% {
-    background-position: 80px 80px;
-  }
-  100% {
-    background-position: 100px 100px;
-  }
-}
-.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .snow {
-  height: 40px;
-  width: 235px;
-  background-color: white;
-  position: absolute;
-  left: 60px;
-  top: 315px;
-  border-radius: 8px;
-}
-.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .bottom {
-  background-color: #ca0404;
-  height: 70px;
-  width: 260px;
-  position: absolute;
-  top: 100%;
-  left: 47px;
-}
-.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .bottom .bt1 {
-  background-color: #ff1919;
-  height: 20px;
-  width: 280px;
-  position: relative;
-  right: 10px;
-  border-radius: 10px;
-  bottom: 12px;
-}
-.header .contact-header-main-content .navbar .my-responsive-images-area .imagesmainarea .banner-right .myimg-area .bottom .bt2 {
-  background-color: #ff1919;
-  height: 20px;
-  width: 280px;
-  position: relative;
-  right: 10px;
-  border-radius: 10px;
-  top: 40px;
 }
 .header .contact-header-main-content .navbar .toggleclose {
   cursor: pointer;
@@ -2965,7 +2648,7 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 10px;
   font-size: 16px;
   font-weight: 600;
-  font-family: "Roboto Slab", serif;
+  font-family: "Jost", sans-serif;
   text-align: center;
   border-radius: 10px;
   -webkit-transition: 0.5s ease;
@@ -2989,7 +2672,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #111;
   text-align: center;
   font-size: 40px;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
   padding-top: 5px;
   cursor: pointer;
@@ -3009,6 +2692,32 @@ p, h1, h2, h3, h4, h5, h6 {
 .header .contact-header-main-content .header-right .togglebar .bar {
   margin-top: 5px;
   margin-left: 8px;
+}
+
+.banner-area {
+  height: 400px;
+  background: #070630;
+}
+.banner-area .banner-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+  width: 100%;
+}
+.banner-area .banner-main h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .contact-hero-area {
@@ -3103,7 +2812,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #0ef;
   font-size: 17px;
   font-weight: 400;
-  font-family: "Roboto Slab", serif;
+  font-family: "Jost", sans-serif;
   text-transform: capitalize;
 }
 .contact-hero-area .contact-hero-main-area .block .content-area .information-input-area .input-item input {
@@ -3252,9 +2961,6 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
     text-align: center;
   }
-  .header .contact-header-main-content .navbar nav ul li:last-child {
-    display: none;
-  }
   .header .contact-header-main-content .navbar nav ul li a {
     display: block;
     width: 100%;
@@ -3282,9 +2988,6 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 100%;
     margin-bottom: 20px;
     text-align: center;
-  }
-  .header .contact-header-main-content .navbar nav ul li:last-child {
-    display: none;
   }
   .header .contact-header-main-content .navbar nav ul li a {
     display: block;
@@ -3402,7 +3105,7 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease;
   z-index: 1;
   overflow: hidden;
-  font-family: "Roboto Slab", serif;
+  font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 600;
 }
@@ -3448,7 +3151,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   font-weight: 700;
   color: #111;
-  font-family: "Roboto Slab", serif;
+  font-family: "Jost", sans-serif;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -3591,14 +3294,14 @@ p, h1, h2, h3, h4, h5, h6 {
 .contact-popup-area .contact-popup-main-area .contact-details .block .content-area h1 {
   color: #fbb800;
   font-size: 25px;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
   text-transform: capitalize;
   padding-bottom: 10px;
   text-decoration: underline;
 }
 .contact-popup-area .contact-popup-main-area .contact-details .block .content-area p {
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 300;
 }
 .contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area {
@@ -3611,7 +3314,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #0ef;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Roboto Slab", serif;
+  font-family: "Jost", sans-serif;
   text-transform: capitalize;
 }
 .contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-item .input-feild {
@@ -3620,7 +3323,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-item .input-feild input {
   width: 100%;
-  font-family: "Roboto Slab", serif;
+  font-family: "Jost", sans-serif;
   font-size: 13px;
   padding: 10px 20px;
   border-radius: 7px;
@@ -3664,7 +3367,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #0ef;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Roboto Slab", serif;
+  font-family: "Jost", sans-serif;
   text-transform: capitalize;
   cursor: pointer;
 }
@@ -3723,7 +3426,7 @@ p, h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   border: none;
   font-weight: 600;
-  font-family: "Roboto Slab", serif;
+  font-family: "Jost", sans-serif;
 }
 .contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .input-group textarea {
   height: 200px;
@@ -3745,7 +3448,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .contact-popup-area .contact-popup-main-area .contact-details .block .content-area .information-input-area .default-information ul li {
   color: #ffffff;
   font-size: 16px;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
   padding-bottom: 10px;
   display: inline-block;
@@ -3766,7 +3469,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .contact-popup-area .contact-popup-main-area .contact-details .block .content-area h2 {
   color: #0ef;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 15px;
   margin-top: 40px;
@@ -3774,7 +3477,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .contact-popup-area .contact-popup-main-area .contact-details .block .content-area h2 button {
   color: #ffffff;
-  font-family: "Roboto Slab", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 700;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -3784,7 +3487,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .contact-popup-area .contact-popup-main-area .contact-details .block .content-area h3 {
   color: #ffffff;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 20px;
   margin-top: 15px;
@@ -3812,7 +3515,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .contact-popup-area .contact-popup-main-area .contact-details .block .content-area .footer-social-icon-area .social-icon p {
   color: #0ef;
   font-size: 20px;
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-style: italic;
   text-align: center;
   font-weight: 600;
@@ -3867,7 +3570,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-button {
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-transform: capitalize;
@@ -3930,7 +3633,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-buttonwhite {
-  font-family: "Andada Pro", serif;
+  font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-transform: capitalize;
