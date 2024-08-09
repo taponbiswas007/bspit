@@ -28,7 +28,7 @@
         padding: 0 20px;
 
         #loginArea {
-            height: 540px;
+            height: 800px;
             display: none;
         }
 
@@ -118,6 +118,10 @@
                         padding-bottom: 10px;
                         text-decoration: underline;
                     }
+                    p {
+                        font-family: $mainfont;
+                        font-weight: 300;
+                    }
 
                     .information-input-area {
                         margin-top: 20px;
@@ -127,7 +131,7 @@
 
                             label {
                                 color: #0ef;
-                                font-size: 17px;
+                                font-size: 14px;
                                 font-weight: 400;
                                 font-family: $headerfont;
                                 text-transform: capitalize;
@@ -142,7 +146,7 @@
 
                                     width: 100%;
                                     font-family: $headerfont;
-                                    font-size: 15px;
+                                    font-size: 13px;
                                     padding: 10px 20px;
                                     border-radius: 7px;
                                     border: 2px solid #0ef;
@@ -185,7 +189,7 @@
                                 padding: 0 0.5em;
                                 margin-bottom: 0.5em;
                                 color: #0ef;
-                                font-size: 17px;
+                                font-size: 14px;
                                 font-weight: 400;
                                 font-family: $headerfont;
                                 text-transform: capitalize;
@@ -194,7 +198,7 @@
 
                             &__input {
                                 color: #fff;
-                                font-size: 1.25rem;
+                                font-size: 1rem;
                                 line-height: 1;
                                 border-style: none;
                                 outline: none;

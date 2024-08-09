@@ -366,7 +366,7 @@ $(document).ready(function () {
     $("#proposalarea").show();
     $("#loginArea").hide();
   });
-  $(".submit").click(function () {
+  $(".senddetails").click(function () {
     $("#loginArea").fadeOut();
     $("#registrationArea").fadeOut();
     $(".overlay").fadeOut();

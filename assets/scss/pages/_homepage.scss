@@ -1407,9 +1407,14 @@
             .swiper-slide {
                 .image-area {
                     position: relative;
-
+                    width: 100%;
+                    height: 500px;
                     img {
-                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        object-fit: fill;
+                        background-position: center;
                         width: 100%;
                         height: 100%;
                     }
@@ -1417,7 +1422,7 @@
                     .work-details {
                         position: absolute;
                         inset: 0;
-                        background: rgba(0, 0, 0, 0.5);
+                        background: rgba(0, 0, 0, 0.1);
 
                         p {
                             color: $white;
