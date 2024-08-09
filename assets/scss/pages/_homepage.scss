@@ -1334,7 +1334,7 @@
 
 .ourportfulio-wrapper {
     background: $white;
-    padding: 100px 0;
+    padding: 50px 0;
 
     .service-header {
         h1 {
@@ -2429,6 +2429,15 @@
             }
         }
     }
+    .ourportfulio-wrapper{
+        .portfulio-slider-area{
+            .swiper .swiper-slide {
+.image-area{
+    height: 260px;
+}
+            }
+        }
+    }  
 }
 
 @media screen and (max-width: 540px) {

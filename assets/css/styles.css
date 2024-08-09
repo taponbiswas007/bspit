@@ -1547,7 +1547,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .ourportfulio-wrapper {
   background: #ffffff;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 .ourportfulio-wrapper .service-header h1 {
   font-family: "Andada Pro", serif;
@@ -2526,6 +2526,9 @@ p, h1, h2, h3, h4, h5, h6 {
   .ourservice-wrapper .service-area .service-list .service-item .servicelink .service-box-content {
     bottom: 100px !important;
     opacity: 1;
+  }
+  .ourportfulio-wrapper .portfulio-slider-area .swiper .swiper-slide .image-area {
+    height: 260px;
   }
 }
 @media screen and (max-width: 540px) {
@@ -3580,7 +3583,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .contact-popup-area .contact-popup-main-area .contact-details .block .content-area {
   position: absolute;
   background: #111;
-  inset: 2px;
+  inset: -1px;
   z-index: 3;
   padding: 30px;
   border-radius: 20px;
